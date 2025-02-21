@@ -620,6 +620,13 @@ body {
         }
     }
 
+    .carousel-img1{
+        background-image: url("https://www.w3schools.com/bootstrap/chicago.jp");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin: 0;
+    }
+
     .carousel {
         align-items: center;
         display: flex;
@@ -705,48 +712,6 @@ body {
         border: 1px solid #000000;
         background: #30ea03;
         padding: 20px 20px 0 20px;
-
-        .frstHd {
-            padding-top: 20px;
-            margin: 0;
-            font-size: 13px;
-        }
-
-        .scndHd {
-            font-size: 40px;
-            margin: 0;
-            padding: 0;
-            font-weight: bold;
-        }
-
-        .thrdHd {
-            margin-top: -10px;
-            padding: 0;
-            font-size: 80px;
-            font-weight: bolder;
-        }
-
-        .aboutStory {
-            display: flex;
-            align-items: center;
-        }
-
-        .storyIcon {
-            i {
-                font-size: 100px;
-            }
-        }
-
-        .clickBtn {
-            border: none;
-            background: #000000;
-            color: #ffffff;
-            margin-left: auto;
-
-            i {
-                margin-left: 10px;
-            }
-        }
     }
 
     .categoryList {
@@ -1210,8 +1175,8 @@ table.tblMySubmissions {
     font-size: 30px;
     font-weight: bold;
 }
-.badgeCount.unActive{
-    background:#bdccff ;
+.badgeCount.unActive {
+    background: #bdccff;
     color: #ffffff;
 }
 .badgeDesc {
@@ -1219,6 +1184,6 @@ table.tblMySubmissions {
     font-size: 13px;
     text-align: left;
 }
-.unActive{
+.unActive {
     color: #bdccff;
 }
