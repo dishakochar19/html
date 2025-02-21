@@ -258,6 +258,7 @@ body {
     .desc {
         font-size: 13px;
         font-weight: normal;
+        padding-bottom: 10px;
     }
 
     .imageBx img {
@@ -620,11 +621,11 @@ body {
         }
     }
 
-    .carousel-img1{
+    .carousel-img1 {
         background-image: url("https://www.w3schools.com/bootstrap/chicago.jp");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    margin: 0;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        margin: 0;
     }
 
     .carousel {
@@ -705,6 +706,7 @@ body {
             font-size: 13px;
             background: #000000;
             color: #ffffff;
+            margin: 10px 20px;
         }
     }
 
@@ -801,13 +803,6 @@ body {
     i {
         font-size: small;
     }
-    /* h1 {
-        font-size: 30px;
-        margin: 0;
-        padding: 0;
-        color: red;
-        display: inline-block;
-    } */
 }
 
 .commonPageTitle {
@@ -1008,7 +1003,7 @@ textarea {
 }
 
 .bgFilters {
-    background: #efefef;
+    background: #e6ebff;
     border-top: 1px solid #000;
     padding: 15px;
     margin-bottom: 10px;
@@ -1039,23 +1034,36 @@ textarea {
 .categoryName {
     font-weight: bold;
     font-size: 15px;
-    display: flex;
-    flex-grow: 1;
     margin-bottom: 5px;
     gap: 5px;
 }
-
 .categorySelection {
     border: 1px solid black;
     width: 40%;
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 .categoryInput {
     display: flex;
     gap: 10px;
+    select {
+        width: 100%;
+    }
+    input {
+        border: 1px solid #000000;
+        width: 50%;
+        padding: 8px;
+    }
+    i {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
 }
-
+.categoryInput.status {
+    width: 50%;
+}
 .resetBtn {
     display: flex;
     gap: 10px;
@@ -1087,9 +1095,6 @@ textarea {
 
 .imgBox {
     width: 100%;
-}
-
-.cardDesc {
 }
 
 /* ------My Submissions----- */
@@ -1187,3 +1192,50 @@ table.tblMySubmissions {
 .unActive {
     color: #bdccff;
 }
+
+/* Dashboard */
+.tab {
+    margin-top: 30px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f1f1f1;
+  }
+  
+  .tablinks{
+    border: 1px solid red;
+    background: #000000;
+  }
+.tablinks .graphical{
+
+}
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
