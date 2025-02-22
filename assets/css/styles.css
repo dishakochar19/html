@@ -185,6 +185,10 @@ body {
         padding-bottom: 10px;
         margin-bottom: 10px;
 
+        .noBtmBorder{
+            border-bottom: none !important;
+        }
+
         .linkIcon {
             border-radius: 999px;
             background: #000000;
@@ -1035,7 +1039,6 @@ textarea {
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 5px;
-    gap: 5px;
 }
 .categorySelection {
     border: 1px solid black;
@@ -1045,15 +1048,13 @@ textarea {
 }
 
 .categoryInput {
-    display: flex;
-    gap: 10px;
     select {
         width: 100%;
     }
     input {
         border: 1px solid #000000;
-        width: 50%;
         padding: 8px;
+        width: 100%;
     }
     i {
         display: flex;
@@ -1061,8 +1062,8 @@ textarea {
         font-weight: bold;
     }
 }
-.categoryInput.status {
-    width: 50%;
+.submitButtons {
+    margin-top: 30px;
 }
 .resetBtn {
     display: flex;
@@ -1108,7 +1109,7 @@ textarea {
 table.tblMySubmissions {
     tbody {
         td {
-            padding: 5px 10px !important;
+            /* padding: 5px 10px !important; */
             vertical-align: middle;
         }
     }
@@ -1193,49 +1194,56 @@ table.tblMySubmissions {
     color: #bdccff;
 }
 
-/* Dashboard */
-.tab {
-    margin-top: 30px;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color: #f1f1f1;
-  }
-  
-  .tablinks{
-    border: 1px solid red;
-    background: #000000;
-  }
-.tablinks .graphical{
-
+/* Dashboard - Tabular Graphical Parent Container */
+.tgContainer{
+    border: 1px solid #30ea03;
+    padding: 20px;
+    display: block;
 }
 
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
+.tabsContainer {
+    display: flex;
+    width: 100%;
+    padding: 20px 0px 11px 0px;
+    flex-direction: row-reverse;
+    position: relative;
+
+    .tabsParent {
+        position: absolute;
+        left: 0;
+        top: 1px;
+    }
+
+    .exportExcel {
+        margin-left: auto;
+    }
+
+    ul.tabs li {
+        float: left;
+        margin: 0px;
+    }
+
+    ul.tabs li a {
+        background: #000;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: 0.3s;
+        font-size: 18px;
+        display: block;
+        font-weight: bold;
+        border-top: 5px solid #000;
+        border-left: 1px solid #30ea03;
+    }
+
+    ul.tabs li a:hover,
+    ul.tabs li a.active {
+        background: #fff;
+        color: #000;
+        border-top: 5px solid #30ea03;
+        border-right: 1px solid #30ea03;
+        
+    }
+}

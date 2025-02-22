@@ -147,7 +147,7 @@
             <!-- Video Bar  -->
             <div class=" col-sm-9">
                 <div class="subSection">
-                    <section class="storyTitle title">
+                    <section class="title noBtmBorder">
                         <i class="linkIcon">
                             <i class="ri-chat-check-line"></i>
                         </i>
@@ -155,11 +155,12 @@
                     </section>
 
                     <div class="bgFilters">
+
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="categoryName">
                                     <i class="ri-user-fill"></i>
-                                    subitter Name
+                                    Submitter Name
                                 </div>
                                 <div class="categoryInput">
                                     <select class="categorySelection" name="" id="">
@@ -198,240 +199,278 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="categoryName">
-                                        <i class="ri-article-line"></i>
-                                        Story Submission Date
-                                    </div>
-                                    <div class="categoryInput">
-                                        <input type="date">
-                                        <i class="ri-arrow-right-line"></i>
-                                        <input type="date">
-                                    </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="categoryName">
+                                    <i class="ri-article-line"></i>
+                                    Story Submission Date
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="categoryName">
-                                        <i class="ri-article-line"></i>
-                                        Status
+                                <div class="row">
+                                    <div class="col-sm-6 categoryInput">
+                                        <input type="date">
+                                        <!-- <i class="ri-arrow-right-line"></i> -->
                                     </div>
-                                    <div class="categoryInput status">
-                                        <select class="categorySelection" name="" id="">
-                                            <option value="Success Stories" selected="select"> -- Select All --
-                                            </option>
-                                            <option value="Best Practices">Best Practices</option>
-                                            <option value="Leassons Learned">Leassons Learned</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="categoryName">
-                                        <i class="ri-article-line"></i>
-                                        Status
-                                    </div>
-                                    <div class="categoryInput status">
-                                        <select class="categorySelection" name="" id="">
-                                            <option value="Success Stories" selected="select"> -- Select All --
-                                            </option>
-                                            <option value="Best Practices">Best Practices</option>
-                                            <option value="Leassons Learned">Leassons Learned</option>
-                                        </select>
+                                    <div class="col-sm-6 categoryInput">
+                                        <input type="date">
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="categoryName">
+                                            <i class="ri-article-line"></i>
+                                            Status
+                                        </div>
+                                        <div class="categoryInput">
+                                            <select class="categorySelection" name="" id="">
+                                                <option value="Success Stories" selected="select"> -- Select All --
+                                                </option>
+                                                <option value="Best Practices">Best Practices</option>
+                                                <option value="Leassons Learned">Leassons Learned</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="categoryName">
+                                            <i class="ri-medal-line"></i>
+                                            Badges
+                                        </div>
+                                        <div class="categoryInput">
+                                            <select class="categorySelection" name="" id="">
+                                                <option value="Success Stories" selected="select"> -- Select All --
+                                                </option>
+                                                <option value="Best Practices">Best Practices</option>
+                                                <option value="Leassons Learned">Leassons Learned</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 submitButtons">
+                                <div class="buttons resetBtn">
+                                    <button class=" btnCommon uploadBtn">
+                                        <i class="ri-search-eye-line"></i>
+                                        Submit
+                                    </button>
+                                    <button class=" btnCommon cancelBtn">
+                                        <i class="ri-loop-left-line"></i>
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-----------buttons----------->
-                    <div class="buttons resetBtn">
-                        <button class=" btnCommon uploadBtn">
-                            <i class="ri-search-eye-line"></i>
-                            Submit
-                        </button>
-                        <button class=" btnCommon cancelBtn">
-                            <i class="ri-loop-left-line"></i>
-                            Cancel
-                        </button>
-                    </div>
-
 
                     <!-------Tabs--------->
-                        <div class="tab">
-                            <button class="tablinks">
-                                <i class="ri-table-2"></i>
-                                Tabular View
-                            </button>
-                            <button class="tablinks graphical">
-                                <i class="ri-bar-chart-fill"></i>
-                                Graphical View
-                            </button>
+
+                    <div class="tabsContainer">
+                        <div class="tabsParent">
+                            <ul class="tabs">
+                                <li>
+                                    <a href="#">
+                                        <i class="ri-table-2"></i>
+                                        <span>Tabular View</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">
+                                        <i class="ri-bar-chart-fill"></i>
+                                        <span>Graphical View</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <table class="table table-bordered tblMySubmissions">
-                            <thead>
-                                <tr class="tableHeader">
-                                    <th class="txtCenter">#</th>
-                                    <th style="min-width: 200px;">Story Name</th>
-                                    <th>Category</th>
-                                    <th>Submission Date</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="data">
-                                    <td class="txtCenter">1</td>
-                                    <td>Automation of VQD process flow</td>
-                                    <td>Success Story</td>
-                                    <td>07/01/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon" data-toggle="modal" data-target="#modalEditStory">
-                                            <i class="ri-edit-box-line"></i>
-                                        </a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">2</td>
-                                    <td>Gamification of ALCOA Training </td>
-                                    <td>Best Practices</td>
-                                    <td>17/01/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">3</td>
-                                    <td>Lessons learned from recall of defected tablets</td>
-                                    <td>Lessons Learned</td>
-                                    <td>11/03/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">4</td>
-                                    <td>Optimizing Prodcut Release Cycle Through Automation</td>
-                                    <td>Success Story</td>
-                                    <td>24/04/2024</td>
-                                    <td>Rejected</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">5</td>
-                                    <td>Enhancing Data Accuracy with Real-Time Quality Automation</td>
-                                    <td>Best Practices</td>
-                                    <td>19/05/2024</td>
-                                    <td>Pending</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">6</td>
-                                    <td>Standardizing Quality Audits or Global Consistency</td>
-                                    <td>Success Story</td>
-                                    <td>03/06/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">7</td>
-                                    <td>Implementing Risk-Based Approach in Qulaity Assessments</td>
-                                    <td>Best Practices</td>
-                                    <td>27/08/2024</td>
-                                    <td>Pending</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">8</td>
-                                    <td>Streamlining Documentation for Regulatory Compliance</td>
-                                    <td>Lessons Learned</td>
-                                    <td>12/10/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">9</td>
-                                    <td>Key Takeways from Supply Chain Disruptions</td>
-                                    <td>Success Story</td>
-                                    <td>05/11/2024</td>
-                                    <td>Rejected</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">10</td>
-                                    <td>Insights Gained from Handling Non-Compformance Incidents</td>
-                                    <td>Success Story</td>
-                                    <td>15/12/2024</td>
-                                    <td>Draft</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                    <!-- ----------Pagination-------- -->
-                    <div class="pagination-container">
-                        <!-- Previous Button -->
-                        <i class="ri-arrow-left-s-fill"></i>
-
-                        <!-- Page Input -->
-                        <input type="number" id="pageInput" class="form-control" style="width: 60px;" min="1" value="1"
-                            oninput="goToInputPage()">
-
-                        <!--  Button -->
-                        <i class="ri-arrow-right-s-fill"></i>
-
-                        <!-- Items Per Page Dropdown -->
-                        <select id="itemsPerPage" class="form-control" style="width: 80px;"
-                            onchange="updatePagination()">
-                            <option value="3">3</option>
-                            <option value="5">5</option>
-                            <option value="10">10</option>
-                        </select>
-                        <span style="color: #0000ff;">
-                            items per page
-                        </span>
-                        <!-- Item Count Display -->
-                        <span class="pagination-summary" id="itemSummary">1- 3 of 19 items</span>
-                        <div>
-                            <i class="ri-reset-right-fill"></i>
-                        </div>
+                        
+                        <a class="exportExcel" href="#">
+                            <i class="ri-contacts-book-upload-line"></i>
+                            Export stories to excel
+                        </a>
                     </div>
+
+                    <!-- <div class="clearfix"></div> -->
+                    <div class="tgContainer">
+
+                        <div class="tgViews">
+                            <table class="table table-bordered tblMySubmissions">
+                                <thead>
+                                    <tr class="tableHeader">
+                                        <th class="txtCenter">#</th>
+                                        <th style="min-width: 200px;">Story Name</th>
+                                        <th>Category</th>
+                                        <th>Submission Date</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <div class="outerBorder"> -->
+                                    <tr class="data">
+                                        <td class="txtCenter">1</td>
+                                        <td>Automation of VQD process flow</td>
+                                        <td>Success Story</td>
+                                        <td>07/01/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon" data-toggle="modal" data-target="#modalEditStory">
+                                                <i class="ri-edit-box-line"></i>
+                                            </a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">2</td>
+                                        <td>Gamification of ALCOA Training </td>
+                                        <td>Best Practices</td>
+                                        <td>17/01/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">3</td>
+                                        <td>Lessons learned from recall of defected tablets</td>
+                                        <td>Lessons Learned</td>
+                                        <td>11/03/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">4</td>
+                                        <td>Optimizing Prodcut Release Cycle Through Automation</td>
+                                        <td>Success Story</td>
+                                        <td>24/04/2024</td>
+                                        <td>Rejected</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">5</td>
+                                        <td>Enhancing Data Accuracy with Real-Time Quality Automation</td>
+                                        <td>Best Practices</td>
+                                        <td>19/05/2024</td>
+                                        <td>Pending</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">6</td>
+                                        <td>Standardizing Quality Audits or Global Consistency</td>
+                                        <td>Success Story</td>
+                                        <td>03/06/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">7</td>
+                                        <td>Implementing Risk-Based Approach in Qulaity Assessments</td>
+                                        <td>Best Practices</td>
+                                        <td>27/08/2024</td>
+                                        <td>Pending</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">8</td>
+                                        <td>Streamlining Documentation for Regulatory Compliance</td>
+                                        <td>Lessons Learned</td>
+                                        <td>12/10/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">9</td>
+                                        <td>Key Takeways from Supply Chain Disruptions</td>
+                                        <td>Success Story</td>
+                                        <td>05/11/2024</td>
+                                        <td>Rejected</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">10</td>
+                                        <td>Insights Gained from Handling Non-Compformance Incidents</td>
+                                        <td>Success Story</td>
+                                        <td>15/12/2024</td>
+                                        <td>Draft</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <!-- </div> -->
+    
+                                </tbody>
+                            </table>
+                            <!-- ----------Pagination-------- -->
+                            <div class="pagination-container">
+                                <!-- Previous Button -->
+                                <i class="ri-arrow-left-s-fill"></i>
+    
+                                <!-- Page Input -->
+                                <input type="number" id="pageInput" class="form-control" style="width: 60px;" min="1"
+                                    value="1" oninput="goToInputPage()">
+    
+                                <!--  Button -->
+                                <i class="ri-arrow-right-s-fill"></i>
+    
+                                <!-- Items Per Page Dropdown -->
+                                <select id="itemsPerPage" class="form-control" style="width: 80px;"
+                                    onchange="updatePagination()">
+                                    <option value="3">3</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <span style="color: #0000ff;">
+                                    items per page
+                                </span>
+                                <!-- Item Count Display -->
+                                <span class="pagination-summary" id="itemSummary">1- 3 of 19 items</span>
+                                <div>
+                                    <i class="ri-reset-right-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tgViews">
+                            Graphical Data will come here
+                        </div>
+
+                    </div>
+
+
+
                 </div>
             </div>
 
