@@ -155,7 +155,7 @@ body {
     font-weight: bold;
     font-size: 18px;
     background: #30ea03;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 6px;
     align-items: center;
     border: 1px solid #000000;
@@ -174,7 +174,6 @@ body {
 }
 
 .subSection {
-
     .homeTitle {
         cursor: pointer;
         gap: 10px;
@@ -194,26 +193,21 @@ body {
             color: #ffffff;
             line-height: 32px;
             text-align: center;
-    
         }
-
-        
     }
-
 
     .internalPageTitle {
         margin: 0;
-        padding: 0 0px 5px 0px;
+        padding: 0 0px 20px 0px;
         display: flex;
         width: 100%;
         gap: 10px;
         align-items: center;
         border-bottom: 1px dashed #000000;
-        
-        /* .noBtmBorder { */
-            /* border-bottom: none !important; */
-        /* } */
 
+        .noBdrBottom {
+            border-bottom: none !important;
+        }
         .internalTitleIcon {
             margin-top: 3px;
             border-radius: 999px;
@@ -224,12 +218,17 @@ body {
             color: #ffffff;
             text-align: center;
 
-            i { font-size: 18px; color: #fff; font-weight: bold; }
-            span {font-size: 30px; line-height: 30px;}
+            i {
+                font-size: 18px;
+                color: #fff;
+                font-weight: bold;
+            }
+            span {
+                font-size: 30px;
+                line-height: 30px;
+            }
         }
     }
-    
-
 }
 
 /* -------Posts------- */
@@ -900,7 +899,6 @@ body {
     .buttons {
         display: flex;
         gap: 10px;
-
         i {
             margin-left: 15px;
         }
@@ -1044,6 +1042,7 @@ textarea {
     margin: 0;
     padding: 0;
     display: inline-block;
+    font-weight: bold;
 }
 
 .keywordInput {
@@ -1091,17 +1090,17 @@ textarea {
 .submitButtons {
     margin-top: 30px;
 }
-.resetBtn {
+.videoBtns {
     display: flex;
     gap: 10px;
-
+    height: 40px;
     .uploadBtn {
         border: none;
         border-radius: 6px;
         gap: 10px;
     }
 
-    .cancelBtn {
+    .resetBtn {
         border: none;
         background: #50e1f79a;
         border-radius: 6px;
@@ -1272,5 +1271,58 @@ table.tblMySubmissions {
         color: #000;
         border-top: 5px solid #30ea03;
         border-right: 1px solid #30ea03;
+    }
+}
+.tgViews {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.tgTitle {
+    padding-bottom: 10px;
+}
+.graphs {
+    border: 1px solid #b8b8b8;
+    border-bottom: 5px solid #000;
+}
+.secondrow {
+    padding-top: 20px;
+}
+.uploadVideo {
+    margin-left: auto;
+    background-color: #30ea03;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+.videoTitle {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    text-align: right;
+    gap: 10px;
+    span:first-child {
+        flex: 2;
+    }
+    span:last-child {
+        flex: 7;
+    }
+    input[type="text"] {
+        border: 1px solid #000;
+        padding: 10px;
+        width: 100%;
+    }
+    select {
+        border: 1px solid #000;
+        padding: 10px;
+        width: 100%;
+    }
+    .videoPopBtn {
+        border-radius: 0;
     }
 }
