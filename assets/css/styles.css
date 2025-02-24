@@ -1,33 +1,39 @@
-/* @mixin desktop {   @media (max-width: #{1400px}) { @content;  }}
-@mixin desktopMd {   @media (max-width: #{1280px}) { @content;  }}
-@mixin desktopSm {   @media (max-width: #{1200px}) { @content;  }}
-@mixin ipadPro {   @media (max-width: #{1366px}) { @content;  }}
-@mixin ipad {   @media (max-width: #{1024px}) { @content;  }}
-@mixin ninenine2 {   @media (max-width: #{992px}) { @content;  }}
-@mixin ninenine1 {   @media (max-width: #{991px}) { @content;  }}
-@mixin sevensix8 {   @media (max-width: #{768px}) { @content;  }}
-@mixin sevensix7 {   @media (max-width: #{767px}) { @content;  }}
-@mixin mobileMd {   @media (max-width: #{580px}) { @content;  }}
-@mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
-
-@media (max-width: 991px) {
-    .outerSection {
-        display: inherit;
-
-        .leftBar {
-            width: inherit;
-        }
-    }
-}
-
-@media (max-width: 767px) {
-}
-
-@media (max-width: 500px) {
-}
-
 body {
     background: #efefef;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 /* ---------carousel------- */
@@ -148,7 +154,6 @@ body {
     /* width: 100px; */
     height: 40px;
     font-weight: bold;
-    border-radius: 6px;
     font-size: 18px;
     align-items: center;
     justify-content: center;
@@ -473,6 +478,7 @@ body {
     }
 
     .submitBtn {
+        border-radius: 6px;
         width: 100px;
         height: 40px;
         border: none;
@@ -588,6 +594,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 6px;
             i {
                 font-size: 40px;
             }
@@ -685,6 +692,7 @@ body {
             padding: 0;
             margin: 0;
             font-weight: bold;
+            text-align: left;
             a {
                 text-decoration: none;
                 color: #000;
@@ -784,6 +792,7 @@ body {
         background: #30ea03;
         display: flex;
         gap: 10px;
+        border-radius: 6px;
     }
     .MessageBox {
         display: inline-block;
@@ -825,13 +834,13 @@ body {
 .formGrp {
     padding: 10px 0 10px 0;
 
-    .col-sm-3 {
+    .col-md-3 {
         font-size: 13px;
         font-weight: bold;
         text-align: right;
     }
 
-    .col-sm-9 {
+    .col-md-9 {
         padding: 0;
 
         input {
@@ -846,7 +855,7 @@ body {
         }
     }
 
-    .categorySelection {
+    .storySelection {
         padding: 10px;
         border: 1px solid #000000;
         width: 100%;
@@ -1010,6 +1019,9 @@ textarea {
     max-height: 100px;
     overflow: hidden;
     margin: 20px 0px;
+    img{
+        width: 100%;
+    }
 }
 
 .bgFilters {
@@ -1123,6 +1135,10 @@ table.tblMySubmissions {
     }
 }
 .action {
+
+    > div {
+        min-width: 120px;
+    }
     a {
         height: 32px;
         width: 32px;
@@ -1166,12 +1182,18 @@ table.tblMySubmissions {
     border-bottom: 8px solid #000000;
     padding: 20px;
     margin-bottom: 20px;
+    align-items: stretch;
 }
 .badgeImg {
+    flex: 1;
     padding-right: 20px;
     width: 500px;
+    img{
+       height: 100%; 
+    }
 }
 .badgeInfo {
+    flex: 1;
     padding-left: 20px;
     border-left: 1px solid #d3d3d3;
     display: flex;
@@ -1224,6 +1246,10 @@ table.tblMySubmissions {
 
     .exportExcel {
         margin-left: auto;
+        a {
+            text-decoration: none;
+            background-color: red;
+        }
     }
 
     ul.tabs li {
@@ -1317,6 +1343,9 @@ table.tblMySubmissions {
 .submitButtons {
     margin-top: 30px;
 }
+.dashboardBtns {
+    padding-top: 10px;
+}
 .filterName {
     font-weight: bold;
     font-size: 15px;
@@ -1339,5 +1368,71 @@ table.tblMySubmissions {
         display: flex;
         align-items: center;
         font-weight: bold;
+    }
+}
+.videouploadingBtns {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    border-radius: none;
+    .uploadBtn {
+        background-color: #30ea03;
+        padding: 10px;
+        i {
+            padding-left: 10px;
+        }
+    }
+    .cancelBtn {
+        padding: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        i {
+            padding-left: 10px;
+        }
+    }
+}
+
+/* 
+
+@mixin desktop {   @media (max-width: #{1400px}) { @content;  }}
+@mixin desktopMd {   @media (max-width: #{1280px}) { @content;  }}
+@mixin desktopSm {   @media (max-width: #{1200px}) { @content;  }}
+@mixin ipadPro {   @media (max-width: #{1366px}) { @content;  }}
+@mixin ipad {   @media (max-width: #{1024px}) { @content;  }}
+@mixin ninenine2 {   @media (max-width: #{992px}) { @content;  }}
+@mixin ninenine1 {   @media (max-width: #{991px}) { @content;  }}
+@mixin sevensix8 {   @media (max-width: #{768px}) { @content;  }}
+@mixin sevensix7 {   @media (max-width: #{767px}) { @content;  }}
+@mixin mobileMd {   @media (max-width: #{580px}) { @content;  }}
+@mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
+
+@media (max-width: 1200px) {
+    .rightBar {
+        .videoBar {
+            .videoTitle {
+                font-size: 22px;
+            }
+        }
+    }
+    .midBar {
+        .midHead {
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .outerSection {
+        display: inherit;
+    }
+}
+
+/* -------Side navigation-------- */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
     }
 }

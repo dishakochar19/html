@@ -25,7 +25,25 @@
         <div class="outerSection row">
 
             <!-- {/* ----------Left Bar-------- */} -->
-            <div class=" col-sm-3 leftBar">
+
+
+
+
+
+
+
+            <div class=" col-md-3 leftBar">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <h2>Animated Sidenav Example</h2>
+                <p>Click on the element below to open the side navigation menu.</p>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
                 <h1 class="commonLogo">
                     <a href="index.html">
                         <span>ABC</span>
@@ -141,10 +159,8 @@
                     </div>
                 </div>
             </div>
-
-
             <!-- {/* ----------Mid Bar-------- */} -->
-            <div class="col-sm-6 midBar">
+            <div class="col-md-6 midBar">
                 <div class="midHead">
                     <div class="storyHead">
                         <span> Top stories</span>
@@ -185,7 +201,8 @@
                             <div class="item">
                                 <div class="mySlide">
                                     <div class="slideSection">
-                                        <h1 class="sliderTitle">Revolutionizing Quality Checks with AI Integration</h1>
+                                        <h1 class="sliderTitle">Revolutionizing Quality Checks with AI Integration
+                                        </h1>
                                         <p class="sliderDesc">
                                             This success story showcases how the integration of AI-driven tools
                                             trasnformed the
@@ -207,7 +224,8 @@
                             <div class="item">
                                 <div class="mySlide">
                                     <div class="slideSection">
-                                        <h1 class="sliderTitle">Revolutionizing Quality Checks with AI Integration</h1>
+                                        <h1 class="sliderTitle">Revolutionizing Quality Checks with AI Integration
+                                        </h1>
                                         <p class="sliderDesc">
                                             This success story showcases how the integration of AI-driven tools
                                             trasnformed the
@@ -348,7 +366,7 @@
 
 
             <!-- {/* ----------Right Bar-------- */} -->
-            <div class="col-sm-3 rightBar">
+            <div class="col-md-3 rightBar">
                 <div class="videoBar">
                     <div class="videoIcon">
                         <i class="ri-vidicon-fill"></i>
@@ -460,6 +478,15 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 
@@ -777,6 +804,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

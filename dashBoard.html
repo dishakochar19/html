@@ -25,7 +25,7 @@
         <div class="outerSection row">
 
             <!-- Left Bar -->
-            <div class=" col-sm-3 leftBar">
+            <div class=" col-md-3 leftBar">
                 <h1 class="commonLogo">
                     <a href="index.html">
                         <span>ABC</span>
@@ -143,7 +143,7 @@
             </div>
 
             <!-- Video Bar -->
-            <div class=" col-sm-9">
+            <div class=" col-md-9">
                 <div class="subSection">
                     <div class="internalPageTitle noBdrBottom">
                         <div class="internalTitleIcon">
@@ -161,7 +161,7 @@
 
                     <div class="bgFilters dashboardFilter">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="filterName">
                                     <i class="ri-user-fill"></i>
                                     Submitter Name
@@ -175,7 +175,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="filterName">
                                     <i class="ri-article-line"></i>
                                     Story Title
@@ -189,7 +189,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="filterName">
                                     <i class="ri-article-line"></i>
                                     Story Title
@@ -206,24 +206,24 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="filterName">
                                     <i class="ri-article-line"></i>
                                     Story Submission Date
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-6 filterInput calendar">
+                                    <div class="col-md-6 filterInput calendar">
                                         <input type="date">
                                         <!-- <i class="ri-arrow-right-line"></i> -->
                                     </div>
-                                    <div class="col-sm-6 filterInput">
+                                    <div class="col-md-6 filterInput">
                                         <input type="date">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-md-6">
                                         <div class="filterName">
                                             <i class="ri-article-line"></i>
                                             Status
@@ -237,7 +237,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-md-6">
                                         <div class="filterName">
                                             <i class="ri-medal-line"></i>
                                             Badges
@@ -253,38 +253,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-sm-4 submitButtons">
-                                <div class="buttons videoBtns">
-                                    <button class=" btnCommon uploadBtn">
-                                        <i class="ri-search-eye-line"></i>
-                                        Submit
-                                    </button>
-                                    <button class=" btnCommon resetBtn">
-                                        <i class="ri-loop-left-line"></i>
-                                        Reset
-                                    </button>
-                                </div>
-                            </div> -->
-
-
-                            <div class="col-sm-4">
-                                <div class="videoBtn">
-                                    <button class="btnCommon uploadBtn">
-                                        <i class="ri-search-eye-line"></i>
-                                        <span>Submit</span>
-                                    </button>
-                                    <button class="btnCommon resetBtn">
-                                        <i class="ri-loop-right-line"></i>
-                                        <span>Reset</span>
-                                    </button>
+                            <div class="col-md-4">
+                                <div class="dashboardBtns">
+                                    <div class="videoBtn">
+                                        <button class="btnCommon uploadBtn">
+                                            <i class="ri-search-eye-line"></i>
+                                            <span>Submit</span>
+                                        </button>
+                                        <button class="btnCommon resetBtn">
+                                            <i class="ri-loop-right-line"></i>
+                                            <span>Reset</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-
-
-
-
-
-
                         </div>
                     </div>
 
@@ -308,7 +290,7 @@
                         </div>
                         <a class="exportExcel" href="#">
                             <i class="ri-contacts-book-upload-line"></i>
-                            Export stories to excel
+                            <span>Export stories to excel</span>
                         </a>
                     </div>
 
@@ -316,144 +298,152 @@
                     <div class="tgContainer">
 
                         <div class="tbViews">
-                            <table class="table table-bordered tblMySubmissions">
-                                <thead>
-                                    <tr class="tableHeader">
-                                        <th class="txtCenter">#</th>
-                                        <th style="min-width: 200px;">Story Name</th>
-                                        <th>Category</th>
-                                        <th>Submission Date</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="data">
-                                        <td class="txtCenter">1</td>
-                                        <td>Automation of VQD process flow</td>
-                                        <td>Success Story</td>
-                                        <td>07/01/2024</td>
-                                        <td>Approved</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon" data-toggle="modal"
-                                                data-target="#modalEditStory">
-                                                <i class="ri-edit-box-line"></i>
-                                            </a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">2</td>
-                                        <td>Gamification of ALCOA Training </td>
-                                        <td>Best Practices</td>
-                                        <td>17/01/2024</td>
-                                        <td>Approved</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">3</td>
-                                        <td>Lessons learned from recall of defected tablets</td>
-                                        <td>Lessons Learned</td>
-                                        <td>11/03/2024</td>
-                                        <td>Approved</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">4</td>
-                                        <td>Optimizing Prodcut Release Cycle Through Automation</td>
-                                        <td>Success Story</td>
-                                        <td>24/04/2024</td>
-                                        <td>Rejected</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">5</td>
-                                        <td>Enhancing Data Accuracy with Real-Time Quality Automation</td>
-                                        <td>Best Practices</td>
-                                        <td>19/05/2024</td>
-                                        <td>Pending</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">6</td>
-                                        <td>Standardizing Quality Audits or Global Consistency</td>
-                                        <td>Success Story</td>
-                                        <td>03/06/2024</td>
-                                        <td>Approved</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">7</td>
-                                        <td>Implementing Risk-Based Approach in Qulaity Assessments</td>
-                                        <td>Best Practices</td>
-                                        <td>27/08/2024</td>
-                                        <td>Pending</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">8</td>
-                                        <td>Streamlining Documentation for Regulatory Compliance</td>
-                                        <td>Lessons Learned</td>
-                                        <td>12/10/2024</td>
-                                        <td>Approved</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">9</td>
-                                        <td>Key Takeways from Supply Chain Disruptions</td>
-                                        <td>Success Story</td>
-                                        <td>05/11/2024</td>
-                                        <td>Rejected</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="txtCenter">10</td>
-                                        <td>Insights Gained from Handling Non-Compformance Incidents</td>
-                                        <td>Success Story</td>
-                                        <td>15/12/2024</td>
-                                        <td>Draft</td>
-                                        <td class="action">
-                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </td>
-                                    </tr>
+                            <div style="overflow-x: auto;">
+                                <table class="table table-bordered tblMySubmissions">
+                                    <thead>
+                                        <tr class="tableHeader">
+                                            <th class="txtCenter">#</th>
+                                            <th style="min-width: 200px;">Story Name</th>
+                                            <th>Category</th>
+                                            <th>Submission Date</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="data">
+                                            <td class="txtCenter">1</td>
+                                            <td>Automation of VQD process flow</td>
+                                            <td>Success Story</td>
+                                            <td>07/01/2024</td>
+                                            <td>Approved</td>
+                                            <td class="action">
+                                                <div>
+                                                    <a href="#" class="searchIcon"><i
+                                                            class="ri-search-eye-line"></i></a>
+                                                    <a href="#" class="editIcon" data-toggle="modal"
+                                                        data-target="#modalEditStory">
+                                                        <i class="ri-edit-box-line"></i>
+                                                    </a>
+                                                    <a href="#" class="deleteIcon"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
 
-                                </tbody>
-                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">2</td>
+                                            <td>Gamification of ALCOA Training </td>
+                                            <td>Best Practices</td>
+                                            <td>17/01/2024</td>
+                                            <td>Approved</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">3</td>
+                                            <td>Lessons learned from recall of defected tablets</td>
+                                            <td>Lessons Learned</td>
+                                            <td>11/03/2024</td>
+                                            <td>Approved</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">4</td>
+                                            <td>Optimizing Prodcut Release Cycle Through Automation</td>
+                                            <td>Success Story</td>
+                                            <td>24/04/2024</td>
+                                            <td>Rejected</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">5</td>
+                                            <td>Enhancing Data Accuracy with Real-Time Quality Automation</td>
+                                            <td>Best Practices</td>
+                                            <td>19/05/2024</td>
+                                            <td>Pending</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">6</td>
+                                            <td>Standardizing Quality Audits or Global Consistency</td>
+                                            <td>Success Story</td>
+                                            <td>03/06/2024</td>
+                                            <td>Approved</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">7</td>
+                                            <td>Implementing Risk-Based Approach in Qulaity Assessments</td>
+                                            <td>Best Practices</td>
+                                            <td>27/08/2024</td>
+                                            <td>Pending</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">8</td>
+                                            <td>Streamlining Documentation for Regulatory Compliance</td>
+                                            <td>Lessons Learned</td>
+                                            <td>12/10/2024</td>
+                                            <td>Approved</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">9</td>
+                                            <td>Key Takeways from Supply Chain Disruptions</td>
+                                            <td>Success Story</td>
+                                            <td>05/11/2024</td>
+                                            <td>Rejected</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txtCenter">10</td>
+                                            <td>Insights Gained from Handling Non-Compformance Incidents</td>
+                                            <td>Success Story</td>
+                                            <td>15/12/2024</td>
+                                            <td>Draft</td>
+                                            <td class="action">
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
                             <!-- ----------Pagination-------- -->
                             <div class="pagination-container">
                                 <i class="ri-arrow-left-s-fill"></i>
@@ -481,7 +471,7 @@
                         </div>
                         <div class="tgViews">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-md-6">
                                     <h1 class="tgTitle">
                                         Stories by Approval Status
                                     </h1>
@@ -490,7 +480,7 @@
                                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-md-6">
                                     <h1 class="tgTitle">
                                         Stories by Category
                                     </h1>
@@ -500,7 +490,7 @@
                                 </div>
                             </div>
                             <div class="row secondrow">
-                                <div class="col-sm-6">
+                                <div class="col-md-6">
                                     <h1 class="tgTitle">
                                         Stories by type of Badges
                                     </h1>
@@ -508,7 +498,7 @@
                                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-md-6">
                                     <h1 class="tgTitle">
                                         Month wise Stories
                                     </h1>
@@ -574,13 +564,13 @@
                         <div class="videoTitle">
                             <span></span>
                             <span>
-                                <div class="buttons videoBtns">
-                                    <button class=" btnCommon uploadBtn">
-                                        Submit
+                                <div class="videouploadingBtns">
+                                    <button class="btnCommon uploadBtn">
+                                        <span>Submit</span>
                                         <i class="ri-check-line"></i>
                                     </button>
-                                    <button class=" btnCommon cancelBtn videoPopBtn">
-                                        Cancel
+                                    <button class="btnCommon cancelBtn">
+                                        <span>Cancel</span>
                                         <i class="ri-close-large-line"></i>
                                     </button>
                                 </div>
