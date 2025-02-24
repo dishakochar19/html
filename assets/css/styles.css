@@ -57,41 +57,36 @@ body {
 
     .formInput {
         display: flex;
-
         .formName {
             margin-right: 10px;
             padding-top: 5px;
         }
-
         .nameInput {
             flex-grow: 1;
         }
-
         input {
             border: 1px solid #000000;
             padding: 5px 10px;
             width: 100%;
         }
-
         .formBtn {
             display: flex;
             gap: 10px;
             padding: 10px 0;
-
             i {
                 margin-left: 15px;
             }
         }
-
-        .cancelBtn {
-            background: #000000;
-            border-radius: 0;
-            color: #ffffff;
+        .uploadBtn {
+            padding: 10px;
+            background: #30ea03;
             display: flex;
         }
-
-        .uploadBtn {
-            border-radius: 0;
+        .cancelBtn {
+            padding: 10px;
+            background: #000000;
+            color: #ffffff;
+            display: flex;
         }
     }
 }
@@ -100,15 +95,12 @@ body {
     padding: 0 !important;
     border-bottom: none !important;
 }
-
 .modal-header .close {
     margin: 20px 20px 0 0;
 }
-
 .noBorder {
     border: 0px !important;
 }
-
 .modal-title {
     font-size: 18px;
     font-weight: bold;
@@ -140,7 +132,7 @@ body {
         background: rgba(0, 0, 0, 1);
         height: 24px !important;
         width: 24px !important;
-        line-height: 24px;
+        line-height: 24px !important;
         color: #fff !important;
         border-radius: 999px !important;
         font-size: 15px;
@@ -151,14 +143,15 @@ body {
 
 /* -------Button------ */
 .btnCommon {
+    cursor: pointer;
     display: flex;
+    /* width: 100px; */
+    height: 40px;
     font-weight: bold;
-    font-size: 18px;
-    background: #30ea03;
-    padding: 10px;
     border-radius: 6px;
+    font-size: 18px;
     align-items: center;
-    border: 1px solid #000000;
+    justify-content: center;
 }
 
 /* ------Sections------ */
@@ -279,7 +272,7 @@ body {
         display: inline-block;
     }
 
-    .desc {
+    .authorDesc {
         font-size: 13px;
         font-weight: normal;
         padding-bottom: 10px;
@@ -290,16 +283,17 @@ body {
         height: 500px;
     }
 
-    .readMore {
+    .authorReadMore {
         margin: 20px 0 20px 0;
         font-size: 13px;
         display: inline-block;
         a {
             text-decoration: none;
+            color: #000000;
         }
     }
 
-    .keyword {
+    .keywords {
         color: #0000ff;
         cursor: pointer;
         display: block;
@@ -309,6 +303,36 @@ body {
         }
         a {
             text-decoration: none;
+        }
+    }
+
+    .likeNshare {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+        font-weight: bold;
+        font-size: 13px;
+        gap: 30px;
+        i {
+            font-size: 17px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .navBar {
+            margin-left: auto;
+
+            > ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                i {
+                    color: #30ea03;
+                }
+            }
         }
     }
 
@@ -434,56 +458,6 @@ body {
         margin-left: 10px;
     }
 
-    .likeNshare {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        margin: 0 0 10px 0;
-
-        .like {
-            font-weight: bold;
-            font-size: 13px;
-
-            i {
-                font-size: 17px;
-            }
-        }
-
-        .share {
-            font-weight: bold;
-            font-size: 13px;
-            margin-left: 20px;
-
-            i {
-                font-size: 17px;
-            }
-            a {
-                text-decoration: none;
-            }
-        }
-
-        .navBar {
-            margin-left: auto;
-
-            > ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                font-size: 15px;
-            }
-
-            .liked {
-                font-size: 13px;
-                font-weight: bold;
-
-                i {
-                    color: #30ea03;
-                    font-size: 17px;
-                }
-            }
-        }
-    }
-
     .commentBox {
         flex-grow: 1;
         display: block;
@@ -499,6 +473,8 @@ body {
     }
 
     .submitBtn {
+        width: 100px;
+        height: 40px;
         border: none;
         background: #30ea03;
         margin: 0 0 0 42px;
@@ -605,16 +581,13 @@ body {
             }
         }
 
-        .searchIcon {
-            cursor: pointer;
+        .searchInputBtn {
             height: 45px;
             width: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 6px;
             background: #30ea03;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
             i {
                 font-size: 40px;
             }
@@ -639,22 +612,24 @@ body {
             padding-right: 300px;
         }
 
-        a.sliderReadMore {
-            cursor: pointer;
-            border: 1px solid #000000;
-            display: block;
-            padding: 3px 10px;
-            font-size: 13px;
-            text-decoration: none;
-            width: 110px;
-            font-weight: bold;
+        .sliderReadMore {
+            border: 1px solid #000;
+            display: flex;
+            width: 120px;
+            height: 35px;
+            border-radius: 0;
+            font-weight: normal;
+            font-size: 15px;
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
         }
 
-        a.sliderReadMore:hover {
+        .sliderReadMore:hover {
             background: #30ea03;
-            transition: all 0.3s ease-in-out;
-            color: #000000;
-            font-weight: bold;
+            transition: all 0.5s ease-in-out;
+            color: #000;
         }
     }
 
@@ -726,6 +701,7 @@ body {
             display: block;
             width: 100%;
             color: #fff;
+            text-decoration: none;
         }
 
         a img {
@@ -802,7 +778,13 @@ body {
             padding: 5px;
         }
     }
-
+    .filterBtn {
+        width: 80px;
+        height: 40px;
+        background: #30ea03;
+        display: flex;
+        gap: 10px;
+    }
     .MessageBox {
         display: inline-block;
         font-size: 13px;
@@ -866,7 +848,7 @@ body {
 
     .categorySelection {
         padding: 10px;
-        border: 1px solid black;
+        border: 1px solid #000000;
         width: 100%;
     }
 
@@ -905,13 +887,13 @@ body {
 
         .cancelBtn {
             background: #000000;
-            border-radius: 0;
+            /* border-radius: 0; */
             color: #ffffff;
             display: flex;
         }
 
         .uploadBtn {
-            border-radius: 0;
+            /* border-radius: 0; */
         }
     }
 }
@@ -1033,10 +1015,12 @@ textarea {
 .bgFilters {
     background: #e6ebff;
     border-top: 1px solid #000;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 10px;
 }
-
+.dashboardFilter {
+    padding: 15px;
+}
 .commonPageTitle {
     font-size: 30px;
     margin: 0;
@@ -1048,38 +1032,34 @@ textarea {
 .keywordInput {
     font-weight: bold;
     font-size: 15px;
-    display: flex;
-    flex-grow: 1;
     margin-bottom: 5px;
     gap: 5px;
+    display: flex;
 }
 
 .InputBox {
-    border: 1px solid black;
-    width: 100%;
+    border: 1px solid #000000;
+    width: 650px;
     padding: 8px;
 }
 
 .categoryName {
+    padding-left: 200px;
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 5px;
 }
 .categorySelection {
-    border: 1px solid black;
-    width: 40%;
-    padding: 10px;
-    margin-bottom: 15px;
+    border: 1px solid #000000;
+    padding: 8px;
+    width: 250px;
+    margin-left: 200px;
 }
 
 .categoryInput {
-    select {
-        width: 100%;
-    }
     input {
         border: 1px solid #000000;
-        padding: 8px;
-        width: 100%;
+        padding: 10px;
     }
     i {
         display: flex;
@@ -1087,24 +1067,25 @@ textarea {
         font-weight: bold;
     }
 }
-.submitButtons {
-    margin-top: 30px;
-}
-.videoBtns {
+
+.videoBtn {
     display: flex;
     gap: 10px;
-    height: 40px;
-    .uploadBtn {
-        border: none;
-        border-radius: 6px;
-        gap: 10px;
+    margin-top: 25px;
+    button {
+        border-radius: 0;
     }
-
+    i {
+        margin-right: 5px;
+    }
+    .uploadBtn {
+        padding: 8px;
+        background: #30ea03;
+    }
     .resetBtn {
-        border: none;
-        background: #50e1f79a;
-        border-radius: 6px;
-        gap: 10px;
+        padding: 8px;
+        background: #59dbff;
+        display: flex;
     }
 }
 
@@ -1116,6 +1097,7 @@ textarea {
         font-weight: bold;
         margin: 0;
         padding-top: 5px;
+        color: #000000;
     }
 }
 
@@ -1323,6 +1305,39 @@ table.tblMySubmissions {
         width: 100%;
     }
     .videoPopBtn {
-        border-radius: 0;
+        /* border-radius: 0; */
+        gap: 10px;
+        display: flex;
+        border: none;
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.submitButtons {
+    margin-top: 30px;
+}
+.filterName {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.filterInput {
+    input[type="date"] {
+        border: 1px solid #000000;
+        padding: 5.5px;
+        width: 100%;
+    }
+    select {
+        border: 1px solid #000000;
+        padding: 8px;
+        width: 100%;
+    }
+    i {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
     }
 }

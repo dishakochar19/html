@@ -28,20 +28,20 @@
             <div class=" col-sm-3 leftBar">
                 <h1 class="commonLogo">
                     <a href="index.html">
-                        ABC
+                        <span>ABC</span>
                     </a>
                 </h1>
                 <p class="logoTagline">
-                    A.B.C
+                    <span>A.B.C</span>
                 </p>
 
                 <div class="subSection">
-                    <section class="homeTitle">
+                    <div class="homeTitle">
                         <div class="homeTitleIcon">
                             <i class="ri-link"></i>
                         </div>
                         <span>Useful links</span>
-                    </section>
+                    </div>
 
                     <div class="linkPages">
                         <nav class="list">
@@ -133,8 +133,7 @@
                                         <i>
                                             <i class="ri-arrow-right-line"></i>
                                         </i>
-                                        <span> Optimizing Supplier Quality Management with Standarized
-                                            Protocols</span>
+                                        <span> Optimizing Supplier Quality Management with StandarizedProtocols</span>
                                     </a>
                                 </li>
                             </ul>
@@ -160,15 +159,15 @@
 
                     </div>
 
-                    <div class="bgFilters">
+                    <div class="bgFilters dashboardFilter">
                         <div class="row">
                             <div class="col-sm-4">
-                                <div class="categoryName">
+                                <div class="filterName">
                                     <i class="ri-user-fill"></i>
                                     Submitter Name
                                 </div>
-                                <div class="categoryInput">
-                                    <select class="categorySelection" name="" id="">
+                                <div class="filterInput">
+                                    <select class="filterSelection" name="" id="">
                                         <option value="Success Stories" selected="select"> -- Select All --
                                         </option>
                                         <option value="Best Practices">Anil</option>
@@ -177,12 +176,12 @@
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="categoryName">
+                                <div class="filterName">
                                     <i class="ri-article-line"></i>
                                     Story Title
                                 </div>
-                                <div class="categoryInput">
-                                    <select class="categorySelection" name="" id="">
+                                <div class="filterInput">
+                                    <select class="filterSelection" name="" id="">
                                         <option value="Success Stories" selected="select"> -- Select All --
                                         </option>
                                         <option value="Best Practices">Best Practices</option>
@@ -191,12 +190,12 @@
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="categoryName">
+                                <div class="filterName">
                                     <i class="ri-article-line"></i>
-                                    Category Name
+                                    Story Title
                                 </div>
-                                <div class="categoryInput">
-                                    <select class="categorySelection" name="" id="">
+                                <div class="filterInput">
+                                    <select class="filterSelection" name="" id="">
                                         <option value="Success Stories" selected="select"> -- Select All --
                                         </option>
                                         <option value="Best Practices">Best Practices</option>
@@ -208,16 +207,16 @@
 
                         <div class="row">
                             <div class="col-sm-4">
-                                <div class="categoryName">
+                                <div class="filterName">
                                     <i class="ri-article-line"></i>
                                     Story Submission Date
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-6 categoryInput">
+                                    <div class="col-sm-6 filterInput calendar">
                                         <input type="date">
                                         <!-- <i class="ri-arrow-right-line"></i> -->
                                     </div>
-                                    <div class="col-sm-6 categoryInput">
+                                    <div class="col-sm-6 filterInput">
                                         <input type="date">
                                     </div>
                                 </div>
@@ -225,12 +224,12 @@
                             <div class="col-sm-4">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="categoryName">
+                                        <div class="filterName">
                                             <i class="ri-article-line"></i>
                                             Status
                                         </div>
-                                        <div class="categoryInput">
-                                            <select class="categorySelection" name="" id="">
+                                        <div class="filterInput">
+                                            <select class="filterSelection" name="" id="">
                                                 <option value="Success Stories" selected="select"> -- Select All --
                                                 </option>
                                                 <option value="Best Practices">Best Practices</option>
@@ -239,12 +238,12 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="categoryName">
+                                        <div class="filterName">
                                             <i class="ri-medal-line"></i>
                                             Badges
                                         </div>
-                                        <div class="categoryInput">
-                                            <select class="categorySelection" name="" id="">
+                                        <div class="filterInput">
+                                            <select class="filterSelection" name="" id="">
                                                 <option value="Success Stories" selected="select"> -- Select All --
                                                 </option>
                                                 <option value="Best Practices">Best Practices</option>
@@ -254,7 +253,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 submitButtons">
+                            <!-- <div class="col-sm-4 submitButtons">
                                 <div class="buttons videoBtns">
                                     <button class=" btnCommon uploadBtn">
                                         <i class="ri-search-eye-line"></i>
@@ -265,7 +264,27 @@
                                         Reset
                                     </button>
                                 </div>
+                            </div> -->
+
+
+                            <div class="col-sm-4">
+                                <div class="videoBtn">
+                                    <button class="btnCommon uploadBtn">
+                                        <i class="ri-search-eye-line"></i>
+                                        <span>Submit</span>
+                                    </button>
+                                    <button class="btnCommon resetBtn">
+                                        <i class="ri-loop-right-line"></i>
+                                        <span>Reset</span>
+                                    </button>
+                                </div>
                             </div>
+
+
+
+
+
+
                         </div>
                     </div>
 
@@ -556,7 +575,7 @@
                             <span></span>
                             <span>
                                 <div class="buttons videoBtns">
-                                    <button class=" btnCommon uploadBtn videoPopBtn">
+                                    <button class=" btnCommon uploadBtn">
                                         Submit
                                         <i class="ri-check-line"></i>
                                     </button>
@@ -566,22 +585,6 @@
                                     </button>
                                 </div>
                             </span>
-
-
-                            <!-- <div class="buttons">
-                                <button class=" btnCommon uploadBtn">
-                                    Submit
-                                    <i class="ri-check-line"></i>
-                                </button>
-                                <button class=" btnCommon cancelBtn">
-                                    Cancel
-                                    <i class="ri-close-large-line"></i>
-                                </button>
-                            </div> -->
-
-
-
-
                         </div>
                     </div>
                 </div>
