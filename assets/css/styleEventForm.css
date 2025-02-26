@@ -1,135 +1,52 @@
-.bg {
-    background: #2d4559;
-    padding: 40px;
-    margin-bottom: 20px;
+/* -------Event Form------- */
+.tableHeader {
+    background: #000000;
+    color: #ffffff;
+    font-size: 15px;
 }
-
-/* -----Tabs----- */
-.myTab {
-    border-bottom: 1px solid white;
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        font-size: 18px;
-        gap: 1px;
-
-        li {
-            justify-content: center;
-
-            a {
-                background: #000000;
-                display: block;
-                align-items: center;
-                padding: 10px 20px;
-
-                &&:hover {
-                    text-decoration: none;
-                }
-            }
-
-            a.tabActive {
-                background: #ffffff;
-            }
+.txtCenter {
+    text-align: center;
+}
+table.eventTbl {
+    tbody {
+        td {
+            vertical-align: middle;
         }
     }
 }
+.action {
+    > div {
+        min-width: 120px;
+    }
+    a {
+        height: 32px;
+        width: 32px;
+        display: inline-block;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 6px;
+        text-decoration: none;
+    }
 
-.monthName {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 20px;
-    padding-bottom: 40px;
-}
-/* ------Sections------ */
-.outerSection {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-}
-
-.outerSection > div:nth-last-child {
-    flex: 2;
-}
-
-.outerSection > div:nth-last-child {
-    flex: 1;
-}
-
-.internalSection {
-    border: 1px solid #ffffff;
-    padding: 40px 20px 20px 20px;
-    position: relative;
-}
-
-.outerCircle {
-    position: absolute;
-    top: -30px;
-    left: 20px;
-    line-height: 60px;
-    text-align: center;
-    height: 60px;
-    width: 60px;
-    border-radius: 999px;
-    background-color: #30ea03;
-
-    i {
-        color: #000000;
-        font-size: 40px;
+    .searchIcon {
+        background: #ff93e9;
+    }
+    .editIcon {
+        background: #30ea03;
+    }
+    .deleteIcon {
+        background: #000000;
+        i {
+            color: #ffffff;
+        }
+    }
+    .unActive {
+        background: #bdccff;
+        i {
+            color: #000000;
+        }
     }
 }
-
-.title {
-    color: #30ea03;
-    font-weight: bold;
-    font-size: 21px;
-}
-
-.date {
-    color: #30ea03;
-    padding-top: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    border-top: 1px solid #30ea03;
-}
-
-.subRow {
-    border-bottom: 1px dashed white;
-    padding: 15px 0;
-}
-
-.subRow:last-child {
-    border: none;
-}
-
-.subHead {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.titleHead {
-    font-size: 21px;
-    font-weight: bold;
-    color: #b7ffff;
-}
-
-.name {
-    font-weight: bold;
-    padding: 0;
-    margin-left: 20px;
-    font-size: 17px;
-    color: #ffffff;
-}
-
-.icon {
-    color: #b7ffff;
-}
-
-/* -------Event Form------- */
 .eventBtn {
     cursor: pointer;
     display: inline-block;

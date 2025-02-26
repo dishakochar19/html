@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>EventForm</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets//css/styleEventForm.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="mainDiv">
+
+
+        <!-- ----Table Data----- -->
+        <table class="table table-bordered eventTbl">
+            <thead>
+                <tr class="tableHeader">
+                    <th class="txtCenter">S No.</th>
+                    <th style="min-width: 200px;">Category</th>
+                    <th>Event Names</th>
+                    <th>Event Date</th>
+                    <th>Target Audience</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="data">
+                    <td class="txtCenter">1</td>
+                    <td>Community</td>
+                    <td>Test, Learn and Scale - Kick Off</td>
+                    <td>13 Jan, 2024</td>
+                    <td>Media,Digital and Community</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur architecto
+                        nostrum delectus. Earum ad non facere adipisci mollitia voluptatibus ex. Id beatae cumque
+                        expedita suscipit laudantium dolorum necessitatibus tempore.</td>
+                    <td class="action">
+                        <div>
+                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                            <a href="#" data-toggle="modal" data-target="#modalEventForm" class="editIcon"><i
+                                    class="ri-edit-box-line"></i></a>
+                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="data">
+                    <td class="txtCenter">2</td>
+                    <td>UpSkill</td>
+                    <td>Zeta - open doors drop in sessions</td>
+                    <td>13 Jan, 2024</td>
+                    <td>CBIA</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur architecto
+                        nostrum delectus. Earum ad non facere adipisci mollitia voluptatibus ex. Id beatae cumque
+                        expedita suscipit laudantium dolorum necessitatibus tempore.</td>
+                    <td class="action">
+                        <div>
+                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                            <a href="#" class="editIcon" data-toggle="modal" data-target="#modalEditStory">
+                                <i class="ri-edit-box-line"></i>
+                            </a>
+                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="data">
+                    <td class="txtCenter">3</td>
+                    <td>Knowledge Sharing</td>
+                    <td>Test, Learn and Scale - Kick Off</td>
+                    <td>13 Jan, 2024</td>
+                    <td>CBIA</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur architecto
+                        nostrum delectus. Earum ad non facere adipisci mollitia voluptatibus ex. Id beatae cumque
+                        expedita suscipit laudantium dolorum necessitatibus tempore.</td>
+                    <td class="action">
+                        <div>
+                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                            <a href="#" class="editIcon" data-toggle="modal" data-target="#modalEditStory">
+                                <i class="ri-edit-box-line"></i>
+                            </a>
+                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <!-- ------Event Form----- -->
+        <button class="eventBtn">
+            <a href="#" data-toggle="modal" data-target="#modalEventForm" class="eventBtn">
+                <span>Add New Event</span>
+            </a>
+        </button>
+    </div>
+
+
+
+    <!-- -----Modal------ -->
+    <div id="modalEventForm" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        <span>
+                            <i class="ri-file-list-3-line"></i>
+                        </span>
+                        <b>Event Registration Form</b>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="formContainer">
+
+                        <div class="formBars">
+                            <label for="Category">Category</label>
+                            <select name="" id="">
+                                <option value="" selected="select">--Select Category--</option>
+                                <option value="">Upkill</option>
+                                <option value="">Community</option>
+                                <option value="">Knowledge Sharing</option>
+                            </select>
+                        </div>
+
+                        <div class="formBars">
+                            <label for="Event Name">Event Name</label>
+                            <input type="text" placeholder="Event name">
+                        </div>
+
+                        <div class="formBars">
+                            <label for="Date">Event Date</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="formBars">
+                            <label for="audience">Target Audience</label>
+                            <input type="text" placeholder="Target Audience">
+
+                        </div>
+
+                        <div class="formBars">
+                            <label for="description">Event Description</label>
+                            <textarea id="" placeholder="Event Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

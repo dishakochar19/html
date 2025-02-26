@@ -22,8 +22,8 @@
 
 <body>
     <div class="mainDiv">
-        <div class="outerSection row">
-            <div class="subSection">
+        <div class="outerSection">
+            <div>
                 <div class="bg">
                     <div class="myTab">
                         <ul>
@@ -210,54 +210,69 @@
                     </div>
                 </div>
 
-
-
-                <div class="formContainer">
-                    <h1>Event Registration</h1>
-
-                    <div class="formBars">
-                        <label for="Category">Category</label>
-                        <select name="" id="">
-                            <option value="" selected="select">--Select Category--</option>
-                            <option value="">Upkill</option>
-                            <option value="">Community</option>
-                            <option value="">Knowledge Sharing</option>
-                        </select>
-                    </div>
-
-                    <div class="formBars">
-                        <label for="Event Name">Event Name</label>
-                        <textarea id="" placeholder="Event Name (e.g. Zeta, Kick off)"></textarea>
-                    </div>
-
-                    <div class="formBars">
-                        <label for="Date">Event Date</label>
-                        <input type="date">
-                    </div>
-
-                    <div class="formBars">
-                        <label for="Event Organiser">Event Name</label>
-                        <textarea id="" placeholder="Event Organiser"></textarea>
-                    </div>
-
-                    <div class="formBars">
-                        <label for="audience">Target Audience</label>
-                        <textarea id="" placeholder="Target Audience"></textarea>
-                    </div>
-
-                    <div class="formBars">
-                        <label for="description">Event Description</label>
-                        <textarea id="" placeholder="Event Description"></textarea>
-                    </div>
-                </div>
+                <!-- ------Event Form----- -->
+                <button class="eventBtn">
+                    <a href="#" data-toggle="modal" data-target="#modalShareStory" class="eventBtn">
+                        <span>Add New Event</span>
+                    </a>
+                </button>
             </div>
         </div>
     </div>
 
 
 
+    <!-- -----Modal------ -->
+    <div id="modalShareStory" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        <span>
+                            <i class="ri-file-list-3-line"></i>
+                        </span>
+                        <b>Event Registration Form</b>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="formContainer">
 
+                        <div class="formBars">
+                            <label for="Category">Category</label>
+                            <select name="" id="">
+                                <option value="" selected="select">--Select Category--</option>
+                                <option value="">Upkill</option>
+                                <option value="">Community</option>
+                                <option value="">Knowledge Sharing</option>
+                            </select>
+                        </div>
 
+                        <div class="formBars">
+                            <label for="Event Name">Event Name</label>
+                            <input type="text" placeholder="Event name">
+                        </div>
+
+                        <div class="formBars">
+                            <label for="Date">Event Date</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="formBars">
+                            <label for="audience">Target Audience</label>
+                            <input type="text" placeholder="Target Audience">
+
+                        </div>
+
+                        <div class="formBars">
+                            <label for="description">Event Description</label>
+                            <textarea id="" placeholder="Event Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
