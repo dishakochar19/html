@@ -2,40 +2,11 @@ body {
     background: #efefef;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+.leftSideNav {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
 }
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 /* ---------carousel------- */
 .glyphicon-chevron-right {
     background: #545454;
@@ -157,7 +128,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 /* ------Sections------ */
 .outerSection {
     padding: 20px;
@@ -895,13 +865,8 @@ body {
 
         .cancelBtn {
             background: #000000;
-            /* border-radius: 0; */
             color: #ffffff;
             display: flex;
-        }
-
-        .uploadBtn {
-            /* border-radius: 0; */
         }
     }
 }
@@ -1022,20 +987,43 @@ textarea {
         width: 100%;
     }
 }
-
 .bgFilters {
     background: #e6ebff;
     border-top: 1px solid #000;
     padding: 20px;
     margin-bottom: 10px;
-}
-.dashboardFilter {
-    padding: 15px;
-}
+    .spotlightFilters {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 20px;
 
-.storyFilterBar {
-    display: flex;
-    gap: 10px;
+        .inputBox {
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #000;
+        }
+        .selectBox {
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #000;
+        }
+        .keyword {
+            flex: 5;
+        }
+        .categoryFilter {
+            flex: 2;
+        }
+        .buttonSection {
+            flex: 2;
+        }
+        .formTitle {
+            font-weight: bold;
+            padding-bottom: 5px;
+            display: block;
+        }
+    }
 }
 .commonPageTitle {
     font-size: 30px;
@@ -1043,66 +1031,6 @@ textarea {
     padding: 0;
     display: inline-block;
     font-weight: bold;
-}
-
-.keywordInput {
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 5px;
-    gap: 5px;
-    display: flex;
-}
-
-.InputBox {
-    border: 1px solid #000000;
-    width: 650px;
-    padding: 8px;
-}
-
-.categoryName {
-    padding-left: 200px;
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-.categorySelection {
-    border: 1px solid #000000;
-    padding: 8px;
-    width: 250px;
-    margin-left: 200px;
-}
-
-.categoryInput {
-    input {
-        border: 1px solid #000000;
-        padding: 10px;
-    }
-    i {
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-    }
-}
-
-.videoBtn {
-    display: flex;
-    gap: 10px;
-    margin-top: 25px;
-    button {
-        border-radius: 0;
-    }
-    i {
-        margin-right: 5px;
-    }
-    .uploadBtn {
-        padding: 8px;
-        background: #30ea03;
-    }
-    .resetBtn {
-        padding: 8px;
-        background: #59dbff;
-        display: flex;
-    }
 }
 
 .videos {
@@ -1186,6 +1114,7 @@ table.tblMySubmissions {
     padding: 20px;
     margin-bottom: 20px;
     align-items: stretch;
+    min-height: 300px;
 }
 .badgeImg {
     flex: 1;
@@ -1228,6 +1157,56 @@ table.tblMySubmissions {
 }
 
 /* Dashboard - Tabular Graphical Parent Container */
+.bgFilters {
+    background: #e6ebff;
+    border-top: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 10px;
+    .formFilters {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 20px;
+
+        .selectBox {
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #000;
+        }
+        .firstBar {
+            flex: 3;
+        }
+        .secondBar {
+            flex: 4;
+        }
+        .thirdBar {
+            flex: 2;
+        }
+        .formTitle {
+            font-weight: bold;
+            padding-bottom: 5px;
+            display: block;
+        }
+        .dateSection {
+            border: 1px solid red;
+            display: flex;
+            gap: 20px;
+            flex: 1.5;
+        }
+        .startDate {
+            flex: 1.5;
+        }
+        .endDate {
+            flex: 1.5;
+        }
+        .status {
+            flex: 1.5;
+        }
+        .achievements {
+            flex: 1.5;
+        }
+    }
+}
 .tgContainer {
     border: 1px solid #30ea03;
     padding: 20px;
@@ -1246,15 +1225,6 @@ table.tblMySubmissions {
         left: 0;
         top: 1px;
     }
-
-    .exportExcel {
-        margin-left: auto;
-        a {
-            text-decoration: none;
-            background-color: red;
-        }
-    }
-
     ul.tabs li {
         float: left;
         margin: 0px;
@@ -1284,6 +1254,15 @@ table.tblMySubmissions {
         border-right: 1px solid #30ea03;
     }
 }
+.exportExcel {
+    margin-left: auto;
+    a {
+        text-decoration: none;
+    }
+    span {
+        border-bottom: 2px solid #30ea03;
+    }
+}
 .tgViews {
     padding-top: 20px;
     font-weight: bold;
@@ -1291,6 +1270,7 @@ table.tblMySubmissions {
 }
 .tgTitle {
     padding-bottom: 10px;
+    font-size: 15px;
 }
 .graphs {
     border: 1px solid #b8b8b8;
@@ -1334,7 +1314,6 @@ table.tblMySubmissions {
         width: 100%;
     }
     .videoPopBtn {
-        /* border-radius: 0; */
         gap: 10px;
         display: flex;
         border: none;
@@ -1349,49 +1328,34 @@ table.tblMySubmissions {
 .dashboardBtns {
     padding-top: 10px;
 }
-.filterName {
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-.filterInput {
-    input[type="date"] {
-        border: 1px solid #000000;
-        padding: 5.5px;
-        width: 100%;
-    }
-    select {
-        border: 1px solid #000000;
-        padding: 8px;
-        width: 100%;
-    }
-    i {
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-    }
-}
 .videouploadingBtns {
     display: flex;
     gap: 10px;
     font-weight: bold;
-    border-radius: none;
+    bottom: 0;
     .uploadBtn {
         background-color: #30ea03;
         padding: 10px;
-        i {
-            padding-left: 10px;
-        }
+        border-radius: 6px;
+    }
+    .resetBtn {
+        padding: 10px;
+        background: #58c4ff;
+        border-radius: 6px;
     }
     .cancelBtn {
         padding: 10px;
-        background-color: #000000;
+        background: #000000;
         color: #ffffff;
-        i {
-            padding-left: 10px;
-        }
+        display: flex;
+        border-radius: 6px;
+        gap: 10px;
+    }
+}
+
+.mobileNav {
+    .closebtn {
+        display: none;
     }
 }
 
@@ -1427,6 +1391,86 @@ table.tblMySubmissions {
 @media (max-width: 991px) {
     .outerSection {
         display: inherit;
+    }
+    .leftSideNav {
+        display: block;
+    }
+    .mobileNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -60px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block;
+        background: white !important;
+        .closebtn {
+            display: block;
+        }
+    }
+
+    .mobileNav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .mobileNav.showMenu {
+        width: 300px;
+        left: 0;
+    }
+    .linkPages {
+        cursor: pointer;
+        display: block;
+
+        .list {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    display: block;
+
+                    a > i {
+                        min-width: 20px;
+
+                        svg {
+                            margin-right: 10px;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            width: 100%;
+            display: flex;
+            color: #000000;
+            font-weight: normal;
+            font-size: 13px;
+            padding: 10px 0;
+            border-bottom: 1px solid #e3e3e3;
+
+            &:hover {
+                background: #e4e4e4;
+                padding-left: 10px;
+                transition: 0.4s all ease-in-out;
+            }
+        }
     }
 }
 

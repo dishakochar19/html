@@ -24,7 +24,6 @@
     <div class="mainDiv">
         <div class="outerSection row">
 
-            <!-- Left Bar -->
             <div class="col-md-3 leftBar">
                 <h1 class="commonLogo">
                     <a href="index.html">
@@ -34,63 +33,84 @@
                 <p class="logoTagline">
                     <span>A.B.C</span>
                 </p>
-
-                <div class="subSection">
-                    <div class="homeTitle">
-                        <div class="homeTitleIcon">
-                            <i class="ri-link"></i>
+                <span class="leftSideNav" onclick="openNav()">
+                    &#9776;
+                </span>
+                <div class="subSection mobileNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div>
+                        <div class="homeTitle">
+                            <div class="homeTitleIcon">
+                                <i class="ri-link"></i>
+                            </div>
+                            <span>Useful links</span>
                         </div>
-                        <span>Useful links</span>
-                    </div>
-
-                    <div class="linkPages">
-                        <nav class="list">
-                            <ul>
-
-                                <li>
-                                    <a href="mySubmissions.html">
-                                        <i>
+                        <div class="linkPages">
+                            <nav class="list">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <i class="ri-home-4-line"></i>
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="add-new-story.html">
+                                            <i class="ri-edit-2-line"></i>
+                                            <span>Add a new story</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="my-submissions.html">
                                             <i class="ri-file-list-3-line"></i>
-                                        </i>
-                                        <span>My submissions</span>
-                                    </a>
-                                </li>
+                                            <span>My submissions</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="my-badges.html">
+                                            <i class="ri-medal-line"></i>
+                                            <span>My badges / achievements</span>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="myBadges.html">
-                                        <i class="ri-medal-line"></i>
-                                        <span>My badges / achievements</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <i>
+                                    <li>
+                                        <a href="spotlight-videos.html">
+                                            <i class="ri-video-line"></i>
+                                            <span>Spotlight videos</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="admin-dashboard.html">
+                                            <i class="ri-user-settings-line"></i>
+                                            <span>Admin Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
                                             <i class="ri-book-marked-line"></i>
-                                        </i>
-                                        <span>Inspiration / Resources</span>
-                                    </a>
-                                </li>
+                                            <span>Inspiration / Resources</span>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="#">
-                                        <i>
+                                    <li>
+                                        <a href="#">
                                             <i class="ri-presentation-fill"></i>
-                                        </i>
-                                        <span>How this works (User Guide)</span>
-                                    </a>
-                                </li>
+                                            <span>How this works (User Guide)</span>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="#">
-                                        <i><i class="ri-question-line"></i></i>
-                                        <span>Know more about Ecellify QSC</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ri-question-line"></i>
+                                            <span>Know more about Ecellify QSC</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
+
                 <div class="subSection">
                     <div class="homeTitle">
                         <i class="homeTitleIcon">
@@ -103,36 +123,28 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span>Transforming Compliance Audits with Digital Dasboards</span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span>Reducing Product Defects Through Predictive Analytics</span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span>Embedding a culture of Continous Improvement in Quality Teams</span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span> Optimizing Supplier Quality Management with StandarizedProtocols</span>
                                     </a>
                                 </li>
@@ -156,43 +168,54 @@
                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                     </div>
 
+
+
+
                     <div class="bgFilters">
-                        <div class="row">
-                            <div class="col-md-4 ">
-                                <div class="keywordInput">
-                                    <i class="ri-article-line"></i>
+                        <div class="spotlightFilters">
+                            <div class="keyword">
+                                <span class="formTitle">
+                                    <i class="ri-user-fill"></i>
                                     Keywords
+                                </span>
+                                <div>
+                                    <input class="inputBox" type="text"
+                                        placeholder="keywords (e.g, quality, innovation)">
                                 </div>
-                                <input class="InputBox" type="text" placeholder="Enter keywords (e.g.quality)">
                             </div>
-                            <div class="col-md-4">
-                                <div class="categoryName">
+
+                            <div class="categoryFilter">
+                                <span class="formTitle">
                                     <i class="ri-article-line"></i>
-                                    <span>Category Name</span>
-                                </div>
-                                <div class="categoryInput">
-                                    <select class="categorySelection" name="" id="">
-                                        <option value="Success Stories" selected="select"> -- Please Select --
-                                        </option>
-                                        <option value="Best Practices">Best Practices</option>
-                                        <option value="Leassons Learned">Leassons Learned</option>
-                                    </select>
-                                </div>
+                                    Category Name
+                                </span>
+                                <select class="selectBox" name="" id="">
+                                    <option value="" selected="select">--Select All--</option>
+                                    <option value="Gamification">Gamification</option>
+                                    <option value="ALCOA">ALCOA</option>
+                                    <option value="Analytics">Analytics</option>
+                                </select>
                             </div>
-                            <div class="col-md-4">
-                                <div class="videoBtn">
+                            <div class="buttonSection">
+                                <div></div>
+                                <div class="videouploadingBtns">
                                     <button class="btnCommon uploadBtn">
-                                        <i class="ri-search-eye-line"></i>
+                                        <i class="ri-check-line"></i>
                                         <span>Submit</span>
                                     </button>
                                     <button class="btnCommon resetBtn">
-                                        <i class="ri-loop-right-line"></i>
+                                        <i class="ri-loop-left-line"></i>
                                         <span>Reset</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
+
+
 
                     <!-------Video Section--------->
                     <div class="row">
@@ -253,12 +276,27 @@
 
         </div>
     </div>
+
+
     <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            const winWidth = window.innerWidth;
+            if (winWidth < 992) {
+                document.querySelector(".mobileNav").classList.add('showMenu');
+            }
+        }
+
+        function closeNav() {
+            document.querySelector(".mobileNav").classList.remove('showMenu');
+        }
+    </script>
 </body>
 
 </html>

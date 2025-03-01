@@ -24,26 +24,7 @@
     <div class="mainDiv">
         <div class="outerSection row">
 
-            <!-- {/* ----------Left Bar-------- */} -->
-
-
-
-
-
-
-
-            <div class=" col-md-3 leftBar">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                </div>
-
-                <h2>Animated Sidenav Example</h2>
-                <p>Click on the element below to open the side navigation menu.</p>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            <div class="col-md-3 leftBar">
                 <h1 class="commonLogo">
                     <a href="index.html">
                         <span>ABC</span>
@@ -52,63 +33,84 @@
                 <p class="logoTagline">
                     <span>A.B.C</span>
                 </p>
-
-                <div class="subSection">
-                    <div class="homeTitle">
-                        <div class="homeTitleIcon">
-                            <i class="ri-link"></i>
+                <span class="leftSideNav" onclick="openNav()">
+                    &#9776;
+                </span>
+                <div class="subSection mobileNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div>
+                        <div class="homeTitle">
+                            <div class="homeTitleIcon">
+                                <i class="ri-link"></i>
+                            </div>
+                            <span>Useful links</span>
                         </div>
-                        <span>Useful links</span>
-                    </div>
-
-                    <div class="linkPages">
-                        <nav class="list">
-                            <ul>
-
-                                <li>
-                                    <a href="mySubmissions.html">
-                                        <i>
+                        <div class="linkPages">
+                            <nav class="list">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <i class="ri-home-4-line"></i>
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="add-new-story.html">
+                                            <i class="ri-edit-2-line"></i>
+                                            <span>Add a new story</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="my-submissions.html">
                                             <i class="ri-file-list-3-line"></i>
-                                        </i>
-                                        <span>My submissions</span>
-                                    </a>
-                                </li>
+                                            <span>My submissions</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="my-badges.html">
+                                            <i class="ri-medal-line"></i>
+                                            <span>My badges / achievements</span>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="myBadges.html">
-                                        <i class="ri-medal-line"></i>
-                                        <span>My badges / achievements</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <i>
+                                    <li>
+                                        <a href="spotlight-videos.html">
+                                            <i class="ri-video-line"></i>
+                                            <span>Spotlight videos</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="admin-dashboard.html">
+                                            <i class="ri-user-settings-line"></i>
+                                            <span>Admin Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
                                             <i class="ri-book-marked-line"></i>
-                                        </i>
-                                        <span>Inspiration / Resources</span>
-                                    </a>
-                                </li>
+                                            <span>Inspiration / Resources</span>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="#">
-                                        <i>
+                                    <li>
+                                        <a href="#">
                                             <i class="ri-presentation-fill"></i>
-                                        </i>
-                                        <span>How this works (User Guide)</span>
-                                    </a>
-                                </li>
+                                            <span>How this works (User Guide)</span>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="#">
-                                        <i><i class="ri-question-line"></i></i>
-                                        <span>Know more about Ecellify QSC</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ri-question-line"></i>
+                                            <span>Know more about Ecellify QSC</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
+
                 <div class="subSection">
                     <div class="homeTitle">
                         <i class="homeTitleIcon">
@@ -121,36 +123,28 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span>Transforming Compliance Audits with Digital Dasboards</span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span>Reducing Product Defects Through Predictive Analytics</span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span>Embedding a culture of Continous Improvement in Quality Teams</span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <i>
-                                            <i class="ri-arrow-right-line"></i>
-                                        </i>
+                                        <i class="ri-arrow-right-line"></i>
                                         <span> Optimizing Supplier Quality Management with StandarizedProtocols</span>
                                     </a>
                                 </li>
@@ -159,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <!-- {/* ----------Mid Bar-------- */} -->
+
             <div class="col-md-6 midBar">
                 <div class="midHead">
                     <div class="storyHead">
@@ -365,23 +359,22 @@
             </div>
 
 
-            <!-- {/* ----------Right Bar-------- */} -->
             <div class="col-md-3 rightBar">
                 <div class="videoBar">
                     <div class="videoIcon">
                         <i class="ri-vidicon-fill"></i>
                     </div>
                     <h1 class="videoTitle">
-                        <a href="spotlightVideos.html">
+                        <a href="spotlight-videos.html">
                             <span>Spotlight videos</span>
                         </a>
 
                     </h1>
                 </div>
 
-                <!-- ------video Section------- -->
-                <div class=" subSection videoSection">
-                    <a href="spotlightVideos.html" target="_blank">
+                <!-- ------Video Section------- -->
+                <div class="subSection videoSection">
+                    <a href="spotlight-videos.html" target="_blank">
                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg" width="100px">
                         <div class="videoText">
                             <span>View all the videos that inspire and connect.</span>
@@ -390,8 +383,8 @@
 
                 </div>
 
-                <!-- ------writing Section------- -->
-                <a href="story.html">
+                <!-- ------Add New Story------- -->
+                <a href="add-new-story.html">
                     <div class="subSection writingSection"></div>
                 </a>
 
@@ -478,26 +471,13 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
         </div>
     </div>
 
-    <!-- Modal View Story -->
+
     <div id="modalViewStory" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <!-- <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title noBorder"></h4>
-                </div> -->
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <div class="postContent">
@@ -761,7 +741,6 @@
     </div>
 
 
-    <!-- Modal Share Story -->
     <div id="modalShareStory" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -807,11 +786,14 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            const winWidth = window.innerWidth;
+            if (winWidth < 992) {
+                document.querySelector(".mobileNav").classList.add('showMenu');
+            }
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".mobileNav").classList.remove('showMenu');
         }
     </script>
 </body>
