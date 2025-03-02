@@ -1,78 +1,84 @@
 .outerSection {
     padding: 20px;
 }
+
 .subSection {
     border: 1px solid #c5c5c5;
     border-radius: 6px;
     padding: 20px;
+    margin-bottom: 10px;
 }
+
 .title {
     font-size: 34px;
     font-weight: bold;
     border-bottom: 7px solid #30ea03;
     padding-bottom: 15px;
 }
+
 .description {
-    padding-top: 15px;
     font-size: 14px;
+    padding: 15px 0 30px 0;
 }
-.departments {
-    padding-top: 25px;
-    display: flex;
-    gap: 20px;
-    > div {
+
+.homeTopLinks {
+    a {
+        display: block;
         border: 1px solid #c5c5c5;
         border-radius: 6px;
-        height: 170px;
-        width: 200px;
-    }
-    .logo {
-        position: relative;
-        height: 80px; /*use of this*/
-        span {
-            display: block; /*use of this*/
-            width: 80px;
+        text-decoration: none;
+
+        .icon {
+            position: relative;
             height: 80px;
-            position: absolute;
-            top: -10px;
-            margin-left: -40px;
-            left: 50%;
-            img {
+
+            span {
+                display: block;
                 width: 80px;
                 height: 80px;
-                border-radius: 0px 0px 6px 6px;
-            }
-        }
-        span::before {
-            content: ""; /* always write this in BEFORE and AFTER case i.e SUDO ELEMENTS */
-            display: block; /* always write this in BEFORE and AFTER case i.e SUDO ELEMENTS */
-            width: 0px;
-            height: 0px;
-            position: absolute;
-            top: 3px;
-            left: -8px;
-            border-color: transparent transparent transparent black;
-            border-width: 8px;
-            border-style: solid;
-            rotate: 45deg;
-            z-index: 10; /*use of this*/
-        }
-        span::after {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 0px;
-            position: absolute;
-            top: 3px;
-            right: -8px;
-            border-color: black transparent transparent transparent;
-            border-width: 8px;
-            border-style: solid;
-            rotate: 45deg;
-            z-index: 10; /*use of this*/
-        }
+                position: absolute;
+                top: -10px;
+                margin-left: -40px;
+                left: 50%;
 
-        /* span::after {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 0px 0px 6px 6px;
+                }
+            }
+
+            span::before {
+                content: "";
+                display: block;
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                top: 3px;
+                left: -8px;
+                border-color: transparent transparent transparent black;
+                border-width: 8px;
+                border-style: solid;
+                rotate: 45deg;
+                z-index: 10;
+            }
+
+            span::after {
+                content: "";
+                display: block;
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                top: 3px;
+                right: -8px;
+                border-color: black transparent transparent transparent;
+                border-width: 8px;
+                border-style: solid;
+                rotate: 45deg;
+                z-index: 10;
+            }
+
+            /* span::after {
             content: "";
             display: block;
             width: 10px;
@@ -83,77 +89,107 @@
             right: -10px;
             border-radius: 0 10px 0 0;
         } */
+        }
+
+        .cta {
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0px;
+            font-size: 15px;
+        }
+
     }
 
-    .text {
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        font-size: 15px;
+    a:hover {
+        border: 1px solid #30ea03;
     }
+
 }
 
 .rightNav {
-    /* padding-top: 15px; */
-    border-left: 1px solid #c5c5c5;
-    padding-left: 15px;
     ul {
         li {
             a {
                 border: 1px solid #c5c5c5;
                 display: block;
-                padding: 10px;
+                padding: 5px 10px;
                 text-decoration: none;
-                margin-top: 15px;
-                > div {
+                margin-top: 10px;
+
+                >div {
                     display: flex;
-                    gap: 20px;
+                    gap: 10px;
                     text-align: center;
                     align-items: center;
+
                     span {
                         background: #30ea03;
-                        width: 40px;
-                        height: 40px;
-                        line-height: 40px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+
                         i {
                             color: #000;
                             background: none;
                             font-size: 20px;
                         }
                     }
+
                     h4 {
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: bold;
                     }
-                    i {
-                        color: #ffff;
-                        line-height: 32px;
+
+                    .arrow {
                         margin-left: auto;
                         height: 32px;
                         width: 32px;
+                        border: 5px solid #fff;
                         border-radius: 999px;
                         background: #000;
                     }
-                }
-            }
-        }
-    }
-}
-.rightNav {
-    ul {
-        li {
-            a:hover {
-                transition: all 0.3s ease-in-out;
-                background-color: #30ea03;
-                span {
-                    background: #000;
-                    i {
+
+                    .arrow i {
                         color: #ffff;
+                        line-height: 24px;
                     }
                 }
             }
+
+            a:hover {
+                transition: all 0.3s ease-in-out;
+                background-color: #30ea03;
+
+                span {
+                    background: #000;
+
+                    i {
+                        color: #fff;
+                    }
+                }
+
+
+                .arrow {
+                    height: 32px;
+                    width: 32px;
+                    background: #fff;
+                    border: 5px solid #000;
+                    border-radius: 999px;
+                }
+
+                .arrow i {
+                    color: #000;
+                    line-height: 24px;
+                }
+
+            }
+
         }
     }
+}
+.calendarLink{
+    /* border: 1px solid red; */
+    height: 150px;
 }
