@@ -1,13 +1,159 @@
-.outerSection{
+.outerSection {
     padding: 20px;
 }
-.subSection{
+.subSection {
     border: 1px solid #c5c5c5;
     border-radius: 6px;
     padding: 20px;
 }
-.title{
-    h1{
-        font-size: 34px !important;
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    border-bottom: 7px solid #30ea03;
+    padding-bottom: 15px;
+}
+.description {
+    padding-top: 15px;
+    font-size: 14px;
+}
+.departments {
+    padding-top: 25px;
+    display: flex;
+    gap: 20px;
+    > div {
+        border: 1px solid #c5c5c5;
+        border-radius: 6px;
+        height: 170px;
+        width: 200px;
+    }
+    .logo {
+        position: relative;
+        height: 80px; /*use of this*/
+        span {
+            display: block; /*use of this*/
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: -10px;
+            margin-left: -40px;
+            left: 50%;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 0px 0px 6px 6px;
+            }
+        }
+        span::before {
+            content: ""; /* always write this in BEFORE and AFTER case i.e SUDO ELEMENTS */
+            display: block; /* always write this in BEFORE and AFTER case i.e SUDO ELEMENTS */
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: 3px;
+            left: -8px;
+            border-color: transparent transparent transparent black;
+            border-width: 8px;
+            border-style: solid;
+            rotate: 45deg;
+            z-index: 10; /*use of this*/
+        }
+        span::after {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: 3px;
+            right: -8px;
+            border-color: black transparent transparent transparent;
+            border-width: 8px;
+            border-style: solid;
+            rotate: 45deg;
+            z-index: 10; /*use of this*/
+        }
+
+        /* span::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: black;
+            position: absolute;
+            top: 0;
+            right: -10px;
+            border-radius: 0 10px 0 0;
+        } */
+    }
+
+    .text {
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+}
+
+.rightNav {
+    /* padding-top: 15px; */
+    border-left: 1px solid #c5c5c5;
+    padding-left: 15px;
+    ul {
+        li {
+            a {
+                border: 1px solid #c5c5c5;
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                margin-top: 15px;
+                > div {
+                    display: flex;
+                    gap: 20px;
+                    text-align: center;
+                    align-items: center;
+                    span {
+                        background: #30ea03;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        i {
+                            color: #000;
+                            background: none;
+                            font-size: 20px;
+                        }
+                    }
+                    h4 {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    i {
+                        color: #ffff;
+                        line-height: 32px;
+                        margin-left: auto;
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 999px;
+                        background: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+.rightNav {
+    ul {
+        li {
+            a:hover {
+                transition: all 0.3s ease-in-out;
+                background-color: #30ea03;
+                span {
+                    background: #000;
+                    i {
+                        color: #ffff;
+                    }
+                }
+            }
+        }
     }
 }
