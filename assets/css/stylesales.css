@@ -1,9 +1,9 @@
 .header {
     background: #000;
     color: #fff;
-    /* position: fixed; */
+    position: fixed;
     /* padding: 20px; */
-    /* width: 100%; */
+    width: 100%;
     top: 0;
     left: 0;
     text-align: center;
@@ -24,19 +24,17 @@
             color: #30ea03;
         }
     }
-    .titleSection {
+    .subHeader {
         display: flex;
         align-items: center;
-        .titleLogo {
-            i {
-                font-size: 30px;
-            }
+        i {
+            font-size: 30px;
         }
     }
     .titleName {
         margin-left: 10px;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
         display: block;
 
         span {
@@ -60,30 +58,25 @@
             display: flex;
             gap: 10px;
             li {
-                text-align: center;
-                border-left: 1px solid #ffff;
-                padding: 15px 10px;
                 a {
+                    /* background-color: #3d3d3d; */
                     display: block;
                     text-align: center;
                     text-decoration: none;
+                    text-align: center;
+                    border-left: 1px solid #ffff;
+                    padding: 15px;
+                }
+                a:hover {
+                    color: #30ea03;
                 }
             }
         }
     }
 }
-.navBar {
-    ul {
-        li {
-            a:hover {
-                color: #30ea03;
-            }
-        }
-    }
-}
-
 .outerSection {
     padding: 20px;
+    padding-top: 80px;
 }
 
 .subSection {
@@ -279,18 +272,21 @@ a.calendarBox {
     margin-bottom: 10px;
     h1 {
         font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 10px;
     }
 }
 a.eventBox {
     background: #007bff;
     text-align: left;
-    .eventInfo {
-        margin: 20px 10px 20px 0;
-    }
+
     .scroller {
         width: auto;
         height: 100px;
         overflow: scroll;
+    }
+    .eventInfo {
+        border-bottom: 1px solid #bababa;
     }
 
     .date {
@@ -316,7 +312,7 @@ a.eventBox {
         content: "";
         margin-top: 5px;
         display: block;
-        width: 95px;
+        width: 100px;
         height: 1px;
         border: 1px solid #30ea03;
     }
@@ -390,7 +386,7 @@ a.eventBox {
         content: "";
         margin-top: 5px;
         display: block;
-        width: 130px;
+        width: 180px;
         height: 1px;
         border: 1px solid #30ea03;
     }
