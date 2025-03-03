@@ -347,7 +347,7 @@ body {
                     height: 32px;
                     width: 32px;
                     display: inline-block;
-                    background-color: #000000;
+                    background: #000000;
                     text-align: center;
                     line-height: 32px;
 
@@ -766,6 +766,10 @@ body {
     .MessageBox {
         display: inline-block;
         font-size: 13px;
+        text-align: center;
+        i {
+            color: #0080cf;
+        }
     }
 
     .contactDesc {
@@ -878,7 +882,7 @@ body {
     padding: 10px;
     align-items: center;
     gap: 10px;
-    background-color: #ffffff;
+    background: #ffffff;
     border: 1px solid #aaaaaa;
     border-radius: 6px;
 }
@@ -923,7 +927,7 @@ ul {
     z-index: 3;
     color: #fff;
     cursor: default;
-    background-color: #337ab7;
+    background: #337ab7;
     border-color: #337ab7;
 }
 
@@ -936,9 +940,9 @@ ul {
     line-height: 1.42857143;
     color: #337ab7;
     text-decoration: none;
-    background-color: #fff;
+    background: #fff;
     border: 1px solid #ddd;
-    background-color: red;
+    background: red;
 }
 
 .form-control {
@@ -949,7 +953,7 @@ ul {
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
-    background-color: #fff;
+    background: #fff;
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -1281,7 +1285,7 @@ table.tblMySubmissions {
 }
 .uploadVideo {
     margin-left: auto;
-    background-color: #30ea03;
+    background: #30ea03;
     font-size: 18px;
     padding: 10px;
     display: flex;
@@ -1317,7 +1321,7 @@ table.tblMySubmissions {
         gap: 10px;
         display: flex;
         border: none;
-        background-color: #000;
+        background: #000;
         color: #fff;
     }
 }
@@ -1334,7 +1338,7 @@ table.tblMySubmissions {
     font-weight: bold;
     bottom: 0;
     .uploadBtn {
-        background-color: #30ea03;
+        background: #30ea03;
         padding: 10px;
         border-radius: 6px;
     }

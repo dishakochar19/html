@@ -1,3 +1,87 @@
+.header {
+    background: #000;
+    color: #fff;
+    /* position: fixed; */
+    /* padding: 20px; */
+    /* width: 100%; */
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+
+    .commonLogo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        h1 {
+            font-weight: bold;
+            font-size: 20px;
+            border-right: 1px solid #ffff;
+            padding: 15px;
+            cursor: pointer;
+        }
+        span {
+            color: #30ea03;
+        }
+    }
+    .titleSection {
+        display: flex;
+        align-items: center;
+        .titleLogo {
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+    .titleName {
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+
+        span {
+            color: #fff;
+        }
+        .titleBar {
+            background: #30ea03;
+            color: #000;
+            text-align: center;
+            line-height: normal;
+        }
+    }
+
+    .navBar {
+        margin-left: auto;
+        font-size: 15px;
+        text-align: center;
+        ul {
+            text-align: center;
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            li {
+                text-align: center;
+                border-left: 1px solid #ffff;
+                padding: 15px 10px;
+                a {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.navBar {
+    ul {
+        li {
+            a:hover {
+                color: #30ea03;
+            }
+        }
+    }
+}
+
 .outerSection {
     padding: 20px;
 }
@@ -31,20 +115,21 @@
         .icon {
             position: relative;
             height: 80px;
-
             span {
+                background: #30ea03;
                 display: block;
-                width: 80px;
-                height: 80px;
+                width: 70px;
+                height: 70px;
                 position: absolute;
                 top: -10px;
                 margin-left: -40px;
                 left: 50%;
+                border-radius: 0 0 6px 6px;
 
-                img {
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 0px 0px 6px 6px;
+                i {
+                    font-size: 30px;
+                    padding: 20px;
+                    line-height: 70px;
                 }
             }
 
@@ -99,13 +184,11 @@
             padding: 20px 0px;
             font-size: 15px;
         }
-
     }
 
     a:hover {
         border: 1px solid #30ea03;
     }
-
 }
 
 .rightNav {
@@ -116,9 +199,9 @@
                 display: block;
                 padding: 5px 10px;
                 text-decoration: none;
-                margin-top: 10px;
-
-                >div {
+                margin: 0 0 7px 0;
+                border-radius: 6px;
+                > div {
                     display: flex;
                     gap: 10px;
                     text-align: center;
@@ -160,7 +243,7 @@
 
             a:hover {
                 transition: all 0.3s ease-in-out;
-                background-color: #30ea03;
+                background: #30ea03;
 
                 span {
                     background: #000;
@@ -169,7 +252,6 @@
                         color: #fff;
                     }
                 }
-
 
                 .arrow {
                     height: 32px;
@@ -183,13 +265,190 @@
                     color: #000;
                     line-height: 24px;
                 }
-
             }
-
         }
     }
 }
-.calendarLink{
-    /* border: 1px solid red; */
-    height: 150px;
+a.calendarBox {
+    background: #f6ff00;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    h1 {
+        font-weight: bold;
+    }
+}
+a.eventBox {
+    background: #007bff;
+    text-align: left;
+    .eventInfo {
+        margin: 20px 10px 20px 0;
+    }
+    .scroller {
+        width: auto;
+        height: 100px;
+        overflow: scroll;
+    }
+
+    .date {
+        color: #bababa;
+        i {
+            color: #000;
+        }
+    }
+}
+.quickLinkSection {
+    background: #000;
+    color: #ffff;
+    margin-bottom: 30px;
+
+    h1::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+    h1::after {
+        content: "";
+        margin-top: 5px;
+        display: block;
+        width: 95px;
+        height: 1px;
+        border: 1px solid #30ea03;
+    }
+    h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .linkBars {
+        width: 100%;
+        padding-top: 20px;
+        ul {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            li {
+                flex-grow: 1;
+                width: calc(20% - 10px);
+                max-width: calc(20% - 10px);
+                a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    margin: 0 0 10px 0;
+                    background: #fff;
+                    > div {
+                        display: flex;
+                        gap: 10px;
+                        text-align: center;
+                        align-items: center;
+                        color: #000;
+                        span {
+                            background: #000;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+
+                            i {
+                                color: #fff;
+                                font-size: 20px;
+                            }
+                        }
+                        h4 {
+                            font-size: 18px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+
+                a:hover {
+                    transition: all 0.3s ease-in-out;
+                    background: #30ea03;
+                }
+            }
+        }
+    }
+}
+
+.referenceSection {
+    background: #000;
+    color: #ffff;
+    margin-bottom: 30px;
+
+    h1::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+    h1::after {
+        content: "";
+        margin-top: 5px;
+        display: block;
+        width: 130px;
+        height: 1px;
+        border: 1px solid #30ea03;
+    }
+    h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .linkBars {
+        width: 100%;
+        padding-top: 20px;
+        ul {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            li {
+                flex-grow: 1;
+                width: calc(20% - 10px);
+                max-width: calc(20% - 10px);
+                a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    margin: 0 0 10px 0;
+                    background: #fff;
+                    > div {
+                        display: flex;
+                        gap: 10px;
+                        text-align: center;
+                        align-items: center;
+                        color: #000;
+                        span {
+                            background: #000;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+
+                            i {
+                                color: #fff;
+                                font-size: 20px;
+                            }
+                        }
+                        h4 {
+                            font-size: 18px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                a:hover {
+                    transition: all 0.3s ease-in-out;
+                    background: #30ea03;
+                }
+            }
+        }
+    }
+}
+.imageBox {
+    img {
+        width: 100%;
+        height: 100px;
+    }
 }
