@@ -1,0 +1,134 @@
+.header {
+    background: #000;
+    color: #fff;
+    position: fixed;
+    /* padding: 20px; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+
+    .commonLogo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        h1 {
+            font-weight: bold;
+            font-size: 20px;
+            border-right: 1px solid #ffff;
+            padding: 15px;
+            cursor: pointer;
+        }
+        span {
+            color: #30ea03;
+        }
+    }
+    .subHeader {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 30px;
+        }
+    }
+    .titleName {
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+
+        span {
+            color: #fff;
+        }
+        .titleBar {
+            background: #30ea03;
+            color: #000;
+            text-align: center;
+            line-height: normal;
+        }
+    }
+
+    .navBar {
+        margin-left: auto;
+        font-size: 15px;
+        text-align: center;
+        ul {
+            text-align: center;
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            li {
+                a {
+                    /* background: #3d3d3d; */
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    text-align: center;
+                    border-left: 1px solid #ffff;
+                    padding: 15px;
+                }
+                a:hover {
+                    color: #30ea03;
+                }
+            }
+        }
+    }
+}
+.mainInternal {
+    width: 95vw;
+    margin: auto;
+}
+.filterSection {
+    border: 1px solid #cccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 80px;
+}
+.commonTopSection {
+    display: flex;
+    gap: 10px;
+    padding: 0 0 20px 0;
+    .commonIcon {
+        border-radius: 999px;
+        width: 32px;
+        height: 32px;
+        background: #30ea03;
+        line-height: 32px;
+        text-align: center;
+        i {
+            font-size: 20px;
+        }
+    }
+    .commonTitle {
+        display: flex;
+        align-items: center;
+        h1 {
+            font-size: 18px;
+            padding: 0 0 5px 0;
+            font-weight: bold;
+            border-bottom: 4px solid #30ea03;
+        }
+    }
+}
+.filterButton {
+    padding: 10px;
+    display: inline-block;
+    background-color: #cde9ff;
+    border-bottom: 1px solid #cccc;
+    .hideBtn {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        h3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .minusBtn{
+            background-color: #30ea03;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+        }
+    }
+}
