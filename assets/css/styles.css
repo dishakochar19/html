@@ -127,6 +127,7 @@ body {
     font-size: 18px;
     align-items: center;
     justify-content: center;
+    border-radius: 6px;
 }
 /* ------Sections------ */
 .outerSection {
@@ -447,7 +448,6 @@ body {
     }
 
     .submitBtn {
-        border-radius: 6px;
         width: 100px;
         height: 40px;
         border: none;
@@ -563,7 +563,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 6px;
             i {
                 font-size: 40px;
             }
@@ -761,7 +760,6 @@ body {
         background: #30ea03;
         display: flex;
         gap: 10px;
-        border-radius: 6px;
     }
     .MessageBox {
         display: inline-block;
@@ -1290,6 +1288,7 @@ table.tblMySubmissions {
     padding: 10px;
     display: flex;
     gap: 10px;
+    border-radius: 6px;
     a {
         text-decoration: none;
         color: #000;
@@ -1340,19 +1339,16 @@ table.tblMySubmissions {
     .uploadBtn {
         background: #30ea03;
         padding: 10px;
-        border-radius: 6px;
     }
     .resetBtn {
         padding: 10px;
         background: #58c4ff;
-        border-radius: 6px;
     }
     .cancelBtn {
         padding: 10px;
         background: #000000;
         color: #ffffff;
         display: flex;
-        border-radius: 6px;
         gap: 10px;
     }
 }
