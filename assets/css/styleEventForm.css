@@ -48,20 +48,16 @@ table.eventTbl {
         }
     }
 }
-.eventBtn {
+a.eventBtn {
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
     font-size: 18px;
     background: #30ea03;
-    padding: 5px;
+    padding: 10px;
     border-radius: 6px;
-}
-.eventBtn {
-    a {
-        text-decoration: none;
-        color: #000000;
-    }
+    text-decoration: none;
+    color: #000000;
 }
 .formContainer {
     h1 {
