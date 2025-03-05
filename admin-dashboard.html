@@ -162,12 +162,10 @@
                             <i class="ri-chat-check-line"></i>
                         </div>
                         <span class="commonPageTitle">Dashboard</span>
-                        <span class="uploadVideo">
-                            <a href="#" data-toggle="modal" data-target="#modalUploadVideo">
-                                <i class="ri-vidicon-fill"></i>
-                                <span>Upload a video</span>
-                            </a>
-                        </span>
+                        <a href="#" class="uploadVideo" data-toggle="modal" data-target="#modalUploadVideo">
+                            <i class="ri-vidicon-fill"></i>
+                            Upload a video
+                        </a>
                     </div>
 
                     <div class="bgFilters">
@@ -261,7 +259,7 @@
                     </div>
 
                     <div class="tgContainer">
-                        <div class="tbViews">
+                        <div class="tbView">
                             <div style="overflow-x: auto;">
                                 <table class="table table-bordered tblMySubmissions">
                                     <thead>
@@ -412,19 +410,19 @@
                             <div class="pagination-container">
                                 <i class="ri-arrow-left-s-fill"></i>
 
-                                <input type="number" id="pageInput" class="form-control" style="width: 60px;" min="1"
-                                    value="1" oninput="goToInputPage()">
+                                <input type="number" id="pageInput" class="form-control nextPrevBtns"
+                                    style="padding: 5px;" min="1" value="1" oninput="goToInputPage()">
 
                                 <!--  Button -->
                                 <i class="ri-arrow-right-s-fill"></i>
 
-                                <select id="itemsPerPage" class="form-control" style="width: 80px;"
+                                <select id="itemsPerPage" class="form-control nextPrevBtns" style="padding: 5px;"
                                     onchange="updatePagination()">
                                     <option value="3">3</option>
                                     <option value="5">5</option>
                                     <option value="10">10</option>
                                 </select>
-                                <span style="color: #0000ff;">
+                                <span class="pgsCount">
                                     items per page
                                 </span>
                                 <span class="pagination-summary" id="itemSummary">1- 3 of 19 items</span>
@@ -433,14 +431,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tgViews">
+                        <div class="grView">
                             <div class="row">
                                 <div class="col-md-6">
                                     <h1 class="tgTitle">
                                         Stories by Approval Status
                                     </h1>
 
-                                    <div class="graphs">
+                                    <div class="tgGraph">
                                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                     </div>
                                 </div>
@@ -448,7 +446,7 @@
                                     <h1 class="tgTitle">
                                         Stories by Category
                                     </h1>
-                                    <div class="graphs">
+                                    <div class="tgGraph">
                                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                     </div>
                                 </div>
@@ -458,7 +456,7 @@
                                     <h1 class="tgTitle">
                                         Stories by type of Badges
                                     </h1>
-                                    <div class="graphs">
+                                    <div class="tgGraph">
                                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                     </div>
                                 </div>
@@ -466,7 +464,7 @@
                                     <h1 class="tgTitle">
                                         Month wise Stories
                                     </h1>
-                                    <div class="graphs">
+                                    <div class="tgGraph">
                                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                     </div>
                                 </div>

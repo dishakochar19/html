@@ -665,6 +665,9 @@ body {
                 text-decoration: none;
                 color: #000;
             }
+            input {
+                border: none !important;
+            }
         }
     }
 
@@ -877,14 +880,20 @@ body {
 .pagination-container {
     cursor: pointer;
     display: flex;
-    padding: 10px;
+    padding: 5px;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     background: #ffffff;
     border: 1px solid #aaaaaa;
     border-radius: 6px;
 }
-
+.nextPrevBtns{
+    max-width: 40px;
+}
+.pgsCount{
+    color: #0000ff;
+    
+}
 .pagination-summary {
     font-weight: bold;
     margin-left: auto;
@@ -1170,7 +1179,6 @@ table.tblMySubmissions {
         padding-bottom: 20px;
 
         .selectBox {
-            padding: 10px;
             width: 100%;
             border-radius: 6px;
             border: 1px solid #000;
@@ -1265,7 +1273,7 @@ table.tblMySubmissions {
         border-bottom: 2px solid #30ea03;
     }
 }
-.tgViews {
+.grView {
     padding-top: 20px;
     font-weight: bold;
     font-size: 18px;
@@ -1274,14 +1282,14 @@ table.tblMySubmissions {
     padding-bottom: 10px;
     font-size: 15px;
 }
-.graphs {
+.tgGraph {
     border: 1px solid #b8b8b8;
     border-bottom: 5px solid #000;
 }
 .secondrow {
     padding-top: 20px;
 }
-.uploadVideo {
+a.uploadVideo {
     margin-left: auto;
     background: #30ea03;
     font-size: 18px;
@@ -1289,10 +1297,8 @@ table.tblMySubmissions {
     display: flex;
     gap: 10px;
     border-radius: 6px;
-    a {
-        text-decoration: none;
-        color: #000;
-    }
+    text-decoration: none;
+    color: #000;
 }
 .videoTitle {
     display: flex;
@@ -1313,7 +1319,6 @@ table.tblMySubmissions {
     }
     select {
         border: 1px solid #000;
-        padding: 10px;
         width: 100%;
     }
     .videoPopBtn {

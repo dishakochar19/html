@@ -1,3 +1,4 @@
+
 /* -------Event Form------- */
 .tableHeader {
     background: #000000;
@@ -69,31 +70,37 @@ table.eventTbl {
         padding: 0 10px;
         text-align: center;
     }
-    .formBars {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 20px;
-        input {
-            /* background: red; */
-            border: 1px solid #000000;
-            padding: 6px;
-        }
-        select {
-            border: 1px solid #000000;
-            padding: 6px;
-        }
-        textarea {
-            border: 1px solid #000000;
-            padding: 6px;
-            height: 200px;
-        }
+    .textareaMedium {
+        height: 130px;
+        width: 100%;
     }
 }
 
 /* -----modal------ */
 .modal-body {
     padding: 20px;
+
+    .choosenDates{
+        display: flex;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    .dateGrps{
+        display: flex;
+        gap: 10px;
+    }
+    .minusIcon{
+        background: #000000;
+        border-radius: 999px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        i{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+        }
+    }
 }
 
 .modal-header {
