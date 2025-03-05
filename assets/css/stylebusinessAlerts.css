@@ -1,3 +1,6 @@
+.btmBdr {
+    border-bottom: 2px solid #cccc;
+}
 .header {
     background: #000;
     color: #fff;
@@ -114,7 +117,7 @@
     padding: 10px;
     display: inline-block;
     background: #cde9ff;
-    border-bottom: 1px solid #cccc;
+    border: 2px solid #cccc;
     .manageBtn {
         display: flex;
         gap: 10px;
@@ -134,34 +137,42 @@
 }
 .filtersContainer {
     /* display: none; */
+    padding-top: 30px;
+    .rowLastChild {
+        border-bottom: 1px solid cccc;
+        padding-bottom: 20px;
+    }
 }
-
 .filtersBtn {
     display: flex;
     gap: 10px;
     a {
         display: block;
-        text-align: center;
         text-decoration: none;
         text-align: center;
         width: 32px;
         height: 32px;
-        text-align: center;
         line-height: 32px;
         border-radius: 6px;
         color: #000;
-        i{
+        i {
             font-size: 15px;
             font-weight: bold;
         }
     }
-
-    a.btnGreen{
+    a.btnGreen {
         background: #30ea03;
     }
-    a.btnBlack{
-        background: #000;        
+    a.btnBlack {
+        background: #000;
         color: #fff !important;
     }
-
+}
+.exportExcel {
+    padding: 10px;
+    float: right;
+    background-color: #30ea03;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: auto;
 }

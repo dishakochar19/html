@@ -169,70 +169,71 @@
                     </div>
 
                     <div class="bgFilters">
-                        <div class="formFilters">
-                            <div class="firstBar">
-                                <span class="formTitle">
+                        <div class="filtersContainer">
+                            <div class="row">
+                                <div class="col-sm-4 form-group">
                                     <i class="ri-user-fill"></i>
-                                    Submitter Name
-                                </span>
-                                <select class="form-control selectBox" name="" id="">
-                                    <option value="" selected="select">--Select All--</option>
-                                    <option value="Anil">Anil</option>
-                                    <option value="Peeyush">Peeyush</option>
-                                    <option value="Atul">Atul</option>
-                                </select>
-                            </div>
-
-                            <div class="secondBar">
-                                <span class="formTitle">
+                                    <label>Submitter Name</label>
+                                    <select class="form-control">
+                                        <option value="" selected="Select All">---Select All---</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 form-group">
                                     <i class="ri-article-line"></i>
-                                    Story Title
-                                </span>
-                                <select class="form-control selectBox" name="" id="">
-                                    <option value="" selected="select">--Select All--</option>
-                                    <option value="Gamification">Gamification</option>
-                                    <option value="ALCOA">ALCOA</option>
-                                    <option value="Analytics">Analytics</option>
-                                </select>
+                                    <label>Story Title</label>
+                                    <select class="form-control">
+                                        <option value="" selected="Select All">---Select All---</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2 form-group">
+                                    <i class="ri-article-line"></i>
+                                    <label>Category Name</label>
+                                    <select class="form-control">
+                                        <option value="" selected="Select All">---Select All---</option>
+                                    </select>
+                                </div>
                             </div>
 
-                            <div class="thirdBar">
-                                <span class="formTitle">
-                                    <i class="ri-profile-line"></i>
-                                    Category Name
-                                </span>
-                                <select class="form-control selectBox" name="" id="">
-                                    <option value="" selected="select">--Select All--</option>
-                                    <option value="Success Stories">Success Stories</option>
-                                    <option value="Best Practices">Best Practices</option>
-                                    <option value="Lessons Learned">Lessons Learned</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="formFilters">
-                            <div class="dateSection">
-                                <div class="startDate">
-                                    <i class="ri-user-fill"></i>
-                                    Story Submission Date
+                            <div class="row">
+                                <div class="col-sm-2 form-group">
+                                    <i class="ri-calendar-2-line"></i>
+                                    <label>Story Submission Date</label>
+                                    <input type="date" class="form-control">
                                 </div>
-                                <div class="endDate">
-                                    <i class="ri-user-fill"></i>
-                                    Story Submission Date
+                                <div class="col-sm-2 form-group">
+                                    <label>&nbsp;</label>
+                                    <input type="date" class="form-control">
                                 </div>
-                                <div class="status">
-                                    <i class="ri-user-fill"></i>
-                                    Story Submission Date
+                                <div class="col-sm-3 form-group">
+                                    <i class="ri-vidicon-fill"></i>
+                                    <label>Status</label>
+                                    <select class="form-control">
+                                        <option value="" selected="Select All">---Select All---</option>
+                                    </select>
                                 </div>
-                                <div class="achievements">
-                                    <i class="ri-user-fill"></i>
-                                    Story Submission Date
+                                <div class="col-sm-3 form-group">
+                                    <i class="ri-medal-line"></i>
+                                    <label>Badges</label>
+                                    <select class="form-control">
+                                        <option value="" selected="Select All">---Select All---</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2">
+                                    <label>&nbsp;</label>
+                                    <div class="dashboardFilterBtn">
+                                        <button class="btnCommon btnGreen">
+                                            Submit
+                                            <i class="ri-check-line"></i>
+                                        </button>
+                                        <button class="btnCommon btnTeal">
+                                            Reset
+                                            <i class="ri-close-large-line"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                     <div class="tabsContainer">
                         <div class="tabsParent">
                             <ul class="tabs">
@@ -422,7 +423,7 @@
                                     <option value="5">5</option>
                                     <option value="10">10</option>
                                 </select>
-                                <span class="pgsCount">
+                                <span class="pgCount">
                                     items per page
                                 </span>
                                 <span class="pagination-summary" id="itemSummary">1- 3 of 19 items</span>

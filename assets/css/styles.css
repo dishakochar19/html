@@ -27,8 +27,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* -----modal------ */
+/********************** Modal Pop Up ********************** */
 .modal-body {
     padding: 20px;
 
@@ -46,24 +45,13 @@ body {
             padding: 5px 10px;
             width: 100%;
         }
-        .formBtn {
+        .sharePopUpBtn {
             display: flex;
             gap: 10px;
             padding: 10px 0;
             i {
-                margin-left: 15px;
+                margin-left: 5px;
             }
-        }
-        .uploadBtn {
-            padding: 10px;
-            background: #30ea03;
-            display: flex;
-        }
-        .cancelBtn {
-            padding: 10px;
-            background: #000000;
-            color: #ffffff;
-            display: flex;
         }
     }
 }
@@ -118,17 +106,37 @@ body {
     }
 }
 
-/* -------Button------ */
+/********************** Common Button ********************** */
+
 .btnCommon {
+    padding: 10px;
+    color: #000;
+    width: auto;
     cursor: pointer;
+    border: 0px;
     display: flex;
-    height: 40px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
 }
+.btnGreen,
+.btnGreen:hover {
+    background-color: #30ea03;
+    color: #000;
+}
+.btnBlack,
+.btnBlack:hover {
+    background-color: #000;
+    color: #fff;
+}
+.btnTeal,
+.btnTeal:hover {
+    background-color: #0399ea;
+    color: #000;
+}
+
 /* ------Sections------ */
 .outerSection {
     padding: 20px;
@@ -449,9 +457,6 @@ body {
 
     .submitBtn {
         width: 100px;
-        height: 40px;
-        border: none;
-        background: #30ea03;
         margin: 0 0 0 42px;
     }
 
@@ -531,12 +536,10 @@ body {
 .midBar {
     .midHead {
         display: flex;
-        gap: 80px;
         align-items: baseline;
-
+        gap: 80px;
         .storyHead {
-            font-size: 36px;
-            margin: 0;
+            font-size: 30px;
             font-weight: bold;
         }
 
@@ -559,10 +562,6 @@ body {
         .searchInputBtn {
             height: 45px;
             width: 45px;
-            background: #30ea03;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             i {
                 font-size: 40px;
             }
@@ -589,12 +588,9 @@ body {
 
         .sliderReadMore {
             border: 1px solid #000;
-            display: flex;
             width: 120px;
-            height: 35px;
             border-radius: 0;
             font-weight: normal;
-            font-size: 15px;
             a {
                 text-decoration: none;
                 color: #000000;
@@ -603,7 +599,7 @@ body {
 
         .sliderReadMore:hover {
             background: #30ea03;
-            transition: all 0.5s ease-in-out;
+            transition: all 0.1s ease-in-out;
             color: #000;
         }
     }
@@ -759,10 +755,19 @@ body {
     }
     .filterBtn {
         width: 80px;
-        height: 40px;
-        background: #30ea03;
         display: flex;
         gap: 10px;
+        padding: 10px;
+        display: flex;
+    }
+    .spotlightVideosFilterBtn {
+        display: flex;
+        gap: 10px;
+        button {
+            i {
+                margin-left: 5px;
+            }
+        }
     }
     .MessageBox {
         display: inline-block;
@@ -798,16 +803,14 @@ body {
     }
 }
 
-/* -------StoryPage------- */
+/********************** Story Page ********************** */
 .storyHead title {
     i {
         font-size: small;
     }
 }
 
-.formGrp {
-    padding: 10px 0 10px 0;
-
+.storyTitle {
     .col-md-3 {
         font-size: 13px;
         font-weight: bold;
@@ -830,7 +833,6 @@ body {
     }
 
     .storySelection {
-        padding: 10px;
         border: 1px solid #000000;
         width: 100%;
     }
@@ -860,43 +862,34 @@ body {
             padding: 10px;
         }
     }
-
-    .buttons {
+    .newStoryPageBtn {
         display: flex;
         gap: 10px;
         i {
-            margin-left: 15px;
-        }
-
-        .cancelBtn {
-            background: #000000;
-            color: #ffffff;
-            display: flex;
+            margin-left: 5px;
         }
     }
 }
 
-/* -----Pagination------- */
+/********************** Pagination ********************** */
 .pagination-container {
     cursor: pointer;
     display: flex;
     padding: 5px;
     align-items: center;
-    /* gap: 10px; */
     background: #ffffff;
     border: 1px solid #aaaaaa;
     border-radius: 6px;
-}
-.nextPrevBtns{
-    max-width: 40px;
-}
-.pgsCount{
-    color: #0000ff;
-    
-}
-.pagination-summary {
-    font-weight: bold;
-    margin-left: auto;
+    .nextPrevBtns {
+        max-width: 40px;
+    }
+    .pgCount {
+        color: #0000ff;
+    }
+    .pagination-summary {
+        font-weight: bold;
+        margin-left: auto;
+    }
 }
 
 /*.pagination {
@@ -988,7 +981,7 @@ textarea {
     padding: 0;
 } */
 
-/* ------Spotlight videos------- */
+/********************** Spotlight Videos /********************** */
 .commonStripBanner {
     width: 100%;
     max-height: 100px;
@@ -1168,53 +1161,15 @@ table.tblMySubmissions {
 }
 
 /* Dashboard - Tabular Graphical Parent Container */
-.bgFilters {
-    background: #e6ebff;
-    border-top: 1px solid #000;
-    padding: 20px;
-    margin-bottom: 10px;
-    .formFilters {
-        display: flex;
-        gap: 20px;
-        padding-bottom: 20px;
-
-        .selectBox {
-            width: 100%;
-            border-radius: 6px;
-            border: 1px solid #000;
-        }
-        .firstBar {
-            flex: 3;
-        }
-        .secondBar {
-            flex: 4;
-        }
-        .thirdBar {
-            flex: 2;
-        }
-        .formTitle {
-            font-weight: bold;
-            padding-bottom: 5px;
-            display: block;
-        }
-        .dateSection {
-            border: 1px solid red;
-            display: flex;
-            gap: 20px;
-            flex: 1.5;
-        }
-        .startDate {
-            flex: 1.5;
-        }
-        .endDate {
-            flex: 1.5;
-        }
-        .status {
-            flex: 1.5;
-        }
-        .achievements {
-            flex: 1.5;
-        }
+.dashboardFilterBtn {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    .btnCommon {
+        padding: 5px 10px;
+    }
+    i {
+        margin-left: 5px;
     }
 }
 .tgContainer {
@@ -1476,6 +1431,9 @@ a.uploadVideo {
                 transition: 0.4s all ease-in-out;
             }
         }
+    }
+    .filtersBtn {
+        padding-top: 0px;
     }
 }
 
