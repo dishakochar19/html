@@ -753,20 +753,15 @@ body {
             padding: 5px;
         }
     }
-    .filterBtn {
-        width: 80px;
-        display: flex;
-        gap: 10px;
-        padding: 10px;
-        display: flex;
-    }
     .spotlightVideosFilterBtn {
         display: flex;
         gap: 10px;
-        button {
-            i {
-                margin-left: 5px;
-            }
+        padding-bottom: 10px;
+        .btnCommon {
+            padding: 5px 10px;
+        }
+        i {
+            margin-left: 5px;
         }
     }
     .MessageBox {

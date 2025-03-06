@@ -4,13 +4,9 @@
 .header {
     background: #000;
     color: #fff;
-    position: fixed;
     /* padding: 20px; */
     width: 100%;
-    top: 0;
-    left: 0;
     text-align: center;
-    z-index: 1000;
 
     .commonLogo {
         display: flex;
@@ -86,6 +82,7 @@
     border-radius: 8px;
     padding: 20px;
     margin-top: 80px;
+    background-color: #efefef;
 }
 .commonTopSection {
     display: flex;
