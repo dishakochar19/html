@@ -1,5 +1,24 @@
-.btmBdr {
-    border-bottom: 2px solid #cccc;
+.topBdr {
+    border-bottom: 1px solid #cccc;
+    padding-bottom: 70px;
+}
+.salesTopBdr {
+    padding: 10px;
+    border-bottom: 1px solid #cccc;
+}
+.txtCenter {
+    text-align: center;
+    margin: 0;
+    border-radius: 6px 6px 0 0;
+}
+.boxBorder {
+    border: 1px solid #bdbdbd;
+}
+.blueText {
+    color: #0091ff;
+}
+.subSection {
+    padding: 40px 0 0 0;
 }
 .header {
     background: #000;
@@ -119,6 +138,7 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        cursor: pointer;
         h3 {
             font-weight: bold;
             font-size: 15px;
@@ -132,13 +152,10 @@
         }
     }
 }
-.filtersContainer {
+.filterContainer {
     /* display: none; */
-    padding-top: 30px;
-    .rowLastChild {
-        border-bottom: 1px solid cccc;
-        padding-bottom: 20px;
-    }
+    /* padding-top: 30px; */
+    border-top: 1px solid #cccc;
 }
 .filtersBtn {
     display: flex;
@@ -165,11 +182,168 @@
         color: #fff !important;
     }
 }
+.excelTitle {
+    padding-top: 10px;
+}
 .exportExcel {
-    padding: 10px;
+    padding: 7px 10px;
     float: right;
     background-color: #30ea03;
     border-radius: 6px;
     font-weight: bold;
-    margin-top: auto;
+    margin-top: 40px;
+}
+
+/* ************Footer************ */
+.footerBg {
+    background-color: #11174b;
+    margin-top: 100vh;
+    color: #ffff;
+    display: flex;
+    padding: 5px 20px;
+    .designCredit {
+        margin-left: auto;
+    }
+}
+.filterBox {
+    padding: 10px;
+    display: inline-block;
+    background: #cde9ff;
+    border: 2px solid #cccc;
+    .filterItem {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+        i {
+            background: #30ea03;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+}
+.description {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #cde9ff;
+    border-left: 6px solid #30ea03;
+}
+.myTab {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        font-size: 18px;
+        gap: 1px;
+        li {
+            a {
+                background: #bad4e7;
+                border-radius: 6px 6px 0 0;
+                display: block;
+                padding: 10px 20px;
+
+                &&:hover {
+                    text-decoration: none;
+                }
+            }
+
+            a.tabActive {
+                background: #30ea03;
+            }
+        }
+    }
+}
+.bgFilter {
+    background-color: #ddf1ff;
+    .sideBdr {
+        padding: 30px 40px;
+    }
+    .category {
+        background-color: #30ea03;
+        padding: 10px;
+        font-weight: bold;
+        /* margin: 0 0 10px 0; */
+        h1 {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+    .inputBar {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                a.fileGrp {
+                    display: block;
+                    padding: 10px;
+                    background: #ffff;
+                    border-top: 2px solid #cccc;
+                    border-right: 2px solid #cccc;
+                    border-bottom: 2px solid #cccc;
+                    border-left: 6px solid #30ea03;
+                    text-decoration: none;
+                    margin: 10px 0px 10px 30px;
+
+                    &&:hover {
+                        color: #000;
+                    }
+
+                    .fileItems {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        i {
+                            font-size: 25px;
+                        }
+                        h1 {
+                            font-size: 16px;
+                            padding-bottom: 5px;
+                        }
+                        .date {
+                            font-size: 12px;
+                            color: #a3a3a3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* *************Category Insights************* */
+.folderName {
+    border-top: none;
+    border-right: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
+    border-left: 1px solid #a3a3a3;
+    border-radius: 0 0 6px 6px;
+    padding: 20px;
+
+    .folderSection {
+        display: flex;
+        align-items: center;
+        h1 {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .leftIcon {
+            margin-left: auto;
+            i {
+                font-weight: bold;
+            }
+        }
+    }
+}
+.categoryInsightsBtn:hover {
+    background-color: #30ea03;
+    color: #fff;
+    outline: 2px solid #000;
 }
