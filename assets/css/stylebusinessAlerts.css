@@ -3,7 +3,7 @@
     padding-bottom: 70px;
 }
 .salesTopBdr {
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 1px solid #cccc;
 }
 .txtCenter {
@@ -20,6 +20,8 @@
 .subSection {
     padding: 40px 0 0 0;
 }
+
+/* ************************ Header ************************ */
 .header {
     background: #000;
     color: #fff;
@@ -129,6 +131,9 @@
         }
     }
 }
+
+/* ************************ Business Alerts ************************ */
+
 .showHideFilters {
     padding: 10px;
     display: inline-block;
@@ -154,12 +159,13 @@
 }
 .filterContainer {
     /* display: none; */
-    /* padding-top: 30px; */
     border-top: 1px solid #cccc;
+    padding-top: 10px;
 }
-.filtersBtn {
+.filterBtn {
     display: flex;
     gap: 10px;
+    margin-top: 25px;
     a {
         display: block;
         text-decoration: none;
@@ -182,29 +188,24 @@
         color: #fff !important;
     }
 }
-.excelTitle {
-    padding-top: 10px;
-}
 .exportExcel {
     padding: 7px 10px;
     float: right;
     background-color: #30ea03;
     border-radius: 6px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
-/* ************Footer************ */
-.footerBg {
-    background-color: #11174b;
-    margin-top: 100vh;
-    color: #ffff;
-    display: flex;
-    padding: 5px 20px;
-    .designCredit {
-        margin-left: auto;
-    }
+/* ************************ Document Library ************************ */
+.description {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #cde9ff;
+    border-left: 6px solid #30ea03;
 }
+
+/* ************************ Sales Tools ************************ */
 .filterBox {
     padding: 10px;
     display: inline-block;
@@ -228,12 +229,8 @@
         }
     }
 }
-.description {
-    padding: 20px;
-    margin-top: 10px;
-    background-color: #cde9ff;
-    border-left: 6px solid #30ea03;
-}
+
+/* ************************ Playbooks ************************ */
 .myTab {
     ul {
         margin: 0;
@@ -277,10 +274,42 @@
     }
     .inputBar {
         ul {
-            margin: 0;
+            margin: 10px 0;
             padding: 0;
             list-style-type: none;
             li {
+                display: flex;
+                margin-bottom: 10px;
+                background-color: #9c9c9ccc;
+                > div:first-child {
+                    width: 5px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    .circle {
+                        flex-shrink: 0;
+                        border-radius: 999px;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #30ea03;
+                        position: absolute;
+                    }
+                }
+                span::before {
+                    content: "";
+                    display: block;
+                }
+
+                span::after {
+                    content: "";
+                    display: block;
+                    border-width: 20px;
+                    border: 5px solid #9c9c9ccc;
+                    margin-left: 11px;
+                }
+
                 a.fileGrp {
                     display: block;
                     padding: 10px;
@@ -290,8 +319,7 @@
                     border-bottom: 2px solid #cccc;
                     border-left: 6px solid #30ea03;
                     text-decoration: none;
-                    margin: 10px 0px 10px 30px;
-
+                    flex-grow: 1;
                     &&:hover {
                         color: #000;
                     }
@@ -318,7 +346,7 @@
     }
 }
 
-/* *************Category Insights************* */
+/* ************************ Category Insights ************************ */
 .folderName {
     border-top: none;
     border-right: 1px solid #a3a3a3;
@@ -346,4 +374,51 @@
     background-color: #30ea03;
     color: #fff;
     outline: 2px solid #000;
+}
+/* ************************ Footer ************************ */
+.footerBg {
+    background-color: #11174b;
+    margin-top: 100vh;
+    color: #ffff;
+    display: flex;
+    padding: 5px 20px;
+    .designCredit {
+        margin-left: auto;
+    }
+}
+
+/* 
+
+@mixin desktop {   @media (max-width: #{1400px}) { @content;  }}
+@mixin desktopMd {   @media (max-width: #{1280px}) { @content;  }}
+@mixin desktopSm {   @media (max-width: #{1200px}) { @content;  }}
+@mixin ipadPro {   @media (max-width: #{1366px}) { @content;  }}
+@mixin ipad {   @media (max-width: #{1024px}) { @content;  }}
+@mixin ninenine2 {   @media (max-width: #{992px}) { @content;  }}
+@mixin ninenine1 {   @media (max-width: #{991px}) { @content;  }}
+@mixin sevensix8 {   @media (max-width: #{768px}) { @content;  }}
+@mixin sevensix7 {   @media (max-width: #{767px}) { @content;  }}
+@mixin mobileMd {   @media (max-width: #{580px}) { @content;  }}
+@mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
+
+@media (max-width: 430px) {
+    .filterBtn {
+        float: right;
+        margin-top: 0;
+    }
+    .topBdr {
+        padding-bottom: 20px;
+    }
+    .exportExcel {
+        margin-top: auto;
+    }
+    .salesTopBdr {
+        padding: 10px 0 15px;
+    }
+    .sideBdr{
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 991px) {
 }

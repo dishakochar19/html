@@ -3,78 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Right Navbar</title>
+    <title>Haleon Scale Documents</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        .navbar-right {
-            margin-right: 0;
+        body {
+            background-color: #e8e8e8;
         }
-        .navbar-toggle {
-            border: none;
-            background: none !important;
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .header {
+            background-color: #228b22;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .document-list {
             position: relative;
-            display: inline-block;
+            padding-left: 30px;
         }
-        .icon-bar {
-            background: #333;
-            display: block;
-            height: 4px;
+        .document-list::before {
+            content: "";
+            position: absolute;
+            left: 14px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #228b22;
+        }
+        .document {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            position: relative;
+        }
+        .document:last-child {
+            border-bottom: none;
+        }
+        .status {
+            width: 12px;
+            height: 12px;
+            background-color: green;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .icon {
             width: 30px;
-            margin: 6px 0;
-            transition: all 0.3s ease;
+            height: 30px;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            margin-right: 10px;
         }
-        .navbar-toggle.active .icon-bar:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
+        .icon:before {
+            content: "📄";
+            color: white;
         }
-        .navbar-toggle.active .icon-bar:nth-child(2) {
-            opacity: 0;
+        .text {
+            flex-grow: 1;
         }
-        .navbar-toggle.active .icon-bar:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
+        .modified {
+            color: gray;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <!-- <div class="container-fluid"> -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Brand</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        <!-- </div> -->
-    </nav>
-    
-    <script>
-        $(document).ready(function () {
-            $(".navbar-toggle").click(function (event) {
-                event.stopPropagation();
-                $(this).toggleClass("active");
-                $("#myNavbar").toggleClass("in");
-            });
 
-            $(document).click(function (event) {
-                let clickover = $(event.target);
-                let _opened = $("#myNavbar").hasClass("in");
-                if (_opened && !clickover.closest('.navbar').length) {
-                    $("#myNavbar").removeClass("in");
-                    $(".navbar-toggle").removeClass("active");
-                }
-            });
-        });
-    </script>
+<div class="container">
+    <div class="header">HALEON SCALE</div>
+
+    <div class="document-list">
+        <div class="document">
+            <div class="status"></div>
+            <div class="icon"></div>
+            <div class="text">
+                <strong>Share Out Playbook 2025 Scale</strong>
+                <div class="modified">Modified: 11/9/2024</div>
+            </div>
+        </div>
+
+        <div class="document">
+            <div class="status"></div>
+            <div class="icon"></div>
+            <div class="text">
+                <strong>Playbook 2025 Scale</strong>
+                <div class="modified">Modified: 12/9/2024</div>
+            </div>
+        </div>
+
+        <div class="document">
+            <div class="status"></div>
+            <div class="icon"></div>
+            <div class="text">
+                <strong>US Soccer Partnership Introduction Sales Version</strong>
+                <div class="modified">Modified: 2/7/2025</div>
+            </div>
+        </div>
+
+        <div class="document">
+            <div class="status"></div>
+            <div class="icon"></div>
+            <div class="text">
+                <strong>US Sustainability Playbook Master</strong>
+                <div class="modified">Modified: 2/6/2025</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
