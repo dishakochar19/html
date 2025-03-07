@@ -288,6 +288,12 @@ a.eventBox {
     }
     .eventInfo {
         border-bottom: 1px solid #bababa;
+        span {
+            font-weight: bold;
+        }
+        >div{
+            padding: 3px 0;
+        }
     }
 
     .date {
@@ -476,7 +482,7 @@ a.eventBox {
             flex-direction: column;
         }
     }
-    .navBar.showMenu{
+    .navBar.showMenu {
         display: block;
     }
     /* .rightmenuBars{
@@ -513,5 +519,4 @@ a.eventBox {
     .navbar-toggle.active .icon-bar:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
-
 }
