@@ -21,6 +21,128 @@
 .subSection {
     padding: 40px 0 0 0;
 }
+.topRowPadding {
+    padding-top: 20px;
+}
+.topPadding {
+    padding-top: 20px;
+}
+/* ************************ Common Classes of All Pgs From Business Alerts ************************ */
+.commonTopSection {
+    display: flex;
+    gap: 10px;
+    padding: 0 0 20px 0;
+    .commonIcon {
+        border-radius: 999px;
+        width: 32px;
+        height: 32px;
+        background: #30ea03;
+        line-height: 32px;
+        text-align: center;
+        i {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .commonTitle {
+        display: flex;
+        align-items: center;
+        h1 {
+            font-size: 18px;
+            padding: 0 0 5px 0;
+            font-weight: bold;
+            border-bottom: 4px solid #30ea03;
+        }
+    }
+}
+.filterSection {
+    border: 1px solid #cccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #efefef;
+}
+.mainInternal {
+    width: 95vw;
+    margin: auto;
+}
+.commonLogo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+        border-right: 1px solid #ffff;
+        padding: 15px;
+        cursor: pointer;
+    }
+    span {
+        color: #30ea03;
+    }
+}
+.showHideFilterBtn {
+    padding: 10px;
+    display: inline-block;
+    background: #cde9ff;
+    border: 2px solid #cccc;
+    .manageBtn {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+        h3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        i {
+            background: #30ea03;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+        }
+    }
+}
+.filterContainer {
+    border-top: 1px solid #cccc;
+    padding-top: 10px;
+}
+.filterBtn {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 6px;
+        color: #000;
+        i {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    a.btnGreen {
+        background: #30ea03;
+    }
+    a.btnBlack {
+        background: #000;
+        color: #fff !important;
+    }
+}
+.exportExcel {
+    padding: 7px 10px;
+    float: right;
+    background-color: #30ea03;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
 /* ************************ Header ************************ */
 .header {
     background: #000;
@@ -68,7 +190,7 @@
         }
     }
 
-    .navBar {
+    .rightHeaderNavBar {
         margin-left: auto;
         font-size: 15px;
         text-align: center;
@@ -94,115 +216,17 @@
         }
     }
 }
-.mainInternal {
-    width: 95vw;
-    margin: auto;
-}
-.filterSection {
-    border: 1px solid #cccc;
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 80px;
-    background-color: #efefef;
-}
-.commonTopSection {
+
+/* ************************ Footer ************************ */
+.footerBg {
+    background-color: #11174b;
+    margin-top: 100px;
+    color: #ffff;
     display: flex;
-    gap: 10px;
-    padding: 0 0 20px 0;
-    .commonIcon {
-        border-radius: 999px;
-        width: 32px;
-        height: 32px;
-        background: #30ea03;
-        line-height: 32px;
-        text-align: center;
-        i {
-            font-size: 20px;
-        }
+    padding: 5px 20px;
+    .designCredit {
+        margin-left: auto;
     }
-    .commonTitle {
-        display: flex;
-        align-items: center;
-        h1 {
-            font-size: 18px;
-            padding: 0 0 5px 0;
-            font-weight: bold;
-            border-bottom: 4px solid #30ea03;
-        }
-    }
-}
-
-/* ************************ Business Alerts ************************ */
-
-.showHideFilters {
-    padding: 10px;
-    display: inline-block;
-    background: #cde9ff;
-    border: 2px solid #cccc;
-    .manageBtn {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        cursor: pointer;
-        h3 {
-            font-weight: bold;
-            font-size: 15px;
-        }
-        i {
-            background: #30ea03;
-            width: 32px;
-            height: 32px;
-            text-align: center;
-            line-height: 32px;
-        }
-    }
-}
-.filterContainer {
-    /* display: none; */
-    border-top: 1px solid #cccc;
-    padding-top: 10px;
-}
-.filterBtn {
-    display: flex;
-    gap: 10px;
-    margin-top: 25px;
-    a {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        width: 32px;
-        height: 32px;
-        line-height: 32px;
-        border-radius: 6px;
-        color: #000;
-        i {
-            font-size: 15px;
-            font-weight: bold;
-        }
-    }
-    a.btnGreen {
-        background: #30ea03;
-    }
-    a.btnBlack {
-        background: #000;
-        color: #fff !important;
-    }
-}
-.exportExcel {
-    padding: 7px 10px;
-    float: right;
-    background-color: #30ea03;
-    border-radius: 6px;
-    font-weight: bold;
-    margin-top: 25px;
-}
-
-/* ************************ Document Library ************************ */
-.description {
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #cde9ff;
-    border-left: 6px solid #30ea03;
 }
 
 /* ************************ Sales Tools ************************ */
@@ -228,6 +252,13 @@
             font-size: 15px;
         }
     }
+}
+.description {
+    padding: 20px;
+    /* margin-top: 20px 10px; */
+    margin: 10px 0;
+    background-color: #cde9ff;
+    border-left: 6px solid #30ea03;
 }
 
 /* ************************ Playbooks ************************ */
@@ -272,7 +303,7 @@
             font-size: 18px;
         }
     }
-    .inputBar {
+    .folderName {
         ul {
             margin: 10px 0;
             padding: 0;
@@ -280,8 +311,8 @@
             li {
                 display: flex;
                 margin-bottom: 10px;
-                background-color: #9c9c9ccc;
                 > div:first-child {
+                    background-color: #9c9c9ccc;
                     width: 5px;
                     justify-content: center;
                     display: flex;
@@ -314,9 +345,7 @@
                     display: block;
                     padding: 10px;
                     background: #ffff;
-                    border-top: 2px solid #cccc;
-                    border-right: 2px solid #cccc;
-                    border-bottom: 2px solid #cccc;
+                    border: 2px solid #cccc;
                     border-left: 6px solid #30ea03;
                     text-decoration: none;
                     flex-grow: 1;
@@ -347,22 +376,23 @@
 }
 
 /* ************************ Category Insights ************************ */
-.folderName {
+.categories {
     border-top: none;
-    border-right: 1px solid #a3a3a3;
-    border-bottom: 1px solid #a3a3a3;
-    border-left: 1px solid #a3a3a3;
     border-radius: 0 0 6px 6px;
+    border: 1px solid #a3a3a3;
     padding: 20px;
-
-    .folderSection {
+    a{
+        text-decoration: none;
+        display: block;
+    }
+    .folderSubSectionTitle {
         display: flex;
         align-items: center;
         h1 {
             font-size: 15px;
             font-weight: bold;
         }
-        .leftIcon {
+        .toggleIcon {
             margin-left: auto;
             i {
                 font-weight: bold;
@@ -375,20 +405,8 @@
     color: #fff;
     outline: 2px solid #000;
 }
-/* ************************ Footer ************************ */
-.footerBg {
-    background-color: #11174b;
-    margin-top: 100vh;
-    color: #ffff;
-    display: flex;
-    padding: 5px 20px;
-    .designCredit {
-        margin-left: auto;
-    }
-}
 
 /* 
-
 @mixin desktop {   @media (max-width: #{1400px}) { @content;  }}
 @mixin desktopMd {   @media (max-width: #{1280px}) { @content;  }}
 @mixin desktopSm {   @media (max-width: #{1200px}) { @content;  }}
@@ -415,7 +433,7 @@
     .salesTopBdr {
         padding: 10px 0 15px;
     }
-    .sideBdr{
+    .sideBdr {
         padding: 10px 10px;
     }
 }

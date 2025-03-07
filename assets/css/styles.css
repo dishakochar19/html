@@ -1,154 +1,29 @@
+/********************** Common Classes ********************** */
+.tableViewScroll {
+    overflow-x: auto;
+}
+.mobileNav {
+    .closebtn {
+        display: none;
+    }
+}
 body {
     background: #efefef;
 }
-
 .leftSideNav {
     font-size: 30px;
     cursor: pointer;
     display: none;
 }
-/* ---------carousel------- */
-.glyphicon-chevron-right {
-    background: #545454;
-    border-radius: 999px;
-    width: 40px !important;
-    height: 40px !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.glyphicon-chevron-left {
-    background: #545454;
-    border-radius: 999px;
-    width: 40px !important;
-    height: 40px !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-/********************** Modal Pop Up ********************** */
-.modal-body {
-    padding: 20px;
-
-    .formInput {
-        display: flex;
-        .formName {
-            margin-right: 10px;
-            padding-top: 5px;
-        }
-        .nameInput {
-            flex-grow: 1;
-        }
-        input {
-            border: 1px solid #000000;
-            padding: 5px 10px;
-            width: 100%;
-        }
-        .sharePopUpBtn {
-            display: flex;
-            gap: 10px;
-            padding: 10px 0;
-            i {
-                margin-left: 5px;
-            }
-        }
-    }
-}
-
-.modal-header {
-    padding: 0 !important;
-    border-bottom: none !important;
-}
-.modal-header .close {
-    margin: 20px 20px 0 0;
-}
 .noBorder {
     border: 0px !important;
 }
-.modal-title {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 0px !important;
-    margin: 5px 20px;
-    border-bottom: 1px solid #ccc;
-
-    span {
-        background: #000000;
-        height: 32px !important;
-        width: 32px !important;
-        min-width: 32px !important;
-        min-height: 32px !important;
-        border-radius: 999px;
-        text-align: center;
-        line-height: 32px;
-        margin-right: 5px;
-        display: inline-block;
-
-        i {
-            color: #ffffff;
-            font-size: 18px;
-        }
-    }
-}
-
-.modal-content {
-    .close {
-        background: rgba(0, 0, 0, 1);
-        height: 24px !important;
-        width: 24px !important;
-        line-height: 24px !important;
-        color: #fff !important;
-        border-radius: 999px !important;
-        font-size: 15px;
-        text-align: center;
-        opacity: 1;
-    }
-}
-
-/********************** Common Button ********************** */
-
-.btnCommon {
-    padding: 10px;
-    color: #000;
-    width: auto;
-    cursor: pointer;
-    border: 0px;
-    display: flex;
-    font-weight: bold;
-    font-size: 15px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-}
-.btnGreen,
-.btnGreen:hover {
-    background-color: #30ea03;
-    color: #000;
-}
-.btnBlack,
-.btnBlack:hover {
-    background-color: #000;
-    color: #fff;
-}
-.btnTeal,
-.btnTeal:hover {
-    background-color: #0399ea;
-    color: #000;
-}
-
-/* ------Sections------ */
-.outerSection {
-    padding: 20px;
-}
-
 .subSection {
     background: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 6px;
 }
-
 .subSection {
     .homeTitle {
         cursor: pointer;
@@ -205,6 +80,153 @@ body {
             }
         }
     }
+}
+.commonPageTitle {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: bold;
+}
+.txtCenter {
+    text-align: center;
+}
+.commonStripBanner {
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+    margin: 20px 0px;
+    img {
+        width: 100%;
+    }
+}
+/********************** carousel ********************** */
+.glyphicon-chevron-right {
+    background: #545454;
+    border-radius: 999px;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.glyphicon-chevron-left {
+    background: #545454;
+    border-radius: 999px;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************** Modal Pop Up ********************** */
+.modal-body {
+    padding: 20px;
+
+    .formInput {
+        display: flex;
+        .formName {
+            margin-right: 10px;
+            padding-top: 5px;
+        }
+        .nameInput {
+            flex-grow: 1;
+        }
+        input {
+            border: 1px solid #000000;
+            padding: 5px 10px;
+            width: 100%;
+        }
+        .sharePopUpBtn {
+            display: flex;
+            gap: 10px;
+            padding: 10px 0;
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.modal-header {
+    padding: 0 !important;
+    border-bottom: none !important;
+}
+.modal-header .close {
+    margin: 20px 20px 0 0;
+}
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px !important;
+    margin: 5px 20px;
+    border-bottom: 1px solid #ccc;
+
+    span {
+        background: #000000;
+        height: 32px !important;
+        width: 32px !important;
+        min-width: 32px !important;
+        min-height: 32px !important;
+        border-radius: 999px;
+        text-align: center;
+        line-height: 32px;
+        margin-right: 5px;
+        display: inline-block;
+
+        i {
+            color: #ffffff;
+            font-size: 18px;
+        }
+    }
+}
+.modal-content {
+    .close {
+        background: rgba(0, 0, 0, 1);
+        height: 24px !important;
+        width: 24px !important;
+        line-height: 24px !important;
+        color: #fff !important;
+        border-radius: 999px !important;
+        font-size: 15px;
+        text-align: center;
+        opacity: 1;
+    }
+}
+
+/********************** Common Button ********************** */
+.btnCommon {
+    padding: 10px;
+    color: #000;
+    width: auto;
+    cursor: pointer;
+    border: 0px;
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+.btnGreen,
+.btnGreen:hover {
+    background-color: #30ea03;
+    color: #000;
+}
+.btnBlack,
+.btnBlack:hover {
+    background-color: #000;
+    color: #fff;
+}
+.btnTeal,
+.btnTeal:hover {
+    background-color: #0399ea;
+    color: #000;
+}
+
+/* ------Sections------ */
+.outerSection {
+    padding: 20px;
 }
 
 /* -------Posts------- */
@@ -630,8 +652,7 @@ body {
     }
 }
 
-/* -------RightBar------- */
-
+/* ************************ Right Bar ************************ */
 .rightBar {
     .videoBar {
         display: flex;
@@ -798,66 +819,62 @@ body {
     }
 }
 
-/********************** Story Page ********************** */
-.storyHead title {
-    i {
-        font-size: small;
-    }
-}
+/* ************************ Add New Story Page ************************ */
+.storyContainer {
+    max-width: 1000px;
+    margin: auto;
 
-.storyTitle {
-    .col-md-3 {
+    .storyHead title {
+        i {
+            font-size: small;
+        }
+    }
+    .storyFormTitle {
         font-size: 13px;
         font-weight: bold;
         text-align: right;
-    }
-
-    .col-md-9 {
-        padding: 0;
 
         input {
             border: 1px solid #000000;
             width: 100%;
             padding: 10px;
+            font-weight: normal;
         }
-
         input[type="file"] {
             border: none;
             padding: 0;
         }
-    }
-
-    .storySelection {
-        border: 1px solid #000000;
-        width: 100%;
-    }
-
-    .impMark {
-        color: #ff0000;
-    }
-
-    .descBx {
-        .textareaLarge {
+        select {
             border: 1px solid #000000;
-            height: 260px;
             width: 100%;
-            padding: 10px;
+            font-weight: normal;
         }
-
-        /* .textareaSmall {
-            border: 1px solid #000000;
-            height: 80px;
-            width: 100%;
-            padding: 10px;
-        } */
-        .textareaMedium {
-            border: 1px solid #000000;
-            height: 130px;
-            width: 100%;
-            padding: 10px;
+        .impMark {
+            color: #ff0000;
+        }
+        .descBx {
+            font-weight: normal;
+            .textareaLarge {
+                border: 1px solid #000000;
+                height: 260px;
+                width: 100%;
+                padding: 10px;
+            }
+            /* .textareaSmall {
+                    border: 1px solid #000000;
+                    height: 80px;
+                    width: 100%;
+                    padding: 10px;
+                } */
+            .textareaMedium {
+                border: 1px solid #000000;
+                height: 130px;
+                width: 100%;
+                padding: 10px;
+            }
         }
     }
-    .newStoryPageBtn {
+    .newStoryBtn {
         display: flex;
         gap: 10px;
         i {
@@ -866,7 +883,7 @@ body {
     }
 }
 
-/********************** Pagination ********************** */
+/* ************************ Pagination ************************ */
 .pagination-container {
     cursor: pointer;
     display: flex;
@@ -977,15 +994,6 @@ textarea {
 } */
 
 /********************** Spotlight Videos /********************** */
-.commonStripBanner {
-    width: 100%;
-    max-height: 100px;
-    overflow: hidden;
-    margin: 20px 0px;
-    img {
-        width: 100%;
-    }
-}
 .bgFilters {
     background: #e6ebff;
     border-top: 1px solid #000;
@@ -1024,13 +1032,6 @@ textarea {
         }
     }
 }
-.commonPageTitle {
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    font-weight: bold;
-}
 
 .videos {
     padding-bottom: 20px;
@@ -1049,20 +1050,16 @@ textarea {
     margin-bottom: 10px;
 }
 
-/* ------My Submissions----- */
-.tableHeader {
-    background: #000000;
-    color: #ffffff;
-}
-.txtCenter {
-    text-align: center;
-}
+/* ********************** My Submissions ********************** */
 table.tblMySubmissions {
     tbody {
         td {
-            /* padding: 5px 10px !important; */
             vertical-align: middle;
         }
+    }
+    .tableHeader {
+        background: #000000;
+        color: #ffffff;
     }
 }
 .action {
@@ -1099,63 +1096,66 @@ table.tblMySubmissions {
     }
 }
 
-/* ------My Badges------ */
-.badgeName {
-    font-size: 21px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-.badges {
-    display: flex;
-    border: 1px solid #d3d3d3;
-    border-bottom: 8px solid #000000;
-    padding: 20px;
-    margin-bottom: 20px;
-    align-items: stretch;
-    min-height: 300px;
-}
-.badgeImg {
-    flex: 1;
-    padding-right: 20px;
-    width: 500px;
-    img {
-        height: 100%;
+/* ********************** My Badges ********************** */
+.badgeSection {
+    .badgeName {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .badges {
+        display: flex;
+        border: 1px solid #d3d3d3;
+        border-bottom: 8px solid #000000;
+        padding: 20px;
+        margin-bottom: 20px;
+        align-items: stretch;
+        min-height: 300px;
+        .badgeImg {
+            flex: 1;
+            padding-right: 20px;
+            width: 500px;
+            img {
+                height: 100%;
+            }
+        }
+        .badgeInfo {
+            flex: 1;
+            padding-left: 20px;
+            border-left: 1px solid #d3d3d3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .badgeCount {
+                border-radius: 999px;
+                background: #30ea03;
+                height: 60px;
+                width: 60px;
+                text-align: center;
+                line-height: 60px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .badgeDesc {
+                margin-top: 10px;
+                font-size: 13px;
+                text-align: left;
+            }
+            .badgeCount.unActive {
+                background: #bdccff;
+                color: #ffffff;
+            }
+
+            .unActive {
+                color: #bdccff;
+            }
+        }
     }
 }
-.badgeInfo {
-    flex: 1;
-    padding-left: 20px;
-    border-left: 1px solid #d3d3d3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.badgeCount {
-    border-radius: 999px;
-    background: #30ea03;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    line-height: 60px;
-    font-size: 30px;
-    font-weight: bold;
-}
-.badgeCount.unActive {
-    background: #bdccff;
-    color: #ffffff;
-}
-.badgeDesc {
-    margin-top: 10px;
-    font-size: 13px;
-    text-align: left;
-}
-.unActive {
-    color: #bdccff;
-}
 
-/* Dashboard - Tabular Graphical Parent Container */
+/* ********************** Dashboard - Tabular Container ********************** */
 .dashboardFilterBtn {
     display: flex;
     gap: 10px;
@@ -1223,21 +1223,24 @@ table.tblMySubmissions {
         border-bottom: 2px solid #30ea03;
     }
 }
+
+/* ********************** Dashboard - Graphical Container ********************** */
 .grView {
     padding-top: 20px;
     font-weight: bold;
     font-size: 18px;
-}
-.tgTitle {
-    padding-bottom: 10px;
-    font-size: 15px;
-}
-.tgGraph {
-    border: 1px solid #b8b8b8;
-    border-bottom: 5px solid #000;
-}
-.secondrow {
-    padding-top: 20px;
+
+    .tgTitle {
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    .tgGraph {
+        border: 1px solid #b8b8b8;
+        border-bottom: 5px solid #000;
+    }
+    .secondrow {
+        padding-top: 20px;
+    }
 }
 a.uploadVideo {
     margin-left: auto;
@@ -1271,20 +1274,6 @@ a.uploadVideo {
         border: 1px solid #000;
         width: 100%;
     }
-    .videoPopBtn {
-        gap: 10px;
-        display: flex;
-        border: none;
-        background: #000;
-        color: #fff;
-    }
-}
-
-.submitButtons {
-    margin-top: 30px;
-}
-.dashboardBtns {
-    padding-top: 10px;
 }
 .videouploadingBtns {
     display: flex;
@@ -1308,25 +1297,19 @@ a.uploadVideo {
     }
 }
 
-.mobileNav {
-    .closebtn {
-        display: none;
-    }
-}
-
 /* 
-
-@mixin desktop {   @media (max-width: #{1400px}) { @content;  }}
-@mixin desktopMd {   @media (max-width: #{1280px}) { @content;  }}
-@mixin desktopSm {   @media (max-width: #{1200px}) { @content;  }}
-@mixin ipadPro {   @media (max-width: #{1366px}) { @content;  }}
-@mixin ipad {   @media (max-width: #{1024px}) { @content;  }}
-@mixin ninenine2 {   @media (max-width: #{992px}) { @content;  }}
-@mixin ninenine1 {   @media (max-width: #{991px}) { @content;  }}
-@mixin sevensix8 {   @media (max-width: #{768px}) { @content;  }}
-@mixin sevensix7 {   @media (max-width: #{767px}) { @content;  }}
-@mixin mobileMd {   @media (max-width: #{580px}) { @content;  }}
-@mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
+desktop {@media (max-width: 1400px) {@content;}}
+desktopMd {@media (max-width: 1280px) {@content;}}
+desktopSm {@media (max-width: 1200px) {@content;}}
+ipadPro {@media (max-width: 1366px) {@content;}}
+ipad {@media (max-width: 1024px) {@content;}}
+ninenine2 {@media (max-width: 992px) {@content;}}
+ninenine1 {@media (max-width: 991px) {@content;}}
+sevensix8 {@media (max-width: 768px) {@content;}}
+sevensix7 {@media (max-width: 767px) {@content;}}
+mobileMd {@media (max-width: 580px) {@content;}}
+mobileSm {@media (max-width: 450px) {@content;}}
+*/
 
 @media (max-width: 1200px) {
     .rightBar {

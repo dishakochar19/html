@@ -1,3 +1,4 @@
+/* ************************ Header ************************ */
 .header {
     background: #000;
     color: #fff;
@@ -44,7 +45,7 @@
         }
     }
 
-    .navBar {
+    .rightHeaderNavBar {
         margin-left: auto;
         font-size: 15px;
         text-align: center;
@@ -70,11 +71,8 @@
         }
     }
 }
-.rightSideNav {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
+
+/* ************************ Common Classes ************************ */
 .outerSection {
     padding: 20px;
     padding-top: 80px;
@@ -86,12 +84,14 @@
     padding: 20px;
     margin-bottom: 10px;
 }
-
-.title {
-    font-size: 34px;
-    font-weight: bold;
-    border-bottom: 7px solid #30ea03;
-    padding-bottom: 15px;
+/* ************************ Home Top Links ************************ */
+.homeTopTitle {
+    h1 {
+        font-size: 34px;
+        font-weight: bold;
+        border-bottom: 7px solid #30ea03;
+        padding-bottom: 15px;
+    }
 }
 
 .description {
@@ -99,14 +99,14 @@
     padding: 15px 0 30px 0;
 }
 
-.homeTopLinks {
+.homeTopLeftLinks {
     a {
         display: block;
         border: 1px solid #c5c5c5;
         border-radius: 6px;
         text-decoration: none;
 
-        .icon {
+        .homeTopLeftIcon {
             position: relative;
             height: 80px;
             span {
@@ -166,11 +166,10 @@
             position: absolute;
             top: 0;
             right: -10px;
-            border-radius: 0 10px 0 0;
-        } */
-        }
+            border-radius: 0 10px 0 0;*/
+        }   
 
-        .cta {
+        h5 {
             font-weight: bold;
             display: flex;
             justify-content: center;
@@ -185,7 +184,7 @@
     }
 }
 
-.rightNav {
+.homeTopRightLinks {
     ul {
         li {
             a {
@@ -263,6 +262,7 @@
         }
     }
 }
+/* ************************ Calendar & New Events ************************ */
 a.calendarBox {
     background: #f6ff00;
     padding: 20px;
@@ -291,7 +291,7 @@ a.eventBox {
         span {
             font-weight: bold;
         }
-        >div{
+        > div {
             padding: 3px 0;
         }
     }
@@ -303,11 +303,14 @@ a.eventBox {
         }
     }
 }
+/* ************************ Quick Links ************************ */
 .quickLinkSection {
     background: #000;
     color: #ffff;
     margin-bottom: 30px;
-
+    .commonTitle {
+        display: flex;
+    }
     h1::before {
         content: "";
         display: block;
@@ -317,9 +320,8 @@ a.eventBox {
 
     h1::after {
         content: "";
-        margin-top: 5px;
         display: block;
-        width: 100px;
+        margin-top: 5px;
         height: 1px;
         border: 1px solid #30ea03;
     }
@@ -342,7 +344,7 @@ a.eventBox {
                     display: block;
                     padding: 10px;
                     text-decoration: none;
-                    margin: 0 0 10px 0;
+                    /* margin: 0 0 10px 0; */
                     background: #fff;
                     > div {
                         display: flex;
@@ -377,11 +379,14 @@ a.eventBox {
     }
 }
 
+/* ************************ Additional Resources ************************ */
 .referenceSection {
     background: #000;
     color: #ffff;
     margin-bottom: 30px;
-
+    .commonTitle {
+        display: flex;
+    }
     h1::before {
         content: "";
         display: block;
@@ -391,9 +396,9 @@ a.eventBox {
 
     h1::after {
         content: "";
-        margin-top: 5px;
         display: block;
-        width: 180px;
+        margin-top: 5px;
+        /* width: 100px; */
         height: 1px;
         border: 1px solid #30ea03;
     }
@@ -416,7 +421,6 @@ a.eventBox {
                     display: block;
                     padding: 10px;
                     text-decoration: none;
-                    margin: 0 0 10px 0;
                     background: #fff;
                     > div {
                         display: flex;
@@ -441,6 +445,7 @@ a.eventBox {
                         }
                     }
                 }
+
                 a:hover {
                     transition: all 0.3s ease-in-out;
                     background: #30ea03;
@@ -455,6 +460,17 @@ a.eventBox {
         height: 100px;
     }
 }
+
+/* ************************ Footer ************************ */
+.footerBg {
+    background-color: #11174b;
+    color: #ffff;
+    display: flex;
+    padding: 5px 20px;
+    .designCredit {
+        margin-left: auto;
+    }
+}
 /* @mixin desktop =   @media (max-width: #{1400px}) { @content;  }   
 @mixin desktopMd =   @media (max-width: #{1280px}) { @content;  }   
 @mixin desktopSm {   @media (max-width: #{1200px}) { @content;  }   }
@@ -467,56 +483,11 @@ a.eventBox {
 @mixin mobileMd {   @media (max-width: #{580px}) { @content;  }}
 @mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
 
-@media screen and (max-width: 767px) {
-    .navBar {
-        background: black;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        position: fixed;
-        display: none;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        transition: all 0.3s ease-out;
+@media screen and (max-width: 430px) {
+    .homeTopLeftLinks {
+        padding: 10px 0;
+    }
+    .quickLinkSection {
         width: 100%;
-        ul {
-            flex-direction: column;
-        }
-    }
-    .navBar.showMenu {
-        display: block;
-    }
-    /* .rightmenuBars{
-        display: block;
-        position: fixed;
-        right: 20px;
-        top: 20px;
-        color: #cccc;
-        z-index: 101;
-    } */
-    .navbar-right {
-        margin-right: 0;
-    }
-    .navbar-toggle {
-        border: none;
-        background: none !important;
-        position: relative;
-        display: inline-block;
-    }
-    .icon-bar {
-        background: #333;
-        display: block;
-        height: 4px;
-        width: 30px;
-        margin: 6px 0;
-        transition: all 0.3s ease;
-    }
-    .navbar-toggle.active .icon-bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .navbar-toggle.active .icon-bar:nth-child(2) {
-        opacity: 0;
-    }
-    .navbar-toggle.active .icon-bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
     }
 }
