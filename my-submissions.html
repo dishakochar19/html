@@ -25,15 +25,19 @@
         <div class="outerSection row">
 
             <div class="col-md-3 leftBar">
+                <span class="leftSideNav" onclick="openNav()">
+                    &#9776;
+                </span>
                 <h1 class="commonLogo">
                     <a href="index.html">
                         <span>ABC</span>
                     </a>
                 </h1>
+
                 <p class="logoTagline">
                     <span>A.B.C</span>
                 </p>
-                <span class="leftSideNav" onclick="openNav()">&#9776;</span>
+
                 <div class="subSection mobileNav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div>
@@ -109,7 +113,8 @@
                     </div>
                 </div>
 
-                <div class="subSection">
+                <div class="subSection mobileNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="homeTitle">
                         <i class="homeTitleIcon">
                             <i class="ri-link"></i>
@@ -167,383 +172,411 @@
 
                     <div class="commonStripBanner img-responsive">
                         <span><img src="https://www.w3schools.com/bootstrap/chicago.jpg"></span>
-                    </div>
 
 
-                    <div class="tableViewScroll">
-                        <table class="table table-bordered tblMySubmissions">
-                            <thead>
-                                <tr class="tableHeader">
-                                    <th class="txtCenter">#</th>
-                                    <th style="min-width: 200px;">Story Name</th>
-                                    <th>Category</th>
-                                    <th>Submission Date</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="txtCenter">1</td>
-                                    <td>Automation of VQD process flow</td>
-                                    <td>Success Story</td>
-                                    <td>07/01/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <div>
+                        <div class="tableViewScroll">
+                            <table class="table table-bordered tblMySubmissions">
+                                <thead>
+                                    <tr class="tableHeader">
+                                        <th class="txtCenter">#</th>
+                                        <th style="min-width: 200px;">Story Name</th>
+                                        <th>Category</th>
+                                        <th>Submission Date</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="txtCenter">1</td>
+                                        <td>Automation of VQD process flow</td>
+                                        <td>Success Story</td>
+                                        <td>07/01/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <div>
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon" data-toggle="modal"
+                                                    data-target="#modalEditStory">
+                                                    <i class="ri-edit-box-line"></i>
+                                                </a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">2</td>
+                                        <td>Gamification of ALCOA Training </td>
+                                        <td>Best Practices</td>
+                                        <td>17/01/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <div>
+                                                <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                                <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                                <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">3</td>
+                                        <td>Lessons learned from recall of defected tablets</td>
+                                        <td>Lessons Learned</td>
+                                        <td>11/03/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
                                             <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                            <a href="#" class="editIcon" data-toggle="modal"
-                                                data-target="#modalEditStory">
-                                                <i class="ri-edit-box-line"></i>
-                                            </a>
-                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">2</td>
-                                    <td>Gamification of ALCOA Training </td>
-                                    <td>Best Practices</td>
-                                    <td>17/01/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <div>
+                                            <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon unActive"><i
+                                                    class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">4</td>
+                                        <td>Optimizing Prodcut Release Cycle Through Automation</td>
+                                        <td>Success Story</td>
+                                        <td>24/04/2024</td>
+                                        <td>Rejected</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon unActive"><i
+                                                    class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">5</td>
+                                        <td>Enhancing Data Accuracy with Real-Time Quality Automation</td>
+                                        <td>Success Story</td>
+                                        <td>19/05/2024</td>
+                                        <td>Pending</td>
+                                        <td class="action">
                                             <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
                                             <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
                                             <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">3</td>
-                                    <td>Lessons learned from recall of defected tablets</td>
-                                    <td>Lessons Learned</td>
-                                    <td>11/03/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon unActive"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">4</td>
-                                    <td>Optimizing Prodcut Release Cycle Through Automation</td>
-                                    <td>Success Story</td>
-                                    <td>24/04/2024</td>
-                                    <td>Rejected</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon unActive"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">5</td>
-                                    <td>Enhancing Data Accuracy with Real-Time Quality Automation</td>
-                                    <td>Success Story</td>
-                                    <td>19/05/2024</td>
-                                    <td>Pending</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">6</td>
-                                    <td>Standardizing Quality Audits or Global Consistency</td>
-                                    <td>Best Practices</td>
-                                    <td>03/06/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon unActive"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">7</td>
-                                    <td>Implementing Risk-Based Approach in Qulaity Assessments</td>
-                                    <td>Best Practices</td>
-                                    <td>27/08/2024</td>
-                                    <td>Pending</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">8</td>
-                                    <td>Streamlining Documentation for Regulatory Compliance</td>
-                                    <td>Best Practices</td>
-                                    <td>12/10/2024</td>
-                                    <td>Approved</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">9</td>
-                                    <td>Key Takeways from Supply Chain Disruptions</td>
-                                    <td>Lessons Learned</td>
-                                    <td>05/11/2024</td>
-                                    <td>Rejected</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="txtCenter">10</td>
-                                    <td>Insights Gained from Handling Non-Compformance Incidents</td>
-                                    <td>Lessons Learned</td>
-                                    <td>15/12/2024</td>
-                                    <td>Draft</td>
-                                    <td class="action">
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon unActive"><i class="ri-delete-bin-line"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">6</td>
+                                        <td>Standardizing Quality Audits or Global Consistency</td>
+                                        <td>Best Practices</td>
+                                        <td>03/06/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon unActive"><i
+                                                    class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">7</td>
+                                        <td>Implementing Risk-Based Approach in Qulaity Assessments</td>
+                                        <td>Best Practices</td>
+                                        <td>27/08/2024</td>
+                                        <td>Pending</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">8</td>
+                                        <td>Streamlining Documentation for Regulatory Compliance</td>
+                                        <td>Best Practices</td>
+                                        <td>12/10/2024</td>
+                                        <td>Approved</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">9</td>
+                                        <td>Key Takeways from Supply Chain Disruptions</td>
+                                        <td>Lessons Learned</td>
+                                        <td>05/11/2024</td>
+                                        <td>Rejected</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="txtCenter">10</td>
+                                        <td>Insights Gained from Handling Non-Compformance Incidents</td>
+                                        <td>Lessons Learned</td>
+                                        <td>15/12/2024</td>
+                                        <td>Draft</td>
+                                        <td class="action">
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" class="editIcon unActive"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon unActive"><i
+                                                    class="ri-delete-bin-line"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
 
-                <!-- ----------Pagination-------- -->
-                <div class="pagination-container">
-                    <!-- Previous Button -->
-                    <i class="ri-arrow-left-s-fill"></i>
+                    <!-- ----------Pagination-------- -->
+                    <div class="pagination-container">
+                        <!-- Previous Button -->
+                        <i class="ri-arrow-left-s-fill"></i>
 
-                    <!-- Page Input -->
-                    <input type="number" id="pageInput" class="form-control" style="width: 60px;" min="1" value="1"
-                        oninput="goToInputPage()">
+                        <!-- Page Number Buttons -->
+                        <!-- <ul class="pagination">
+                        <li id="page1" class="active"><a href="#" onclick="goToPage(1)">1</a></li>
+                        <li id="page2"><a href="#" onclick="goToPage(2)">2</a></li>
+                    </ul> -->
 
-                    <!--  Button -->
-                    <i class="ri-arrow-right-s-fill"></i>
+                        <input type="number" id="pageInput" class="form-control" min="1" value="1"
+                            oninput="goToInputPage()">
 
-                    <!-- Items Per Page Dropdown -->
-                    <select id="itemsPerPage" class="form-control" style="width: 80px;" onchange="updatePagination()">
-                        <option value="3">3</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                    </select>
-                    <span style="color: #0000ff;">
-                        items per page
-                    </span>
-                    <!-- Item Count Display -->
-                    <span class="pagination-summary" id="itemSummary">1- 3 of 19 items</span>
-                    <div>
-                        <i class="ri-reset-right-fill"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <i class="ri-arrow-right-s-fill"></i>
 
-    <div id="modalEditStory" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">
-                        <span>
-                            <i class="ri-file-list-3-line"></i>
+                        <select id="itemsPerPage" class="form-control" onchange="updatePagination()">
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                        <span class="pgCountText">
+                            items per page
                         </span>
-                        <b> Edit a story</b>
-                    </h4>
+                        <span class="pagination-summary" id="itemSummary">1- 3 of 19 items</span>
+                        <div>
+                            <i class="ri-reset-right-fill"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div class="subSection">
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    Category
-                                    <span class="impMark">*</span>
-                                </div>
-                                <div class="col-md-9">
-                                    <select class="form-control storySelection" name="" id="">
-                                        <option value="Success Stories" selected="select"> --Select All--</option>
-                                    </select>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    Title of the story
-                                    <span class=" impMark">*</span>
-                                </div>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control"
-                                        placeholder="Enter story title (e.g, Automation of VQD process flow)">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    Description
-                                    <span class=" impMark">*</span>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="descBx">
-                                        <textarea class=" form-control textareaLarge" name="" id=""
-                                            placeholder="Enter description"></textarea>
+            </div>
+        </div>
+
+        <div id="modalEditStory" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            <span>
+                                <i class="ri-file-list-3-line"></i>
+                            </span>
+                            <b> Edit a story</b>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="subSection">
+                            <div class="storyContainer">
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            Category
+                                            <span class="impMark">*</span>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <select class="form-control" name="" id="">
+                                                <option value="Success Stories" selected="select"> --Select All--
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="clearfix"></div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    Add keywords
-                                    <span class=" impMark">*</span>
-                                </div>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control"
-                                        placeholder="Enter keywords (e.g, #VQD #automation)">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    Who are the main charcters of the story
-                                </div>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control"
-                                        placeholder="Enter name (e.g, Anil, Chetan, Peeyush)">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    What was the main problem/challenge?
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="descBx">
-                                        <textarea class="form-control textareaMedium" id=""
-                                            placeholder="Describe the main challenge that the project aimed to solve"></textarea>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3 ">
+                                            Title of the story
+                                            <span class=" impMark">*</span>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter story title (e.g, Automation of VQD process flow)">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    How was it addressed what actions were taken
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="descBx">
-                                        <textarea class="form-control textareaMedium" id=""
-                                            placeholder="Describe the actions taken to solve the problem"></textarea>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            Description
+                                            <span class="impMark">*</span>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="descBx">
+                                                <textarea class="form-control textareaLarge" name="" id=""
+                                                    placeholder="Enter description"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    What was the result
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="descBx">
-                                        <textarea class="form-control textareaMedium" id=""
-                                            placeholder="Describe the outcome of the project"></textarea>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            Add keywords
+                                            <span class=" impMark">*</span>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter keywords (e.g, #VQD #automation)">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    What does the story teach us
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="descBx">
-                                        <textarea class="form-control textareaMedium" id=""
-                                            placeholder="Describe the key lessons learned from the project"></textarea>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            Who are the main charcters of the story
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter name (e.g, Anil, Chetan, Peeyush)">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    I send this story from (BU)
-                                    <span class="impMark">*</span>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            What was the main problem/challenge?
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="descBx">
+                                                <textarea class="form-control textareaMedium" id=""
+                                                    placeholder="Describe the main challenge that the project aimed to solve"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-9">
-                                    <select class="form-control storySelection">
-                                        <option value="Success Stories" selected="select"> --Select All--</option>
-                                    </select>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            How was it addressed what actions were taken
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="descBx">
+                                                <textarea class="form-control textareaMedium" id=""
+                                                    placeholder="Describe the actions taken to solve the problem"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    Upload file
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            What was the result
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="descBx">
+                                                <textarea class="form-control textareaMedium" id=""
+                                                    placeholder="Describe the outcome of the project"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-9">
-                                    <input type="file">
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            What does the story teach us
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="descBx">
+                                                <textarea class="form-control textareaMedium" id=""
+                                                    placeholder="Describe the key lessons learned from the project"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="form-group storyTitle">
-                            <div class="row">
-                                <div class="col-md-3"></div>
-                                <div class="col-md-9">
-                                    <div class="newStoryPageBtn">
-                                        <button class=" btnCommon btnGreen">
-                                            Submit
-                                            <i class="ri-check-line"></i>
-                                        </button>
-                                        <button class=" btnCommon btnBlack">
-                                            Cancel
-                                            <i class="ri-close-large-line"></i>
-                                        </button>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            I send this story from (BU)
+                                            <span class="impMark">*</span>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <select class="form-control">
+                                                <option value="Success Stories" selected="select"> --Select All--
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row storyFormTitle">
+                                        <div class="col-md-3">
+                                            Upload file
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="file">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-3 txtRight"></div>
+                                        <div class="col-md-9">
+                                            <div class="newStoryBtn">
+                                                <button class=" btnCommon btnGreen">
+                                                    Submit
+                                                    <i class="ri-check-line"></i>
+                                                </button>
+                                                <button class=" btnCommon btnBlack">
+                                                    Cancel
+                                                    <i class="ri-close-large-line"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
 
-    <script>
-        function openNav() {
-            const winWidth = window.innerWidth;
-            if (winWidth < 992) {
-                document.querySelector(".mobileNav").classList.add('showMenu');
+
+
+
+
+
+        <div class="col-md-9">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+        <script>
+            function openNav() {
+                const winWidth = window.innerWidth;
+                if (winWidth < 992) {
+                    document.querySelector(".mobileNav").classList.add('showMenu');
+                }
             }
-        }
 
-        function closeNav() {
-            document.querySelector(".mobileNav").classList.remove('showMenu');
-        }
-    </script>
+            function closeNav() {
+                document.querySelector(".mobileNav").classList.remove('showMenu');
+            }
+        </script>
 </body>
 
 </html>

@@ -100,6 +100,41 @@ body {
         width: 100%;
     }
 }
+.outerSection {
+    padding: 20px;
+}
+
+/* ************************ Pagination ************************ */
+.pagination-container {
+    cursor: pointer;
+    display: flex;
+    padding: 5px 15px;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #aaaaaa;
+    border-radius: 6px;
+    line-height: 0.5;
+    a{
+        text-decoration: none;
+        display: block;
+    }
+    input {
+        width: 50px;
+    }
+    select {
+        width: 55px;
+    }
+    .pgCountText {
+        color: #0000ff;
+        margin-left: 10px;
+    }
+    .pagination-summary {
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+}
+
 /********************** carousel ********************** */
 .glyphicon-chevron-right {
     background: #545454;
@@ -213,6 +248,11 @@ body {
     background-color: #30ea03;
     color: #000;
 }
+.btnPink,
+.btnPink:hover {
+    background-color: #ff93e9;
+    color: #000;
+}
 .btnBlack,
 .btnBlack:hover {
     background-color: #000;
@@ -224,12 +264,7 @@ body {
     color: #000;
 }
 
-/* ------Sections------ */
-.outerSection {
-    padding: 20px;
-}
-
-/* -------Posts------- */
+/* ************************ Posts ************************ */
 .postContent {
     .authorProfile {
         display: flex;
@@ -428,7 +463,7 @@ body {
         margin-top: 40px;
     }
 
-    /* -----Comment Section------ */
+    /* ************************ Comment Section ************************ */
     .commmentHead {
         font-weight: bold;
         font-size: 21px;
@@ -487,7 +522,7 @@ body {
     }
 }
 
-/* -------LeftBar------- */
+/* ************************ Left Bar ************************ */
 .leftBar {
     .commonLogo {
         cursor: pointer;
@@ -554,7 +589,7 @@ body {
     }
 }
 
-/* -------MidBar------- */
+/* ************************ Mid Bar ************************ */
 .midBar {
     .midHead {
         display: flex;
@@ -563,6 +598,7 @@ body {
         .storyHead {
             font-size: 30px;
             font-weight: bold;
+            flex-shrink: 0;
         }
 
         .searchBar {
@@ -572,7 +608,7 @@ body {
             flex-grow: 1;
 
             input {
-                padding: 5px 10px;
+                padding: 5px 8px;
                 border-radius: 6px;
                 flex-grow: 1;
                 border: 1px solid #000000;
@@ -583,14 +619,14 @@ body {
 
         .searchInputBtn {
             height: 45px;
-            width: 45px;
+            padding: 5px;
             i {
-                font-size: 40px;
+                font-size: 30px;
             }
         }
     }
 
-    /* ------silde----- */
+    /* ************************ Slide ************************ */
     .slideSection {
         display: flex;
         flex-direction: column;
@@ -657,7 +693,7 @@ body {
     .videoBar {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         .videoIcon {
             margin-right: 15px;
@@ -774,16 +810,9 @@ body {
             padding: 5px;
         }
     }
-    .spotlightVideosFilterBtn {
-        display: flex;
-        gap: 10px;
-        padding-bottom: 10px;
-        .btnCommon {
-            padding: 5px 10px;
-        }
-        i {
-            margin-left: 5px;
-        }
+    .filterBtn {
+        width: 70px;
+        padding: 8px;
     }
     .MessageBox {
         display: inline-block;
@@ -883,27 +912,6 @@ body {
     }
 }
 
-/* ************************ Pagination ************************ */
-.pagination-container {
-    cursor: pointer;
-    display: flex;
-    padding: 5px;
-    align-items: center;
-    background: #ffffff;
-    border: 1px solid #aaaaaa;
-    border-radius: 6px;
-    .nextPrevBtns {
-        max-width: 40px;
-    }
-    .pgCount {
-        color: #0000ff;
-    }
-    .pagination-summary {
-        font-weight: bold;
-        margin-left: auto;
-    }
-}
-
 /*.pagination {
     display: inline-block;
     padding-left: 0;
@@ -998,41 +1006,17 @@ textarea {
     background: #e6ebff;
     border-top: 1px solid #000;
     padding: 20px;
-    margin-bottom: 10px;
-    .spotlightFilters {
-        display: flex;
-        gap: 20px;
-        padding-bottom: 20px;
+    margin-bottom: 20px;
 
-        .inputBox {
-            padding: 10px;
-            width: 100%;
-            border-radius: 6px;
-            border: 1px solid #000;
-        }
-        .selectBox {
-            padding: 10px;
-            width: 100%;
-            border-radius: 6px;
-            border: 1px solid #000;
-        }
-        .keyword {
-            flex: 5;
-        }
-        .categoryFilter {
-            flex: 2;
-        }
-        .buttonSection {
-            flex: 2;
-        }
-        .formTitle {
-            font-weight: bold;
-            padding-bottom: 5px;
-            display: block;
+    .spotlightVideosFilterBtn {
+        display: flex;
+        margin: 15px 0;
+        gap: 10px;
+        i {
+            margin-left: 10px;
         }
     }
 }
-
 .videos {
     padding-bottom: 20px;
     a {
@@ -1043,11 +1027,10 @@ textarea {
         padding-top: 5px;
         color: #000000;
     }
-}
-
-.imgBox {
-    width: 100%;
-    margin-bottom: 10px;
+    .imgBox {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 /* ********************** My Submissions ********************** */
@@ -1159,7 +1142,7 @@ table.tblMySubmissions {
 .dashboardFilterBtn {
     display: flex;
     gap: 10px;
-    padding-bottom: 10px;
+    margin: 25px 0 0 0;
     .btnCommon {
         padding: 5px 10px;
     }
@@ -1169,10 +1152,13 @@ table.tblMySubmissions {
 }
 .tgContainer {
     border: 1px solid #30ea03;
-    padding: 20px;
+    padding: 20px 20px;
+    /* padding: 20px 0 0 0; */
     display: block;
 }
-
+.tvStoryNameTitle {
+    min-width: 200px;
+}
 .tabsContainer {
     display: flex;
     width: 100%;
@@ -1196,7 +1182,7 @@ table.tblMySubmissions {
         border: none;
         outline: none;
         cursor: pointer;
-        padding: 10px 20px;
+        padding: 10px;
         transition: 0.3s;
         font-size: 18px;
         display: block;
@@ -1204,6 +1190,9 @@ table.tblMySubmissions {
         border-top: 5px solid #000;
         border-left: 1px solid #30ea03;
         text-decoration: none;
+        span{
+            font-size: 16px;
+        }
     }
 
     ul.tabs li a:hover,
@@ -1216,6 +1205,7 @@ table.tblMySubmissions {
 }
 .exportExcel {
     margin-left: auto;
+
     a {
         text-decoration: none;
     }
@@ -1231,22 +1221,22 @@ table.tblMySubmissions {
     font-size: 18px;
 
     .tgTitle {
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         font-size: 15px;
+        h1{
+            margin-bottom: 5px;
+        }
     }
     .tgGraph {
         border: 1px solid #b8b8b8;
         border-bottom: 5px solid #000;
     }
-    .secondrow {
-        padding-top: 20px;
-    }
 }
 a.uploadVideo {
     margin-left: auto;
     background: #30ea03;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 8px;
     display: flex;
     gap: 10px;
     border-radius: 6px;
@@ -1319,11 +1309,6 @@ mobileSm {@media (max-width: 450px) {@content;}}
             }
         }
     }
-    .midBar {
-        .midHead {
-            gap: 10px;
-        }
-    }
 }
 
 @media (max-width: 991px) {
@@ -1332,6 +1317,7 @@ mobileSm {@media (max-width: 450px) {@content;}}
     }
     .leftSideNav {
         display: block;
+        float: right;
     }
     .mobileNav {
         height: 100%;
@@ -1410,17 +1396,71 @@ mobileSm {@media (max-width: 450px) {@content;}}
             }
         }
     }
-    .filterBtn {
-        padding-top: 0px;
-    }
 }
 
-/* -------Side navigation-------- */
-@media screen and (max-height: 450px) {
+@media (max-width: 450px) {
     .sidenav {
         padding-top: 15px;
     }
     .sidenav a {
         font-size: 18px;
+    }
+    .midBar {
+        .midHead {
+            gap: 20px;
+        }
+    }
+    .pagination-container {
+        margin-bottom: 20px;
+        input {
+            width: 35px;
+        }
+    }
+    .storyContainer {
+        .storyFormTitle {
+            text-align: left;
+        }
+    }
+    .badgeSection {
+        .badges {
+            .badgeImg {
+                width: 100%;
+                display: block;
+            }
+            .badgeInfo {
+                display: flex;
+                > div {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    .videos {
+        .imgSection {
+            margin-bottom: 0;
+        }
+    }
+    .subSection {
+        .internalPageTitle {
+            .uploadVideo {
+                flex-shrink: 1;
+            }
+        }
+    }
+    .commonPageTitle {
+        font-size: 24px;
+    }
+    .tgContainer {
+        padding: 0;
+        margin-top: 1px;
+        border: none;
+    }
+    .tabsContainer {
+        padding: 20px 0px 31px 0px;
+        margin-top: 50px;
+    }
+    .exportExcel {
+        position: absolute;
+        top: -40px;
     }
 }

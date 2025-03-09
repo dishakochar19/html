@@ -25,17 +25,19 @@
         <div class="outerSection row">
 
             <div class="col-md-3 leftBar">
+                <span class="leftSideNav" onclick="openNav()">
+                    &#9776;
+                </span>
                 <h1 class="commonLogo">
                     <a href="index.html">
                         <span>ABC</span>
                     </a>
                 </h1>
+
                 <p class="logoTagline">
                     <span>A.B.C</span>
                 </p>
-                <span class="leftSideNav" onclick="openNav()">
-                    &#9776;
-                </span>
+
                 <div class="subSection mobileNav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div>
@@ -111,7 +113,8 @@
                     </div>
                 </div>
 
-                <div class="subSection">
+                <div class="subSection mobileNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="homeTitle">
                         <i class="homeTitleIcon">
                             <i class="ri-link"></i>
@@ -154,7 +157,6 @@
                 </div>
             </div>
 
-            <!-- Video Bar  -->
             <div class="col-md-9">
                 <div class="subSection">
                     <div class="internalPageTitle">
@@ -168,48 +170,37 @@
                         <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                     </div>
                     <div class="bgFilters">
-                        <div class="filtersContainer">
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <i class="ri-article-line"></i>
-                                    <label>Keywords</label>
-                                    <input type="text" class="form-control"
-                                        placeholder="Enter keywords (e.g. quality, innovation)">
-                                </div>
-                                <div class="col-sm-3 form-group">
-                                    <i class="ri-article-line"></i>
-                                    <label>Category Name</label>
-                                    <select class="form-control">
-                                        <option value="" selected="Select All">---Select All---</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="filterBtn">
-                                        <div class="spotlightVideosFilterBtn">
-                                            <button class="btnCommon btnGreen">
-                                                Submit
-                                                <i class="ri-check-line"></i>
-                                            </button>
-                                            <button class="btnCommon btnTeal">
-                                                Reset
-                                                <i class="ri-close-large-line"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <i class="ri-article-line"></i>
+                                <label>Keywords</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Enter keywords (e.g. quality, innovation)">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                                <i class="ri-article-line"></i>
+                                <label>Category Name</label>
+                                <select class="form-control">
+                                    <option value="" selected="Select All">---Select All---</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 form-group spotlightVideosFilterBtn">
+                                <button class=" btnCommon btnGreen">
+                                    Submit
+                                    <i class="ri-check-line"></i>
+                                </button>
+                                <button class=" btnCommon btnBlack">
+                                    Cancel
+                                    <i class="ri-close-large-line"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
 
-
-
-
-
-                    <!-------Video Section--------->
                     <div class="row">
                         <div class="col-md-4 videos">
                             <a href="#">
-                                <div class="imgBox">
+                                <div class="imgSection">
                                     <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                 </div>
                                 <p>Breaking Barriers: A jouney to success</p>
@@ -217,7 +208,7 @@
                         </div>
                         <div class="col-md-4 videos">
                             <a href="#">
-                                <div class="imgBox">
+                                <div class="imgSection">
                                     <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                 </div>
                                 <p>Breaking Barriers: A jouney to success</p>
@@ -225,7 +216,7 @@
                         </div>
                         <div class="col-md-4 videos">
                             <a href="#">
-                                <div class="imgBox">
+                                <div class="imgSection">
                                     <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                 </div>
                                 <p>Breaking Barriers: A jouney to success</p>
@@ -235,7 +226,7 @@
                     <div class="row">
                         <div class="col-md-4 videos">
                             <a href="#">
-                                <div class="imgBox">
+                                <div class="imgSection">
                                     <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                 </div>
                                 <p>Breaking Barriers: A jouney to success</p>
@@ -243,7 +234,7 @@
                         </div>
                         <div class="col-md-4 videos">
                             <a href="#">
-                                <div class="imgBox">
+                                <div class="imgSection">
                                     <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                 </div>
                                 <p>Breaking Barriers: A jouney to success</p>
@@ -251,7 +242,7 @@
                         </div>
                         <div class="col-md-4 videos">
                             <a href="#">
-                                <div class="imgBox">
+                                <div class="imgSection">
                                     <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
                                 </div>
                                 <p>Breaking Barriers: A jouney to success</p>

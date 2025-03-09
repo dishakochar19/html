@@ -25,17 +25,19 @@
         <div class="outerSection row">
 
             <div class="col-md-3 leftBar">
+                <span class="leftSideNav" onclick="openNav()">
+                    &#9776;
+                </span>
                 <h1 class="commonLogo">
                     <a href="index.html">
                         <span>ABC</span>
                     </a>
                 </h1>
+
                 <p class="logoTagline">
                     <span>A.B.C</span>
                 </p>
-                <span class="leftSideNav" onclick="openNav()">
-                    &#9776;
-                </span>
+
                 <div class="subSection mobileNav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div>
@@ -111,7 +113,8 @@
                     </div>
                 </div>
 
-                <div class="subSection">
+                <div class="subSection mobileNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="homeTitle">
                         <i class="homeTitleIcon">
                             <i class="ri-link"></i>
@@ -165,63 +168,78 @@
                     </div>
 
                     <div class="commonStripBanner img-responsive">
-                        <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
+                        <span><img src="https://www.w3schools.com/bootstrap/chicago.jpg"></span
                     </div>
 
                     <div class="bgFilters">
-                        Input box to come here
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <i class="ri-article-line"></i>
+                                <label>Keywords</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Enter keywords (e.g. quality, innovation)">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                                <i class="ri-article-line"></i>
+                                <label>Category Name</label>
+                                <select class="form-control">
+                                    <option value="" selected="Select All">---Select All---</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 form-group spotlightVideosFilterBtn">
+                                <button class=" btnCommon btnGreen">
+                                    Submit
+                                    <i class="ri-check-line"></i>
+                                </button>
+                                <button class=" btnCommon btnBlack">
+                                    Cancel
+                                    <i class="ri-close-large-line"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-
-
-
-                    <!-- ----Table Data----- -->
-                    <table class="table table-bordered eventTbl">
-                        <thead>
-                            <tr class="tableHeader">
-                                <th class="txtCenter">S No.</th>
-                                <th>Video Title</th>
-                                <th>Uploaded By</th>
-                                <th>Uploading Date</th>
-                                <th style="min-width: 200px;">Category</th>
-                                <th>Keywords</th>
-                                <th>Description</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-
-
-                        <!-- delete existing file to be written in pop up -->
-
-
-
-
-                        <tbody>
-                            <tr class="data">
-                                <td class="txtCenter">1</td>
-                                <td>Test, Learn and Scale - Kick Off</td>
-                                <td>Motivational</td>
-                                <td>Anil</td>
-                                <td>13 Jan, 2025</td>
-                                <td>#VQD , #training</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur
-                                    architecto
-                                    nostrum delectus. Earum ad non facere adipisci mollitia voluptatibus ex. Id beatae
-                                    cumque
-                                    expedita suscipit laudantium dolorum necessitatibus tempore.</td>
-                                <td class="action">
-                                    <div>
-                                        <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#modalUploadVideo"
-                                            class="editIcon"><i class="ri-edit-box-line"></i></a>
-                                        <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="tableViewScroll">
+                        <table class="table table-bordered eventTbl">
+                            <thead>
+                                <tr class="tableHeader">
+                                    <th class="txtCenter">S No.</th>
+                                    <th>Video Title</th>
+                                    <th>Uploaded By</th>
+                                    <th>Uploading Date</th>
+                                    <th style="min-width: 200px;">Category</th>
+                                    <th>Keywords</th>
+                                    <th>Description</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="data">
+                                    <td class="txtCenter">1</td>
+                                    <td>Test, Learn and Scale - Kick Off</td>
+                                    <td>Motivational</td>
+                                    <td>Anil</td>
+                                    <td>13 Jan, 2025</td>
+                                    <td>#VQD , #training</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur
+                                        architecto
+                                        nostrum delectus. Earum ad non facere adipisci mollitia voluptatibus ex. Id
+                                        beatae
+                                        cumque
+                                        expedita suscipit laudantium dolorum necessitatibus tempore.</td>
+                                    <td class="action">
+                                        <div>
+                                            <a href="#" class="searchIcon"><i class="ri-search-eye-line"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#modalUploadVideo"
+                                                class="editIcon"><i class="ri-edit-box-line"></i></a>
+                                            <a href="#" class="deleteIcon"><i class="ri-delete-bin-line"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -254,7 +272,8 @@
                         </div>
                         <div class="videoTitle">
                             <span>Add keyword:</span>
-                            <span><input type="text" class="form-control" placeholder="Enter keyword (e.g. quality, innovation)"></span>
+                            <span><input type="text" class="form-control"
+                                    placeholder="Enter keyword (e.g. quality, innovation)"></span>
                         </div>
                         <div class="videoTitle">
                             <span>Category:</span>
