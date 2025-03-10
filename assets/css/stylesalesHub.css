@@ -1,40 +1,56 @@
+body {
+    font-weight: normal;
+    font-size: 13px;
+}
 /* ************************ Header ************************ */
 .header {
     background: #000;
     color: #fff;
-    /* padding: 20px; */
     width: 100%;
     text-align: center;
 
-    .commonLogo {
-        display: flex;
-        gap: 10px;
-        align-items: center;
+    /* .commonLogo { */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    a {
+        display: block;
+        text-decoration: none;
         h1 {
             font-weight: bold;
             font-size: 20px;
             border-right: 1px solid #ffff;
             padding: 15px;
-            cursor: pointer;
         }
-        span {
-            color: #30ea03;
+        &&:hover {
+            h1 {
+                color: #fff;
+                span {
+                    color: #30ea03;
+                }
+            }
         }
     }
+
+    span {
+        color: #30ea03;
+    }
+    /* } */
     .subHeader {
         display: flex;
         align-items: center;
+        padding: 5px;
         i {
             font-size: 30px;
         }
     }
-    .titleName {
+    a.titleName {
         margin-left: 10px;
         font-weight: bold;
         font-size: 15px;
         display: block;
-
-        span {
+        text-decoration: none;
+        h4 {
             color: #fff;
         }
         .titleBar {
@@ -167,7 +183,7 @@
             top: 0;
             right: -10px;
             border-radius: 0 10px 0 0;*/
-        }   
+        }
 
         h5 {
             font-weight: bold;
@@ -463,7 +479,7 @@ a.eventBox {
 
 /* ************************ Footer ************************ */
 .footerBg {
-    background-color: #11174b;
+    background: #11174b;
     color: #ffff;
     display: flex;
     padding: 5px 20px;

@@ -60,7 +60,7 @@
     border-radius: 8px;
     padding: 20px;
     margin-top: 80px;
-    background-color: #efefef;
+    background: #efefef;
 }
 .mainInternal {
     width: 95vw;
@@ -137,7 +137,7 @@
 .exportExcel {
     padding: 7px 10px;
     float: right;
-    background-color: #30ea03;
+    background: #30ea03;
     border-radius: 6px;
     font-weight: bold;
     margin-top: 25px;
@@ -219,7 +219,7 @@
 
 /* ************************ Footer ************************ */
 .footerBg {
-    background-color: #11174b;
+    background: #11174b;
     margin-top: 100px;
     color: #ffff;
     display: flex;
@@ -257,7 +257,7 @@
     padding: 20px;
     /* margin-top: 20px 10px; */
     margin: 10px 0;
-    background-color: #cde9ff;
+    background: #cde9ff;
     border-left: 6px solid #30ea03;
 }
 
@@ -289,12 +289,12 @@
     }
 }
 .bgFilter {
-    background-color: #ddf1ff;
+    background: #ddf1ff;
     .sideBdr {
         padding: 30px 40px;
     }
     .category {
-        background-color: #30ea03;
+        background: #30ea03;
         padding: 10px;
         font-weight: bold;
         /* margin: 0 0 10px 0; */
@@ -312,7 +312,7 @@
                 display: flex;
                 margin-bottom: 10px;
                 > div:first-child {
-                    background-color: #9c9c9ccc;
+                    background: #9c9c9ccc;
                     width: 5px;
                     justify-content: center;
                     display: flex;
@@ -324,7 +324,7 @@
                         border-radius: 999px;
                         height: 20px;
                         width: 20px;
-                        background-color: #30ea03;
+                        background: #30ea03;
                         position: absolute;
                     }
                 }
@@ -401,7 +401,7 @@
     }
 }
 .categoryInsightsBtn:hover {
-    background-color: #30ea03;
+    background: #30ea03;
     color: #fff;
     outline: 2px solid #000;
 }

@@ -245,22 +245,22 @@ body {
 }
 .btnGreen,
 .btnGreen:hover {
-    background-color: #30ea03;
+    background: #30ea03;
     color: #000;
 }
 .btnPink,
 .btnPink:hover {
-    background-color: #ff93e9;
+    background: #ff93e9;
     color: #000;
 }
 .btnBlack,
 .btnBlack:hover {
-    background-color: #000;
+    background: #000;
     color: #fff;
 }
 .btnTeal,
 .btnTeal:hover {
-    background-color: #0399ea;
+    background: #0399ea;
     color: #000;
 }
 
