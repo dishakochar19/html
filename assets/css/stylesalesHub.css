@@ -1,6 +1,7 @@
 body {
     font-weight: normal;
     font-size: 13px;
+    color: #000;
 }
 .scroller {
     width: auto;
@@ -61,7 +62,6 @@ body {
     padding: 20px;
     padding-top: 80px;
 }
-
 .subSection {
     border: 1px solid #c5c5c5;
     border-radius: 6px;
@@ -274,11 +274,11 @@ a.homeTopLeftLinks {
                     }
 
                     h4 {
-                        font-size: 18px;
+                        font-size: 13px;
                         font-weight: bold;
                     }
 
-                    .arrow {
+                    .rightArrow {
                         margin-left: auto;
                         height: 32px;
                         width: 32px;
@@ -301,7 +301,7 @@ a.homeTopLeftLinks {
                             color: #fff;
                         }
                     }
-                    .arrow {
+                    .rightArrow {
                         height: 32px;
                         width: 32px;
                         background: #fff;
@@ -326,11 +326,11 @@ a.calendarBox {
     color: #000;
     display: block;
     text-align: center;
+    justify-content: center;
     margin-bottom: 10px;
     h1 {
         font-weight: bold;
         font-size: 15px;
-        padding-bottom: 10px;
     }
 }
 a.eventBox {
@@ -350,7 +350,7 @@ a.eventBox {
     }
 
     .date {
-        color: #bababa;
+        color: #ececec;
         i {
             color: #000;
         }
@@ -424,6 +424,7 @@ a.eventBox {
 /* ************************ Footer ************************ */
 .footerBg {
     background: #11174b;
+    margin-top: 100px;
     color: #ffff;
     display: flex;
     padding: 5px 20px;
@@ -456,6 +457,20 @@ a.eventBox {
             li {
                 width: 100%;
                 max-width: 100%;
+            }
+        }
+    }
+    .outerSection {
+        padding-top: 20px;
+    }
+    .homeTopRightLinks {
+        ul {
+            li {
+                a {
+                    h4 {
+                        text-align: start;
+                    }
+                }
             }
         }
     }

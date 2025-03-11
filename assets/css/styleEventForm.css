@@ -1,5 +1,7 @@
-
-/* -------Event Form------- */
+/* ************************ Event Form ************************ */
+.categoryWidth {
+    min-width: 200px;
+}
 .tableHeader {
     background: #000000;
     color: #ffffff;
@@ -76,22 +78,22 @@ a.eventBtn {
 .modal-body {
     padding: 20px;
 
-    .choosenDates{
+    .choosenDates {
         display: flex;
         margin-bottom: 10px;
         gap: 10px;
     }
-    .dateGrps{
+    .dateGrps {
         display: flex;
         gap: 10px;
     }
-    .minusIcon{
+    .minusIcon {
         background: #000000;
         border-radius: 999px;
         height: 20px;
         width: 20px;
         line-height: 20px;
-        i{
+        i {
             display: flex;
             justify-content: center;
             color: #fff;

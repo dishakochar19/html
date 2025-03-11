@@ -1,15 +1,19 @@
 /********************** Common Classes ********************** */
+body {
+    background: #efefef;
+}
 .tableViewScroll {
     overflow-x: auto;
+}
+.categoryWidth {
+    min-width: 200px;
 }
 .mobileNav {
     .closebtn {
         display: none;
     }
 }
-body {
-    background: #efefef;
-}
+
 .leftSideNav {
     font-size: 30px;
     cursor: pointer;
@@ -103,7 +107,40 @@ body {
 .outerSection {
     padding: 20px;
 }
+.linkPages {
+    cursor: pointer;
+    display: block;
+    ul {
+        margin: 0;
+        padding: 0;
 
+        li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: block;
+
+            a > i {
+                min-width: 20px;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        color: #000000;
+        font-size: 13px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e3e3e3;
+        &:hover {
+            background: #e4e4e4;
+            padding-left: 10px;
+            transition: 0.4s all ease-in-out;
+        }
+    }
+}
 /* ************************ Pagination ************************ */
 .pagination-container {
     cursor: pointer;
@@ -114,7 +151,7 @@ body {
     border: 1px solid #aaaaaa;
     border-radius: 6px;
     line-height: 0.5;
-    a{
+    a {
         text-decoration: none;
         display: block;
     }
@@ -538,54 +575,6 @@ body {
     .logoTagline {
         font-size: 21px;
         font-weight: normal;
-    }
-
-    .linkPages {
-        cursor: pointer;
-        display: block;
-
-        .list {
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 0px;
-
-            ul {
-                margin: 0;
-                padding: 0;
-
-                li {
-                    margin: 0;
-                    padding: 0;
-                    list-style-type: none;
-                    display: block;
-
-                    a > i {
-                        min-width: 20px;
-
-                        svg {
-                            margin-right: 10px;
-                            align-self: center;
-                        }
-                    }
-                }
-            }
-        }
-
-        a {
-            text-decoration: none;
-            width: 100%;
-            display: flex;
-            color: #000000;
-            font-weight: normal;
-            font-size: 13px;
-            padding: 10px 0;
-            border-bottom: 1px solid #e3e3e3;
-
-            &:hover {
-                background: #e4e4e4;
-                padding-left: 10px;
-                transition: 0.4s all ease-in-out;
-            }
-        }
     }
 }
 
@@ -1190,7 +1179,7 @@ table.tblMySubmissions {
         border-top: 5px solid #000;
         border-left: 1px solid #30ea03;
         text-decoration: none;
-        span{
+        span {
             font-size: 16px;
         }
     }
@@ -1223,7 +1212,7 @@ table.tblMySubmissions {
     .tgTitle {
         padding-bottom: 30px;
         font-size: 15px;
-        h1{
+        h1 {
             margin-bottom: 5px;
         }
     }
@@ -1354,9 +1343,6 @@ mobileSm {@media (max-width: 450px) {@content;}}
         display: block;
 
         .list {
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 0px;
-
             ul {
                 margin: 0;
                 padding: 0;
@@ -1369,11 +1355,6 @@ mobileSm {@media (max-width: 450px) {@content;}}
 
                     a > i {
                         min-width: 20px;
-
-                        svg {
-                            margin-right: 10px;
-                            align-self: center;
-                        }
                     }
                 }
             }
