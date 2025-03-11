@@ -1,4 +1,8 @@
 /* ************************ Common Classes ************************ */
+.mainInternal {
+    width: 95vw;
+    margin: auto;
+}
 .topBdr {
     border-bottom: 1px solid #cccc;
     padding-bottom: 70px;
@@ -62,10 +66,7 @@
     margin-top: 80px;
     background: #efefef;
 }
-.mainInternal {
-    width: 95vw;
-    margin: auto;
-}
+
 .commonLogo {
     display: flex;
     gap: 10px;
@@ -147,23 +148,32 @@
 .header {
     background: #000;
     color: #fff;
-    /* padding: 20px; */
     width: 100%;
     text-align: center;
-
-    .commonLogo {
-        display: flex;
-        gap: 10px;
-        align-items: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    a {
+        display: block;
+        text-decoration: none;
         h1 {
             font-weight: bold;
             font-size: 20px;
             border-right: 1px solid #ffff;
-            padding: 15px;
-            cursor: pointer;
+            padding: 12px;
         }
         span {
             color: #30ea03;
+            margin: 0;
+            padding: 0;
+        }
+        &&:hover {
+            h1 {
+                color: #fff;
+                span {
+                    color: #30ea03;
+                }
+            }
         }
     }
     .subHeader {
@@ -172,27 +182,24 @@
         i {
             font-size: 30px;
         }
-    }
-    .titleName {
-        margin-left: 10px;
-        font-weight: bold;
-        font-size: 15px;
-        display: block;
-
-        span {
-            color: #fff;
-        }
-        .titleBar {
-            background: #30ea03;
-            color: #000;
-            text-align: center;
-            line-height: normal;
+        a {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 15px;
+            display: block;
+            text-decoration: none;
+            h4 {
+                color: #fff;
+            }
+            span {
+                background: #30ea03;
+                color: #000;
+            }
         }
     }
 
     .rightHeaderNavBar {
         margin-left: auto;
-        font-size: 15px;
         text-align: center;
         ul {
             text-align: center;
@@ -201,13 +208,15 @@
             gap: 10px;
             li {
                 a {
-                    /* background: #3d3d3d; */
                     display: block;
                     text-align: center;
                     text-decoration: none;
                     text-align: center;
                     border-left: 1px solid #ffff;
                     padding: 15px;
+                }
+                i {
+                    margin-right: 5px;
                 }
                 a:hover {
                     color: #30ea03;
@@ -381,7 +390,7 @@
     border-radius: 0 0 6px 6px;
     border: 1px solid #a3a3a3;
     padding: 20px;
-    a{
+    a {
         text-decoration: none;
         display: block;
     }
