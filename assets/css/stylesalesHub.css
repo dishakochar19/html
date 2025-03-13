@@ -120,6 +120,7 @@ body {
         font-weight: bold;
         border-bottom: 7px solid #30ea03;
         padding-bottom: 15px;
+        margin: 0;
     }
 }
 .description {
@@ -433,5 +434,8 @@ a.eventBox {
                 }
             }
         }
+    }
+    .rightBtns{
+
     }
 }

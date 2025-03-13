@@ -1133,7 +1133,7 @@ table.tblMySubmissions {
     gap: 10px;
     margin: 25px 0 0 0;
     .btnCommon {
-        padding: 5px 10px;
+        padding: 5px 15px;
     }
     i {
         margin-left: 5px;
@@ -1142,7 +1142,6 @@ table.tblMySubmissions {
 .tgContainer {
     border: 1px solid #30ea03;
     padding: 20px 20px;
-    /* padding: 20px 0 0 0; */
     display: block;
 }
 .tvStoryNameTitle {
@@ -1444,4 +1443,5 @@ mobileSm {@media (max-width: 450px) {@content;}}
         position: absolute;
         top: -40px;
     }
+
 }
