@@ -361,7 +361,7 @@ body {
     }
 
     .authorReadMore {
-        margin: 20px 0 20px 0;
+        margin: 14px 0 14px 0;
         font-size: 13px;
         display: inline-block;
         a {
@@ -374,7 +374,8 @@ body {
         color: #0000ff;
         cursor: pointer;
         display: block;
-
+        margin: 5px 0;
+        
         .comma {
             color: #000000;
         }
@@ -1443,5 +1444,4 @@ mobileSm {@media (max-width: 450px) {@content;}}
         position: absolute;
         top: -40px;
     }
-
 }
