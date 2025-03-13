@@ -164,7 +164,7 @@ body {
     gap: 10px;
     border-radius: 6px;
     font-weight: bold;
-    >div{
+    > div {
         padding: 10px 40px;
     }
 }
@@ -173,7 +173,12 @@ body {
     display: flex;
     gap: 10px;
     padding: 0 0 20px 0;
-
+    align-items: center;
+    > div:first-child {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
     .commonIcon {
         border-radius: 999px;
         width: 32px;
@@ -340,6 +345,34 @@ body {
             }
         }
     } */
+    .bars {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        font-size: 30px;
+        color: yellowgreen;
+        z-index: 1000;
+    }
+    .closebtn {
+        display: none;
+        position: fixed;
+        right: 15px;
+        top: -10px;
+        padding: 10px;
+        color: #999;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 999px;
+    }
+    .leftNav {
+        display: flex;
+        gap: 10px;
+        img {
+            height: 50px;
+        }
+    }
 
     .rightHeaderNavBar {
         margin-left: auto;
@@ -495,6 +528,54 @@ a.categoryInsightsBtn {
 @mixin mobileMd {   @media (max-width: #{580px}) { @content;  }}
 @mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
 
+@media (max-width: 767px) {
+    .rightHeaderNavBar {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        right: 0px;
+        top: 0;
+        width: 100%;
+        background: white;
+        ul {
+            flex-direction: column;
+            color: #000;
+            li {
+                border-bottom: 1px solid #eee;
+                height: 100%;
+            }
+        }
+    }
+    .bars {
+        display: block !important;
+    }
+    .showMenu {
+        .closebtn {
+            display: block !important;
+            background: none;
+            z-index: 999;
+        }
+        .bars {
+            display: none !important;
+        }
+        .rightHeaderNavBar {
+            display: block !important;
+        }
+    }
+    .commonTopSection {
+        flex-direction: column;
+        backdrop-filter: red;
+        .commonTitle {
+            flex-direction: column;
+            margin: inherit;
+        }
+        .rightBtns{
+            flex-direction: column;
+            margin: inherit;
+            width: 100%;
+        }
+    }
+}
 @media (max-width: 450px) {
     .filterBtn {
         float: right;
@@ -514,8 +595,5 @@ a.categoryInsightsBtn {
     }
     .filterSection {
         margin-top: 30px;
-    }
-    .rightBtns{
-
     }
 }
