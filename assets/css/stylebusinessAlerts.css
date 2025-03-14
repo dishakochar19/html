@@ -234,6 +234,8 @@ body {
     display: inline-block;
     background: #cde9ff;
     border: 2px solid #cccc;
+    margin-bottom: 2px;
+    margin-left: 2px;
     .manageBtn {
         display: flex;
         gap: 10px;
@@ -242,6 +244,7 @@ body {
         h3 {
             font-weight: bold;
             font-size: 15px;
+            color: #000;
         }
         i {
             background: #30ea03;
