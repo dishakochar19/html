@@ -629,7 +629,7 @@ a.categoryInsightsBtn {
         }
     }
     .commonTopSection {
-        /* flex-direction: column; */
+        flex-direction: column;
         .commonTitle {
             flex-direction: column;
             margin: inherit;
