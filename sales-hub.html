@@ -56,13 +56,12 @@
     <div class="outerSection">
         <div class="subSection">
             <div class="homeTopTitle">
-                <h1>Title</h1>
+                <h1>Welcome to sales Hub!</h1>
             </div>
             <div class="description">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non soluta, aspernatur quidem
-                    dignissimos velit natus corporis sed assumenda beatae reiciendis delectus similique
-                    autem
-                    ducimus sapiente placeat tempore, exercitationem voluptates laborum?</p>
+                <p>The home of all sales information and tools. Our platform is designed to be intuitive, and
+                    integrated, ensuring you have everything you need at your fingertips. Dive in and eplore the
+                    features that your work , make things easier and drive our buisness forward. </p>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -88,7 +87,9 @@
                         <div class="col-sm-4">
                             <a href="business-alerts.html" class="homeTopLeftLinks">
                                 <div class="homeTopLeftIcon">
-                                    <span><i class="ri-bar-chart-2-fill"></i></span>
+                                    <span>
+                                        <i class="ri-bar-chart-2-fill"></i>
+                                    </span>
                                 </div>
                                 <h5>Sales Tools</h5>
                             </a>
@@ -116,7 +117,7 @@
                                     <a href="#">
                                         <div>
                                             <span><i class="ri-calendar-2-line"></i></span>
-                                            <h4>ABC</h4>
+                                            <h4>Brand Activation Calendars</h4>
                                             <div class="rightArrow">
                                                 <i class="ri-arrow-right-line"></i>
                                             </div>
@@ -124,10 +125,10 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#modalSalesForecast">
                                         <div>
                                             <span><i class="ri-lightbulb-flash-line"></i></span>
-                                            <h4>ABC</h4>
+                                            <h4>Sales Forecast Guidance</h4>
                                             <div class="rightArrow">
                                                 <i class="ri-arrow-right-line"></i>
                                             </div>
@@ -407,7 +408,7 @@
                                                 <span>
                                                     <i class="ri-file-pdf-2-line"></i>
                                                 </span>
-                                                <h4>ABC</h4>
+                                                <h4>SDS Tools</h4>
                                             </div>
                                         </a>
                                     </li>
@@ -417,7 +418,7 @@
                                                 <span>
                                                     <i class="ri-file-pdf-2-line"></i>
                                                 </span>
-                                                <h4>ABC</h4>
+                                                <h4>US Commercial Learning</h4>
                                             </div>
                                         </a>
                                     </li>
@@ -427,7 +428,7 @@
                                                 <span>
                                                     <i class="ri-file-pdf-2-line"></i>
                                                 </span>
-                                                <h4>ABC</h4>
+                                                <h4>My Learning</h4>
                                             </div>
                                         </a>
                                     </li>
@@ -437,7 +438,17 @@
                                                 <span>
                                                     <i class="ri-file-pdf-2-line"></i>
                                                 </span>
-                                                <h4>ABC</h4>
+                                                <h4>Workday</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <span>
+                                                    <i class="ri-file-pdf-2-line"></i>
+                                                </span>
+                                                <h4>Global Travel Booking</h4>
                                             </div>
                                         </a>
                                     </li>
@@ -462,24 +473,41 @@
         </div>
     </div>
 
+
+    <div id="modalSalesForecast" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        Coming soon....!
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <span><img src="https://www.w3schools.com/bootstrap/chicago.jpg"></span>
+                        <button class="submitBtn">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-        <script>
-            function openNav() {
-                const winWidth = window.innerWidth;
-                if (winWidth < 767) {
-                    document.querySelector("body").classList.add('showMenu');
-                }
+    <script>
+        function openNav() {
+            const winWidth = window.innerWidth;
+            if (winWidth < 767) {
+                document.querySelector("body").classList.add('showMenu');
             }
-    
-            function closeNav() {
-                document.querySelector("body").classList.remove('showMenu');
-            }
-        </script>
+        }
+
+        function closeNav() {
+            document.querySelector("body").classList.remove('showMenu');
+        }
+    </script>
 </body>
 
 </html>

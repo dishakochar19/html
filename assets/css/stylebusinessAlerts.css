@@ -4,52 +4,65 @@ body {
     font-weight: normal;
     color: #000;
 }
+
 .mainInternal {
     width: 95vw;
     margin: auto;
     min-height: calc(100vh - 99px);
 }
+
 .topBdr {
     border-bottom: 1px solid #cccc;
     padding-bottom: 70px;
 }
+
 .salesTopBdr {
     padding: 10px 0;
     border-bottom: 1px solid #cccc;
 }
+
 .txtCenter {
     text-align: center;
     margin: 0;
     border-radius: 6px 6px 0 0;
 }
+
 .boxBorder {
     border: 1px solid #bdbdbd;
 }
+
 .blueText {
     color: #0091ff;
 }
+
 .subSection {
     padding: 5px 0 0 0;
 }
+
 .topRowPadding {
     padding-top: 20px;
 }
+
 .topPadding {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .sideBdr {
     padding: 30px 40px;
 }
+
 .folderName {
     ul {
         margin: 10px 0;
         padding: 0;
         list-style-type: none;
+
         li {
             display: flex;
             margin-bottom: 10px;
-            > div:first-child {
+
+            >div:first-child {
                 background: #9c9c9ccc;
                 width: 5px;
                 justify-content: center;
@@ -66,6 +79,7 @@ body {
                     position: absolute;
                 }
             }
+
             span::before {
                 content: "";
                 display: block;
@@ -87,6 +101,7 @@ body {
                 border-left: 6px solid #30ea03;
                 text-decoration: none;
                 flex-grow: 1;
+
                 &&:hover {
                     color: #000;
                 }
@@ -95,13 +110,16 @@ body {
                     display: flex;
                     align-items: center;
                     gap: 10px;
+
                     i {
                         font-size: 25px;
                     }
+
                     h1 {
                         font-weight: bold;
-                        font-size: 15px;
+                        font-size: 13px;
                     }
+
                     .date {
                         color: #a3a3a3;
                     }
@@ -110,13 +128,15 @@ body {
         }
     }
 }
+
 .categories {
     background: #30ea03;
     padding: 10px;
     font-weight: bold;
+
     h1 {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -133,52 +153,62 @@ body {
     justify-content: center;
     border-radius: 6px;
 }
+
 .btnGreen,
 .btnGreen:hover {
     background: #30ea03;
     color: #000;
 }
+
 .btnPink,
 .btnPink:hover {
     background: #ff93e9;
     color: #000;
 }
+
 .btnBlack,
 .btnBlack:hover {
     background: #000;
     color: #fff;
 }
+
 .btnTeal,
 .btnTeal:hover {
     background: #0399ea;
     color: #000;
 }
+
 .btnYellow,
 .btnYellow:hover {
     background: #ffff00;
     color: #000;
 }
+
 .rightBtns {
     margin-left: auto;
     display: flex;
     gap: 10px;
     border-radius: 6px;
     font-weight: bold;
-    > div {
+
+    >div {
         padding: 10px 40px;
     }
 }
+
 /* ************************ Common Classes of All Pgs From Business Alerts ************************ */
 .commonTopSection {
     display: flex;
     gap: 10px;
     padding: 0 0 20px 0;
     align-items: center;
-    > div:first-child {
+
+    >div:first-child {
         gap: 10px;
         display: flex;
         align-items: center;
     }
+
     .commonIcon {
         border-radius: 999px;
         width: 32px;
@@ -187,6 +217,7 @@ body {
         line-height: 32px;
         text-align: center;
         position: relative;
+
         i {
             font-size: 25px;
             position: absolute;
@@ -195,9 +226,11 @@ body {
             font-weight: bold;
         }
     }
+
     .commonTitle {
         display: flex;
         align-items: center;
+
         h1 {
             font-size: 18px;
             padding: 0 0 5px 0;
@@ -206,6 +239,7 @@ body {
         }
     }
 }
+
 .filterSection {
     border: 1px solid #cccc;
     border-radius: 8px;
@@ -218,6 +252,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+
     h1 {
         font-weight: bold;
         font-size: 20px;
@@ -225,10 +260,12 @@ body {
         padding: 15px;
         cursor: pointer;
     }
+
     span {
         color: #30ea03;
     }
 }
+
 .showHideFilterBtn {
     padding: 10px;
     display: inline-block;
@@ -236,16 +273,19 @@ body {
     border: 2px solid #cccc;
     margin-bottom: 2px;
     margin-left: 2px;
+
     .manageBtn {
         display: flex;
         gap: 10px;
         align-items: center;
         cursor: pointer;
+
         h3 {
             font-weight: bold;
             font-size: 15px;
             color: #000;
         }
+
         i {
             background: #30ea03;
             width: 32px;
@@ -255,14 +295,17 @@ body {
         }
     }
 }
+
 .filterContainer {
     border-top: 1px solid #cccc;
     padding-top: 10px;
 }
+
 .filterBtn {
     display: inline-flex;
     gap: 10px;
     margin-top: 25px;
+
     a {
         display: block;
         text-decoration: none;
@@ -272,19 +315,23 @@ body {
         line-height: 32px;
         border-radius: 6px;
         color: #000;
+
         i {
             font-size: 15px;
             font-weight: bold;
         }
     }
+
     a.btnGreen {
         background: #30ea03;
     }
+
     a.btnBlack {
         background: #000;
         color: #fff !important;
     }
 }
+
 .exportExcel {
     padding: 7px 10px;
     float: right;
@@ -302,11 +349,13 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+
     img {
         border-right: 1px solid #ffff;
         width: 100px;
         height: 15px;
     }
+
     /* a {
         display: block;
         text-decoration: none;
@@ -358,6 +407,7 @@ body {
         color: yellowgreen;
         z-index: 1000;
     }
+
     .closebtn {
         display: none;
         position: fixed;
@@ -369,9 +419,11 @@ body {
         font-size: 30px;
         border-radius: 999px;
     }
+
     .leftNav {
         display: flex;
         gap: 10px;
+
         img {
             height: 50px;
         }
@@ -380,11 +432,13 @@ body {
     .rightHeaderNavBar {
         margin-left: auto;
         text-align: center;
+
         ul {
             text-align: center;
             list-style-type: none;
             display: flex;
             gap: 10px;
+
             li {
                 a {
                     display: block;
@@ -394,9 +448,11 @@ body {
                     border-left: 1px solid #ffff;
                     padding: 15px;
                 }
+
                 i {
                     margin-right: 5px;
                 }
+
                 a:hover {
                     color: #30ea03;
                 }
@@ -412,6 +468,7 @@ body {
     color: #ffff;
     display: flex;
     padding: 5px 20px;
+
     .designCredit {
         margin-left: auto;
     }
@@ -423,24 +480,29 @@ body {
     display: inline-block;
     background: #cde9ff;
     border: 2px solid #cccc;
+
     .filterItem {
         display: flex;
         gap: 10px;
         align-items: center;
         cursor: pointer;
+
         i {
             background: #30ea03;
             width: 32px;
             height: 32px;
             text-align: center;
             line-height: 32px;
+            font-size: 20px;
         }
+
         h3 {
             font-weight: bold;
             font-size: 15px;
         }
     }
 }
+
 .description {
     padding: 20px;
     margin: 30px 0;
@@ -457,6 +519,7 @@ body {
         display: flex;
         font-size: 18px;
         gap: 1px;
+
         li {
             a {
                 background: #bad4e7;
@@ -475,6 +538,7 @@ body {
         }
     }
 }
+
 .bgFilter {
     background: #ddf1ff;
 }
@@ -485,17 +549,21 @@ body {
     border-top: none;
     border-radius: 0 0 6px 6px;
     padding: 20px;
+
     a {
         text-decoration: none;
         display: block;
     }
+
     .folderSubSectionTitle {
         display: flex;
         align-items: center;
+
         h1 {
             font-weight: bold;
-            font-size: 16px;
+            font-size: 13px;
         }
+
         .toggleIcon {
             margin-left: auto;
             height: 25px;
@@ -504,12 +572,14 @@ body {
             text-align: center;
             background: #30ea03;
             border-radius: 999px;
+
             i {
                 font-weight: bold;
             }
         }
     }
 }
+
 a.categoryInsightsBtn {
     display: inline-block;
     background: #30ea03;
@@ -578,26 +648,33 @@ a.categoryInsightsBtn {
         }
     } */
 }
+
 @media (max-width: 450px) {
     .filterBtn {
         float: right;
         margin-top: 0;
     }
+
     .topBdr {
         padding-bottom: 20px;
     }
+
     .exportExcel {
         margin-top: auto;
     }
+
     .salesTopBdr {
         padding: 10px 0 15px;
     }
+
     .sideBdr {
         padding: 10px 34px;
     }
+
     .filterSection {
         margin-top: 30px;
     }
+
     .rightHeaderNavBar {
         display: none;
         position: fixed;
@@ -606,38 +683,47 @@ a.categoryInsightsBtn {
         top: 0;
         width: 100%;
         background: white;
+
         ul {
             flex-direction: column;
             color: #000;
+
             li {
                 border-bottom: 1px solid #eee;
                 height: 100%;
             }
         }
     }
+
     .bars {
         display: block !important;
     }
+
     .showMenu {
         .closebtn {
             display: block !important;
             background: none;
             z-index: 999;
         }
+
         .bars {
             display: none !important;
         }
+
         .rightHeaderNavBar {
             display: block !important;
         }
     }
+
     .commonTopSection {
         flex-direction: column;
+
         .commonTitle {
             flex-direction: column;
             margin: inherit;
         }
-        .rightBtns{
+
+        .rightBtns {
             flex-direction: column;
             margin: inherit;
             width: 100%;

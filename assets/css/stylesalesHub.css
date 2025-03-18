@@ -3,34 +3,41 @@ body {
     font-size: 13px;
     color: #000;
 }
+
 .scroller {
     width: auto;
     height: 100px;
     overflow: scroll;
     scrollbar-color: #30ea03;
 }
+
 .linkBars {
     width: 100%;
     padding-top: 20px;
+
     ul {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
+
         li {
             flex-grow: 1;
             width: calc(20% - 10px);
             max-width: calc(20% - 10px);
+
             a {
                 display: block;
                 padding: 10px;
                 text-decoration: none;
                 background: #fff;
-                > div {
+
+                >div {
                     display: flex;
                     gap: 10px;
                     text-align: center;
                     align-items: center;
                     color: #000;
+
                     span {
                         background: #000;
                         width: 30px;
@@ -42,8 +49,9 @@ body {
                             font-size: 20px;
                         }
                     }
+
                     h4 {
-                        font-size: 18px;
+                        /* font-size: 18px; */
                         font-weight: normal;
                         flex-shrink: 0;
                     }
@@ -58,12 +66,48 @@ body {
     }
 }
 
+/********************** Modal ********************** */
+.modal-header {
+    background-color: #ff62f2;
+    border-radius: 6px 6px 0 0;
+    h4 {
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+.modal-content {
+    .close {
+        background: rgba(0, 0, 0, 1);
+        height: 24px !important;
+        width: 24px !important;
+        line-height: 24px !important;
+        color: #fff !important;
+        border-radius: 999px !important;
+        font-size: 15px;
+        text-align: center;
+        opacity: 1;
+    }
+}
+.modal-body {
+        .submitBtn {
+            background-color: #000;
+            padding: 8px 34px;
+            color: #fff;
+            border-radius: 6px;
+            text-align: center;
+            float: right;
+            margin-top: 20px;
+        }
+
+}
+
 /* ************************ Common Classes ************************ */
 .outerSection {
     padding: 20px;
     padding-top: 80px;
     min-height: calc(100vh - 99px);
 }
+
 .subSection {
     border: 1px solid #c5c5c5;
     border-radius: 6px;
@@ -79,6 +123,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+
     img {
         border-right: 1px solid #ffff;
         width: 100px;
@@ -88,11 +133,13 @@ body {
     .rightHeaderNavBar {
         margin-left: auto;
         text-align: center;
+
         ul {
             text-align: center;
             list-style-type: none;
             display: flex;
             gap: 10px;
+
             li {
                 a {
                     display: block;
@@ -102,9 +149,11 @@ body {
                     border-left: 1px solid #ffff;
                     padding: 15px;
                 }
+
                 i {
                     margin-right: 5px;
                 }
+
                 a:hover {
                     color: #30ea03;
                 }
@@ -123,9 +172,11 @@ body {
         margin: 0;
     }
 }
+
 .description {
     padding: 15px 0 30px 0;
 }
+
 a.homeTopLeftLinks {
     display: block;
     border: 1px solid #c5c5c5;
@@ -136,9 +187,11 @@ a.homeTopLeftLinks {
     &&:hover {
         border: 1px solid #30ea03;
     }
+
     .homeTopLeftIcon {
         position: relative;
         height: 80px;
+
         span {
             background: #30ea03;
             display: block;
@@ -149,6 +202,7 @@ a.homeTopLeftLinks {
             margin-left: -40px;
             left: 50%;
             border-radius: 0 0 6px 6px;
+
             i {
                 font-size: 30px;
                 padding: 20px;
@@ -207,6 +261,7 @@ a.homeTopLeftLinks {
         font-size: 15px;
     }
 }
+
 .homeTopRightLinks {
     ul {
         li {
@@ -219,7 +274,7 @@ a.homeTopLeftLinks {
                 border-radius: 6px;
                 color: #000;
 
-                > div {
+                >div {
                     display: flex;
                     gap: 10px;
                     text-align: center;
@@ -231,6 +286,7 @@ a.homeTopLeftLinks {
                         height: 30px;
                         line-height: 30px;
                         text-align: center;
+
                         i {
                             font-size: 20px;
                         }
@@ -248,28 +304,33 @@ a.homeTopLeftLinks {
                         border: 5px solid #fff;
                         border-radius: 999px;
                         background: #000;
+
                         i {
                             color: #ffff;
                             line-height: 24px;
                         }
                     }
                 }
+
                 &&:hover {
                     transition: all 0.3s ease-in-out;
                     background: #30ea03;
 
                     span {
                         background: #000;
+
                         i {
                             color: #fff;
                         }
                     }
+
                     .rightArrow {
                         height: 32px;
                         width: 32px;
                         background: #fff;
                         border: 5px solid #000;
                         border-radius: 999px;
+
                         i {
                             color: #000;
                             line-height: 24px;
@@ -291,12 +352,14 @@ a.calendarBox {
     text-align: center;
     justify-content: center;
     margin-bottom: 10px;
+
     h1 {
         margin-bottom: 5px;
         font-weight: bold;
         font-size: 15px;
     }
 }
+
 a.eventBox {
     background: #d0d0d0;
     text-align: left;
@@ -312,6 +375,7 @@ a.eventBox {
 
     .date {
         color: #515151;
+
         i {
             color: #000;
         }
@@ -328,10 +392,12 @@ a.eventBox {
     .commonTitle {
         display: flex;
     }
+
     h1 {
         font-size: 18px;
         font-weight: bold;
     }
+
     h1::before {
         content: "";
         display: block;
@@ -357,16 +423,19 @@ a.eventBox {
     .commonTitle {
         display: flex;
     }
+
     h1 {
         font-size: 18px;
         font-weight: bold;
     }
+
     h1::before {
         content: "";
         display: block;
         width: 0;
         height: 0;
     }
+
     h1::after {
         content: "";
         display: block;
@@ -375,6 +444,7 @@ a.eventBox {
         border: 1px solid #30ea03;
     }
 }
+
 .imageBox {
     img {
         width: 100%;
@@ -389,6 +459,7 @@ a.eventBox {
     color: #ffff;
     display: flex;
     padding: 5px 20px;
+
     .designCredit {
         margin-left: auto;
     }
@@ -410,9 +481,11 @@ a.eventBox {
     .description {
         padding: 15px 0;
     }
+
     a.homeTopLeftLinks {
         margin: 20px 0;
     }
+
     .linkBars {
         ul {
             li {
@@ -421,9 +494,11 @@ a.eventBox {
             }
         }
     }
+
     .outerSection {
         padding-top: 20px;
     }
+
     .homeTopRightLinks {
         ul {
             li {
@@ -434,8 +509,5 @@ a.eventBox {
                 }
             }
         }
-    }
-    .rightBtns{
-
     }
 }
