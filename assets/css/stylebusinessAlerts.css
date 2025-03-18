@@ -191,8 +191,9 @@ body {
     border-radius: 6px;
     font-weight: bold;
 
-    >div {
+    > div {
         padding: 10px 40px;
+        gap: 10px;
     }
 }
 
@@ -444,9 +445,9 @@ body {
                     display: block;
                     text-align: center;
                     text-decoration: none;
-                    text-align: center;
-                    border-left: 1px solid #ffff;
+                    /* border-left: 1px solid #ffff; */
                     padding: 15px;
+                    float: left;
                 }
 
                 i {
@@ -601,54 +602,6 @@ a.categoryInsightsBtn {
 @mixin mobileMd {   @media (max-width: #{580px}) { @content;  }}
 @mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
 
-@media (max-width: 767px) {
-    /* .rightHeaderNavBar {
-        display: none;
-        position: fixed;
-        z-index: 100;
-        right: 0px;
-        top: 0;
-        width: 100%;
-        background: white;
-        ul {
-            flex-direction: column;
-            color: #000;
-            li {
-                border-bottom: 1px solid #eee;
-                height: 100%;
-            }
-        }
-    }
-    .bars {
-        display: block !important;
-    }
-    .showMenu {
-        .closebtn {
-            display: block !important;
-            background: none;
-            z-index: 999;
-        }
-        .bars {
-            display: none !important;
-        }
-        .rightHeaderNavBar {
-            display: block !important;
-        }
-    }
-    .commonTopSection {
-        flex-direction: column;
-        .commonTitle {
-            flex-direction: column;
-            margin: inherit;
-        }
-        .rightBtns{
-            flex-direction: column;
-            margin: inherit;
-            width: 100%;
-        }
-    } */
-}
-
 @media (max-width: 450px) {
     .filterBtn {
         float: right;
@@ -687,14 +640,14 @@ a.categoryInsightsBtn {
         ul {
             flex-direction: column;
             color: #000;
-
+            
             li {
+                float: left;
                 border-bottom: 1px solid #eee;
                 height: 100%;
             }
         }
     }
-
     .bars {
         display: block !important;
     }
@@ -717,6 +670,7 @@ a.categoryInsightsBtn {
 
     .commonTopSection {
         flex-direction: column;
+        float: left;
 
         .commonTitle {
             flex-direction: column;
