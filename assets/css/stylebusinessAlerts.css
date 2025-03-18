@@ -3,6 +3,7 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #000;
+    /* overflow-x: hidden; */
 }
 
 .mainInternal {
@@ -101,7 +102,7 @@ body {
                 border-left: 6px solid #30ea03;
                 text-decoration: none;
                 flex-grow: 1;
-
+                margin-bottom: 20px;
                 &&:hover {
                     color: #000;
                 }
@@ -137,6 +138,7 @@ body {
     h1 {
         font-weight: bold;
         font-size: 15px;
+        margin: 0;
     }
 }
 
@@ -272,8 +274,6 @@ body {
     display: inline-block;
     background: #cde9ff;
     border: 2px solid #cccc;
-    margin-bottom: 2px;
-    margin-left: 2px;
 
     .manageBtn {
         display: flex;
@@ -285,6 +285,7 @@ body {
             font-weight: bold;
             font-size: 15px;
             color: #000;
+            margin: 0;
         }
 
         i {
@@ -356,48 +357,6 @@ body {
         width: 100px;
         height: 15px;
     }
-
-    /* a {
-        display: block;
-        text-decoration: none;
-        h1 {
-        }
-        span {
-            color: #30ea03;
-            margin: 0;
-            padding: 0;
-
-        }
-        &&:hover {
-            h1 {
-                color: #fff;
-                span {
-                    color: #30ea03;
-                }
-            }
-        }
-    }
-    .subHeader {
-        display: flex;
-        align-items: center;
-        i {
-            font-size: 30px;
-        }
-        a {
-            margin-left: 10px;
-            font-weight: bold;
-            font-size: 15px;
-            display: block;
-            text-decoration: none;
-            h4 {
-                color: #fff;
-            }
-            span {
-                background: #30ea03;
-                color: #000;
-            }
-        }
-    } */
     .bars {
         display: none;
         cursor: pointer;
@@ -445,7 +404,7 @@ body {
                     display: block;
                     text-align: center;
                     text-decoration: none;
-                    /* border-left: 1px solid #ffff; */
+                    border-left: 1px solid #ffff;
                     padding: 15px;
                     float: left;
                 }
@@ -563,6 +522,7 @@ body {
         h1 {
             font-weight: bold;
             font-size: 13px;
+            margin: 0;
         }
 
         .toggleIcon {
@@ -669,7 +629,7 @@ a.categoryInsightsBtn {
     }
 
     .commonTopSection {
-        flex-direction: column;
+        /* flex-direction: column; */
         float: left;
 
         .commonTitle {
@@ -681,6 +641,23 @@ a.categoryInsightsBtn {
             flex-direction: column;
             margin: inherit;
             width: 100%;
+        }
+    }
+    .mainParent{
+        .commonTopSection {
+            flex-direction: column;
+            float: left;
+    
+            .commonTitle {
+                flex-direction: column;
+                margin: inherit;
+            }
+    
+            .rightBtns {
+                flex-direction: column;
+                margin: inherit;
+                width: 100%;
+            }
         }
     }
 }

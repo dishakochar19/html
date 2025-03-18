@@ -129,6 +129,37 @@ body {
         width: 100px;
         height: 15px;
     }
+    .bars {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        font-size: 30px;
+        color: yellowgreen;
+        z-index: 1000;
+    }
+
+    .closebtn {
+        display: none;
+        position: fixed;
+        right: 15px;
+        top: -10px;
+        padding: 10px;
+        color: #999;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 999px;
+    }
+
+    .leftNav {
+        display: flex;
+        gap: 10px;
+
+        img {
+            height: 50px;
+        }
+    }
 
     .rightHeaderNavBar {
         margin-left: auto;
@@ -145,9 +176,9 @@ body {
                     display: block;
                     text-align: center;
                     text-decoration: none;
-                    text-align: center;
                     border-left: 1px solid #ffff;
                     padding: 15px;
+                    float: left;
                 }
 
                 i {
@@ -478,6 +509,45 @@ a.eventBox {
 @mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
 
 @media screen and (max-width: 450px) {
+    .rightHeaderNavBar {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        right: 0px;
+        top: 0;
+        width: 100%;
+        background: white;
+
+        ul {
+            flex-direction: column;
+            color: #000;
+            
+            li {
+                float: left;
+                border-bottom: 1px solid #eee;
+                height: 100%;
+            }
+        }
+    }
+    .bars {
+        display: block !important;
+    }
+
+    .showMenu {
+        .closebtn {
+            display: block !important;
+            background: none;
+            z-index: 999;
+        }
+
+        .bars {
+            display: none !important;
+        }
+
+        .rightHeaderNavBar {
+            display: block !important;
+        }
+    }
     .description {
         padding: 15px 0;
     }
