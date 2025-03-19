@@ -161,7 +161,7 @@ body {
         }
     }
 
-    .rightHeaderNavBar {
+    /* .rightHeaderNavBar {
         margin-left: auto;
         text-align: center;
 
@@ -190,8 +190,79 @@ body {
                 }
             }
         }
+    } */
+
+
+
+
+
+    .rightHeaderNavBar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: #fff;
+        /* color: #000; */
+        transition: all 0.5s ease-in-out;
+        padding-top: 50px;
+        z-index: 1000;
     }
+
+    .rightHeaderNavBar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .rightHeaderNavBar ul li {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .rightHeaderNavBar ul li a {
+        color: #000;
+        border-bottom: 1px solid #c1c1c1;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+    }
+
+    .rightHeaderNavBar ul li a:hover {
+        /* background: #575757; */
+        color: #30ea03;
+    }
+
+    /* Open button */
+    .open-btn {
+        position: fixed;
+        right: 40px;
+        /* color: #30ea03; */
+        /* border: none; */
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Close button */
+    .close-btn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #000;
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
 
 /* ************************ Home Top Links ************************ */
 .homeTopTitle {
@@ -509,7 +580,7 @@ a.eventBox {
 @mixin mobileSm {   @media (max-width: #{450px}) { @content;  }} */
 
 @media screen and (max-width: 450px) {
-    .rightHeaderNavBar {
+    /* .rightHeaderNavBar {
         display: none;
         position: fixed;
         z-index: 100;
@@ -547,7 +618,7 @@ a.eventBox {
         .rightHeaderNavBar {
             display: block !important;
         }
-    }
+    } */
     .description {
         padding: 15px 0;
     }
