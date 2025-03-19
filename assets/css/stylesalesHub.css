@@ -595,9 +595,6 @@ a.eventBox {
             display: block;
         }
     }
-}
-@media screen and (max-width: 450px) {
-
     .description {
         padding: 15px 0;
     }
