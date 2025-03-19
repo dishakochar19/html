@@ -213,17 +213,19 @@ body {
         list-style: none;
         padding: 0;
     }
-
-    .rightHeaderNavBar ul li {
-        padding: 15px;
-        text-align: left;
+.rightHeaderNavBar{
+    ul{
+        li{
+        padding: 15px 11px;
+        }
     }
+}
 
     .rightHeaderNavBar ul li a {
         color: #000;
         border-bottom: 1px solid #c1c1c1;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 13px;
         display: block;
     }
 
