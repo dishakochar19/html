@@ -160,11 +160,10 @@ body {
         }
     }
     .rightHeaderNavBar {
-        
         position: fixed;
         top: 0;
-        left: -300px;
-        width: 300px;
+        left: -250px;
+        width: 250px;
         height: 100vh;
         background-color: #fff;
         transition: all 0.5s ease-in-out;
