@@ -570,6 +570,7 @@ a.eventBox {
             right: 20px;
             cursor: pointer;
             font-size: 30px;
+            margin-right: 5px;
         }
         .close-btn {
             display: none;
