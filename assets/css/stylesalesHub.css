@@ -642,12 +642,14 @@ a.eventBox {
                 width: 100%;
                 max-width: 100%;
             }
+            /* Icons class to be added here */
         }
     }
 
     .outerSection {
         padding-top: 20px;
     }
+    /* Icons class to be added here */
 
     .homeTopRightLinks {
         ul {
