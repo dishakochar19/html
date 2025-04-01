@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" onclick="openSidebar()">
-                    ☰
+                    <span>☰</span>
                 </button>
                 <a class="navbar-brand" href="#">
                     <img src="https://www.w3schools.com/bootstrap/chicago.jpg">
@@ -79,7 +79,7 @@
     </nav>
 
     <!-- MOBILE SIDEBAR (Opens from Left) -->
-    <div class="mobile-sidebar" id="sidebar">
+    <!-- <div class="mobile-sidebar" id="sidebar">
         <span class="close-sidebar" onclick="closeSidebar()">×</span>
         <ul>
             <li>
@@ -107,7 +107,6 @@
                     <span>Help</span>
                 </a>
             </li>
-            <!-- More Dropdown in Mobile -->
             <li class="mobile-more-toggle" onclick="toggleMoreLinks()">
                 More <span class="caret"></span>
             </li>
@@ -120,8 +119,22 @@
                 <li><a href="#">Shopper and Category Insights</a></li>
             </ul>
         </ul>
-    </div>
+    </div> -->
 
+<!-- Sidebar -->
+<div class="mobile-sidebar" id="sidebar">
+    <span class="close-sidebar" onclick="closeSidebar()">×</span>
+    <ul>
+        <li><a href="#"><i class="ri-home-9-line"></i> <span>Home</span></a></li>
+        <li><a href="#"><i class="ri-book-read-line"></i> <span>About us</span></a></li>
+        <li><a href="#"><i class="ri-blogger-line"></i> <span>Blog</span></a></li>
+        <li><a href="#"><i class="ri-contacts-book-line"></i> <span>Contact</span></a></li>
+        <li><a href="#"><i class="ri-questionnaire-line"></i> <span>Help</span></a></li>
+    </ul>
+</div>
+
+<!-- Background Overlay -->
+<div class="overlay-bg" id="overlay" onclick="closeSidebar()"></div>
 
     <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -130,22 +143,32 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script>
+        // function openSidebar() {
+        //     document.getElementById("sidebar").classList.add("sidebar-open");
+        // }
+
+        // function closeSidebar() {
+        //     document.getElementById("sidebar").classList.remove("sidebar-open");
+        // }
+
+        // function toggleMoreLinks() {
+        //     var moreLinks = document.querySelector('.mobile-more-links');
+        //     if (moreLinks.style.display === "block") {
+        //         moreLinks.style.display = "none";
+        //     } else {
+        //         moreLinks.style.display = "block";
+        //     }
+        // }
         function openSidebar() {
             document.getElementById("sidebar").classList.add("sidebar-open");
+            document.getElementById("overlay").style.display = "block"; // Show overlay
         }
 
         function closeSidebar() {
             document.getElementById("sidebar").classList.remove("sidebar-open");
+            document.getElementById("overlay").style.display = "none"; // Hide overlay
         }
 
-        function toggleMoreLinks() {
-            var moreLinks = document.querySelector('.mobile-more-links');
-            if (moreLinks.style.display === "block") {
-                moreLinks.style.display = "none";
-            } else {
-                moreLinks.style.display = "block";
-            }
-        }
     </script>
 
 </body>

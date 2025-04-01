@@ -1,4 +1,19 @@
-/* Navbar Brand Logos */
+.overlay-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); 
+    z-index: 999; 
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar-open ~ .overlay-bg {
+    display: block;
+    opacity: 0.5;
+}
 .navbar-brand {
     padding: 0px 15px;
     img {
@@ -9,13 +24,14 @@
     background-color: #000;
 }
 
-/* Move hamburger to right */
 .navbar-toggle {
     float: right;
     margin-right: 15px;
+    span{
+        color: #fff;
+    }
 }
 
-/* Sidebar Navigation (Hidden by Default) */
 .mobile-sidebar {
     position: fixed;
     left: -345px;
@@ -25,7 +41,7 @@
     background: #fff;
     color: #000;
     padding-top: 50px;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     z-index: 1000;
     box-shadow: -10px 0 10px rgba(22, 31, 18, 3.3);
     border-radius: 0 6px 6px 0;
@@ -48,12 +64,10 @@
     }
 }
 
-/* Open sidebar */
 .sidebar-open {
     left: 0 !important;
 }
 
-/* Close Button */
 .close-sidebar {
     position: absolute;
     right: 15px;
@@ -63,7 +77,6 @@
     color: #000;
 }
 
-/* More dropdown in mobile */
 .mobile-more-links {
     display: none;
     padding-left: 20px;
@@ -95,7 +108,6 @@
     }
 }
 
-/* Hide navigation in mobile */
 @media (max-width: 450px) {
     .desktop-nav {
         ul {
