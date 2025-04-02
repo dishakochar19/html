@@ -51,7 +51,6 @@ body {
                     }
 
                     h4 {
-                        /* font-size: 18px; */
                         font-weight: normal;
                         flex-shrink: 1;
                     }
@@ -642,7 +641,6 @@ a.eventBox {
                 width: 100%;
                 max-width: 100%;
             }
-            /* Icons class to be added here */
         }
     }
 

@@ -1,207 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="marquee">
+    <p>Business Winning Share 71% YTD, 58% L3M Alpha Alpha is now live! Request your access today!</p>
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sales Tools</title>
+<style>
+    .marquee {
+        background-color: red;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    .marquee p {
+        background-color: yellow;
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 20s linear infinite;
+    }
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    .marquee p:hover {
+        animation-play-state: paused;
+    }
 
-    <link rel="stylesheet" href="./assets//css/styletestNav.css" />
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-
-</head>
-
-<body>
-
-    <!-- HEADER NAVIGATION -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle button for mobile -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" onclick="openSidebar()">
-                    ☰
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="logo1.png" alt="Logo 1">
-                </a>
-                <a class="navbar-brand" href="#">
-                    <img src="logo2.png" alt="Logo 2">
-                </a>
-            </div>
-
-            <!-- Desktop Navigation -->
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Contact Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Help
-                        </a>
-                    </li>
-                    <!-- More Dropdown -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">
-                                    Playbooks
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Brand Activation Calendars
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Innovation dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Commercial Planning
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Sales Forecast Guidance
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Shopper and Category Insights
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- MOBILE SIDEBAR (Opens from Left) -->
-    <div class="mobile-sidebar" id="sidebar">
-        <span class="close-sidebar" onclick="closeSidebar()">×</span>
-        <ul>
-            <li>
-                <a href="#">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    About Us
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Contact Us
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Help
-                </a>
-            </li>
-            <!-- More Dropdown in Mobile -->
-            <li class="mobile-more-toggle" onclick="toggleMoreLinks()">
-                More <span class="caret"></span>
-            </li>
-            <ul class="mobile-more-links">
-                <li>
-                    <a href="#">
-                        Playbooks
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Brand Activation Calendars
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Innovation dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Commercial Planning
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Sales Forecast Guidance
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Shopper and Category Insights
-                    </a>
-                </li>
-            </ul>
-        </ul>
-    </div>
-
-
-
-    <!-- <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" crossorigin="anonymous"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script>
-        function openSidebar() {
-            document.getElementById("sidebar").classList.add("sidebar-open");
+    @keyframes marquee {
+        from {
+            transform: translateX(100%);
         }
 
-        function closeSidebar() {
-            document.getElementById("sidebar").classList.remove("sidebar-open");
+        to {
+            transform: translateX(-100%);
         }
-
-        function toggleMoreLinks() {
-            var moreLinks = document.querySelector('.mobile-more-links');
-            if (moreLinks.style.display === "block") {
-                moreLinks.style.display = "none";
-            } else {
-                moreLinks.style.display = "block";
-            }
-        }
-    </script>
-
-</body>
-
-</html>
+    }
+</style>
