@@ -503,7 +503,7 @@ a.eventBox {
     }
 
     .link-item {
-        min-height: 100%;        
+        min-height: 100%;
         h4 {
             margin: 0;
             overflow-wrap: break-word;
@@ -559,14 +559,11 @@ a.eventBox {
             transition: all 0.2s ease-in-out;
             z-index: 1000;
             ul {
-                /* display: flex; */
-                /* flex-direction: column; */
                 display: block;
                 width: 100%;
                 list-style: none;
                 padding: 0;
                 height: 100%;
-                /* grid-area: 0; */
                 gap: 0;
                 li {
                     display: block !important;
@@ -647,7 +644,6 @@ a.eventBox {
     .outerSection {
         padding-top: 20px;
     }
-    /* Icons class to be added here */
 
     .homeTopRightLinks {
         ul {
